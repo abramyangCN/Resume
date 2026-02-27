@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   build-and-deploy:
@@ -71,3 +72,53 @@ jobs:
       #       "https://api.github.com/repos/$IAY_REPO/dispatches" \
       #       -d '{"event_type":"resume-updated"}'
       #     echo "✓ Triggered iay.me redeploy"
+      
+      - name: Close stale translation issues
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue list --label "translation" --state open --json number \
+            --jq '.[].number' | \
+          xargs -I{} gh issue close {} --comment "Superseded by new translation request."
+
+      - name: Create Copilot translation issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMIT_SHA: ${{ github.sha }}
+        run: |
+          gh issue create \
+            --title "translate: update resume.zh.json from resume.json (${{ github.sha }})" \
+            --label "translation" \
+            --assignee "copilot" \
+            --body "$(cat << 'EOF'
+          ## Task
+          Translate \`resume.json\` into Simplified Chinese and write the result to \`resume.zh.json\`.
+
+          ## Rules
+
+          **Keep the following in English (do NOT translate):**
+          - All JSON field keys/property names
+          - Technology names: React, TypeScript, Vue, Next.js, Node.js, Taro, Uniapp, Fabric.js, Three.js, WebGL, Docker, CI/CD, REST API, JS Bridge, WebView, MJML, Swiper.js, Canvas, glTF, GitHub, CSS, HTML, JavaScript, Material UI, Litmus, Gulp, Velocity, WeChat JSSDK, Claude Code, GitHub Copilot, LLM, SaaS, SDK, Baidu Map, Tencent Map, Decal Geometry, postMessage
+          - Company/brand names: Christie's, Hermès, Messika, Bucherer, Kallista, Monotype, Publicis Sapient, Trajectry, Fabernovel, EY Studio, Tootools, Fumamx, DS Automobile, IQOS, Marriott, Huawei, Alibaba Cloud
+          - Platform names: WeChat, WeChat Miniprogram, LinkedIn, GitHub
+          - All URLs, email addresses, phone numbers
+          - All date strings (YYYY-MM-DD)
+          - Location identifiers: Shanghai, China, CN, TW, KR and similar
+          - The \`$schema\` field value
+          - countryCode values
+
+          **Translate these string values to Simplified Chinese:**
+          - \`basics.label\`, \`basics.summary\`
+          - \`work[].position\`, \`work[].summary\`, \`work[].highlights[]\`
+          - \`projects[].description\`, \`projects[].highlights[]\`
+          - \`skills[].name\` (e.g. "Frontend" → "前端开发", "Rendering & Visualization" → "渲染与可视化")
+          - \`education[].area\`, \`education[].studyType\`
+          - \`languages[].fluency\` values (e.g. "Native" → "母语", "Professional Working Proficiency" → "职业工作语言")
+          - \`awards[].title\`, \`awards[].summary\`
+          - \`interests[].name\` (e.g. "Hobbies" → "个人爱好")
+          - \`meta.lastModified\` → update to today's date
+
+          ## Output
+          Write the translated content to \`resume.zh.json\` with identical JSON structure to \`resume.json\`.
+          EOF
+          )"
