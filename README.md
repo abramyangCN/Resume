@@ -75,13 +75,13 @@ pnpm run export   # export to resume.html
 
 ---
 
-## Abraham Yang
+## Abraham Yang 杨杨
 
-**Senior Frontend Engineer | Frontend Lead**
+**Senior Frontend Engineer / Frontend Lead**
 
 📧 [abram.yang@outlook.com](mailto:abram.yang@outlook.com) · 🌐 [https://iay.me](https://iay.me) · 📍 Shanghai, Shanghai
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abramyang)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abramyang) [![Github](https://img.shields.io/badge/Github-0A66C2?style=flat&logo=github&logoColor=white)](https://www.github.com/abramyangCN)
 
 ## Summary
 
