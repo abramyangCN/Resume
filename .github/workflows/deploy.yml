@@ -47,7 +47,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
           git diff --staged --quiet || git commit -m "chore: update README [skip ci]"
-          git push
+          git push origin HEAD
 
       - name: Export resume to HTML
         run: |
@@ -83,4 +83,4 @@ jobs:
         run: |
           git add resume.zh.json
           git diff --staged --quiet || git commit -m "chore: update resume.zh.json [skip ci]"
-          git push
+          git push origin HEAD
