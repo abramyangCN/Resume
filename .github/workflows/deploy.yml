@@ -51,9 +51,21 @@ jobs:
 
       - name: Export resume to HTML
         run: |
+          # Export English version
           pnpm exec resume export resume.html --theme even
-          mkdir -p dist
+          # Export Chinese version
+          cp resume.json resume.json.bak
+          cp resume.zh.json resume.json
+          pnpm exec resume export resume.zh.html --theme even
+          cp resume.json.bak resume.json
+          rm resume.json.bak
+          # Arrange into dist/
+          mkdir -p dist/zh
           cp resume.html dist/index.html
+          cp resume.zh.html dist/zh/index.html
+          # Inject language switcher buttons
+          node scripts/inject-lang-switcher.js dist/index.html en zh /zh/
+          node scripts/inject-lang-switcher.js dist/zh/index.html zh en /
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
