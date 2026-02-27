@@ -79,7 +79,7 @@ pnpm run export   # export to resume.html
 
 **Senior Frontend Engineer / Frontend Lead**
 
-📧 [abram.yang@outlook.com](mailto:abram.yang@outlook.com) · 🌐 [https://iay.me](https://iay.me) · 📍 Shanghai, Shanghai
+📧 [abram.yang@outlook.com](mailto:abram.yang@outlook.com) · 🌐 [https://gh.abramyang.com/resume](https://gh.abramyang.com/resume) · 📍 Shanghai, Shanghai
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abramyang) [![Github](https://img.shields.io/badge/Github-0A66C2?style=flat&logo=github&logoColor=white)](https://www.github.com/abramyangCN)
 
