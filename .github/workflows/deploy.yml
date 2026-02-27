@@ -47,6 +47,18 @@ jobs:
           git diff --staged --quiet || git commit -m "chore: update README [skip ci]"
           git push
 
+      - name: Export resume to HTML
+        run: |
+          resume export resume.html --theme even
+          mkdir -p dist
+          cp resume.html dist/index.html
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist
+
       # - name: Trigger iay.me redeploy
       #   env:
       #     IAY_DEPLOY_TOKEN: ${{ secrets.IAY_DEPLOY_TOKEN }}
