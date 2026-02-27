@@ -77,11 +77,11 @@ jobs:
         run: |
           REPO_NAME="${GITHUB_REPOSITORY##*/}"
           # Export English version
-          pnpm exec resume export resume.html --theme even
+          pnpm exec resume export resume.html
           # Export Chinese version
           cp resume.json resume.json.bak
           cp resume.zh.json resume.json
-          pnpm exec resume export resume.zh.html --theme even
+          pnpm exec resume export resume.zh.html
           cp resume.json.bak resume.json
           rm resume.json.bak
           # Arrange into dist/
