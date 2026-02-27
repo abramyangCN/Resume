@@ -17,7 +17,7 @@ const snippet = `
   #lang-switcher {
     position: fixed;
     bottom: 24px;
-    right: 24px;
+    left: 24px;
     z-index: 9999;
     background: #333;
     color: #fff;
