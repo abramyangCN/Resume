@@ -8,9 +8,8 @@ const GIST_TOKEN = process.env.GIST_TOKEN;
 const GIST_ID    = process.env.GIST_ID;
 
 if (!GIST_TOKEN || !GIST_ID) {
-  console.error("✗ Missing GIST_TOKEN or GIST_ID environment variables.");
-  console.error("  Set them as repository secrets in GitHub → Settings → Secrets.");
-  process.exit(1);
+  console.log("⚠ GIST_TOKEN or GIST_ID not set — skipping Gist sync.");
+  process.exit(0);
 }
 
 const content = fs.readFileSync(

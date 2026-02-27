@@ -1,0 +1,117 @@
+# 📄 JSON Resume — 双语简历即代码
+
+[English](../README.md) | **中文**
+
+> 用 YAML 编写简历，通过 GitHub Models 自动翻译成中文，发布为支持语言切换的双语 GitHub Pages 站点 —— 每次推送全自动完成。
+
+## ✨ 功能特性
+
+- 📝 **YAML 源文件** — 编辑 `src/*.yaml`，构建步骤自动汇总生成 `resume.json`
+- 🤖 **AI 自动翻译** — 使用内置的 `GITHUB_TOKEN` 调用 GitHub Models（GPT-4o mini）生成 `resume.zh.json`，仅在 `resume.json` 变更时触发，无需额外配置
+- 🌐 **双语 GitHub Pages** — 英文版在 `/`，中文版在 `/zh/`，页面右下角有浮动语言切换按钮
+- 📋 **Gist 同步** *(可选)* — 每次部署将 `resume.json` 推送到 GitHub Gist，可配合 [registry.jsonresume.org](https://registry.jsonresume.org) 使用
+- 📄 **README 自动生成** — 每次推送后从 `resume.json` 重新生成 README
+
+## 🚀 快速开始
+
+### 1. Fork 本仓库
+
+点击右上角的 **Fork** 按钮。
+
+### 2. 开启 GitHub Pages
+
+进入仓库 **Settings → Pages → Source**，选择 `gh-pages` 分支。
+
+### 3. 配置 Gist 同步（可选）
+
+如果需要 JSON Resume 注册表同步，在 **Settings → Secrets and variables → Actions** 中添加：
+
+| Secret | 说明 |
+|--------|------|
+| `GIST_TOKEN` | 具有 `gist` 权限的 GitHub PAT |
+| `GIST_ID` | 目标 Gist 的 ID（提前创建一个空白 Gist） |
+
+> 若不设置，Gist 同步步骤会自动跳过，不影响其他功能。
+
+### 4. 编辑简历内容
+
+修改 `src/` 目录下的 YAML 文件：
+
+```
+src/
+├── basics.yaml   # 基本信息：姓名、联系方式、简介
+├── work.yaml     # 工作经历
+├── skills.yaml   # 技能关键词
+├── projects.yaml # 项目经历
+└── misc.yaml     # 教育背景、语言、荣誉
+```
+
+YAML 格式示例（`src/basics.yaml`）：
+
+```yaml
+name: 张三
+label: 高级前端工程师
+email: zhangsan@example.com
+url: https://example.com
+summary: 拥有 5 年前端开发经验...
+```
+
+### 5. 推送到 `main` 分支
+
+每次 push 后，GitHub Actions 会自动：
+
+1. 从 YAML 构建 `resume.json`
+2. 检测到 `resume.json` 变更时，调用 GitHub Models 翻译为 `resume.zh.json`
+3. 导出双语 HTML，部署到 GitHub Pages
+4. 同步 `resume.json` 到 Gist（如已配置）
+5. 重新生成本 README
+
+## 🛠 本地开发
+
+```bash
+# 安装依赖
+pnpm install
+
+# 从 YAML 构建 resume.json
+pnpm run build
+
+# 本地预览（http://localhost:4000）
+pnpm run serve
+
+# 导出为 HTML
+pnpm run export
+```
+
+## 📁 项目结构
+
+```
+.
+├── src/                  # YAML 源文件
+│   ├── basics.yaml
+│   ├── work.yaml
+│   ├── skills.yaml
+│   ├── projects.yaml
+│   └── misc.yaml
+├── scripts/
+│   ├── build.js                  # YAML → resume.json
+│   ├── translate.js              # 调用 GitHub Models 翻译
+│   ├── generate-readme.js        # 生成 README.md
+│   ├── inject-lang-switcher.js   # 注入语言切换按钮
+│   └── update-gist.js            # 同步到 Gist
+├── resume.json           # 英文简历（自动生成）
+├── resume.zh.json        # 中文简历（自动翻译）
+└── .github/workflows/
+    └── deploy.yml        # CI/CD 流水线
+```
+
+## 🔧 自定义翻译规则
+
+翻译逻辑在 `scripts/translate.js` 中，可以修改 `SYSTEM_PROMPT` 来：
+
+- 调整哪些字段需要翻译
+- 添加不翻译的专有名词
+- 更换翻译模型（当前为 `gpt-4o-mini`）
+
+## 📄 许可证
+
+MIT

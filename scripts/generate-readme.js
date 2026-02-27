@@ -17,10 +17,72 @@ function formatDate(dateStr) {
   return `${months[parseInt(month, 10) - 1]} ${year}`;
 }
 
+const docLines = [];
+
+// Project documentation (shown before resume)
+docLines.push("# 📄 JSON Resume — Bilingual as Code");
+docLines.push("");
+docLines.push("**English** | [中文](./docs/README.zh.md)");
+docLines.push("");
+docLines.push("## 🍴 Use This Template");
+docLines.push("");
+docLines.push("> A résumé-as-code pipeline: write in YAML, auto-translate to Chinese via GitHub Models, publish as a bilingual GitHub Pages site — fully automated on every push.");
+docLines.push("");
+docLines.push("### ✨ Features");
+docLines.push("");
+docLines.push("- 📝 **YAML source** — edit `src/*.yaml`, the build step assembles `resume.json`");
+docLines.push("- 🤖 **AI translation** — `resume.zh.json` is auto-generated via GitHub Models (GPT-4o mini); works with the built-in `GITHUB_TOKEN`, no extra setup needed");
+docLines.push("- 🌐 **Bilingual GitHub Pages** — English at `/` and Chinese at `/zh/` with a floating language-switch button");
+docLines.push("- 📋 **Gist sync** *(optional)* — push `resume.json` to a Gist on every deploy for use with [registry.jsonresume.org](https://registry.jsonresume.org)");
+docLines.push("- 📄 **README auto-gen** — this file is regenerated from `resume.json` on every push");
+docLines.push("");
+docLines.push("### 🚀 Quick Start");
+docLines.push("");
+docLines.push("1. **Fork** this repository");
+docLines.push("2. **Enable GitHub Pages** → Settings → Pages → Source: `gh-pages` branch");
+docLines.push("3. *(Optional)* **Set Gist secrets** if you want JSON Resume registry sync:");
+docLines.push("");
+docLines.push("   | Secret | Description |");
+docLines.push("   |--------|-------------|");
+docLines.push("   | `GIST_TOKEN` | GitHub PAT with `gist` scope |");
+docLines.push("   | `GIST_ID` | ID of the target Gist (create a blank one first) |");
+docLines.push("");
+docLines.push("   > If these secrets are not set, the Gist sync step will be skipped automatically.");
+docLines.push("");
+docLines.push("4. **Edit your resume** in `src/*.yaml`:");
+docLines.push("");
+docLines.push("   ```");
+docLines.push("   src/");
+docLines.push("   ├── basics.yaml   # name, contact, summary");
+docLines.push("   ├── work.yaml     # experience");
+docLines.push("   ├── skills.yaml   # skills & keywords");
+docLines.push("   ├── projects.yaml # side projects");
+docLines.push("   └── misc.yaml     # education, languages, awards");
+docLines.push("   ```");
+docLines.push("");
+docLines.push("5. **Push to `main`** — the workflow will automatically:");
+docLines.push("   - Build `resume.json` from YAML");
+docLines.push("   - Translate to `resume.zh.json` via GitHub Models *(only when `resume.json` changes)*");
+docLines.push("   - Export bilingual HTML → deploy to GitHub Pages");
+docLines.push("   - Sync `resume.json` to Gist *(if configured)*");
+docLines.push("   - Regenerate this README");
+docLines.push("");
+docLines.push("### 🛠 Local Development");
+docLines.push("");
+docLines.push("```bash");
+docLines.push("pnpm install");
+docLines.push("pnpm run build    # build resume.json from YAML");
+docLines.push("pnpm run serve    # preview at http://localhost:4000");
+docLines.push("pnpm run export   # export to resume.html");
+docLines.push("```");
+docLines.push("");
+docLines.push("---");
+docLines.push("");
+
 const lines = [];
 
 // Header
-lines.push(`# ${basics.name}`);
+lines.push(`## ${basics.name}`);
 lines.push("");
 lines.push(`**${basics.label}**`);
 lines.push("");
@@ -98,6 +160,6 @@ lines.push(
   `Last updated: ${new Date().toISOString().slice(0, 10)}*`
 );
 
-const output = lines.join("\n");
+const output = [...docLines, ...lines].join("\n");
 fs.writeFileSync(path.join(__dirname, "../README.md"), output);
 console.log("✓ README.md generated");

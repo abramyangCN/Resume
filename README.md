@@ -1,10 +1,68 @@
-# Abraham Yang 杨杨
+# 📄 JSON Resume — Bilingual as Code
 
-**Senior Frontend Engineer / Frontend Lead**
+**English** | [中文](./docs/README.zh.md)
+
+## 🍴 Use This Template
+
+> A résumé-as-code pipeline: write in YAML, auto-translate to Chinese via GitHub Models, publish as a bilingual GitHub Pages site — fully automated on every push.
+
+### ✨ Features
+
+- 📝 **YAML source** — edit `src/*.yaml`, the build step assembles `resume.json`
+- 🤖 **AI translation** — `resume.zh.json` is auto-generated via GitHub Models (GPT-4o mini); works with the built-in `GITHUB_TOKEN`, no extra setup needed
+- 🌐 **Bilingual GitHub Pages** — English at `/` and Chinese at `/zh/` with a floating language-switch button
+- 📋 **Gist sync** *(optional)* — push `resume.json` to a Gist on every deploy for use with [registry.jsonresume.org](https://registry.jsonresume.org)
+- 📄 **README auto-gen** — this file is regenerated from `resume.json` on every push
+
+### 🚀 Quick Start
+
+1. **Fork** this repository
+2. **Enable GitHub Pages** → Settings → Pages → Source: `gh-pages` branch
+3. *(Optional)* **Set Gist secrets** if you want JSON Resume registry sync:
+
+   | Secret | Description |
+   |--------|-------------|
+   | `GIST_TOKEN` | GitHub PAT with `gist` scope |
+   | `GIST_ID` | ID of the target Gist (create a blank one first) |
+
+   > If these secrets are not set, the Gist sync step will be skipped automatically.
+
+4. **Edit your resume** in `src/*.yaml`:
+
+   ```
+   src/
+   ├── basics.yaml   # name, contact, summary
+   ├── work.yaml     # experience
+   ├── skills.yaml   # skills & keywords
+   ├── projects.yaml # side projects
+   └── misc.yaml     # education, languages, awards
+   ```
+
+5. **Push to `main`** — the workflow will automatically:
+   - Build `resume.json` from YAML
+   - Translate to `resume.zh.json` via GitHub Models *(only when `resume.json` changes)*
+   - Export bilingual HTML → deploy to GitHub Pages
+   - Sync `resume.json` to Gist *(if configured)*
+   - Regenerate this README
+
+### 🛠 Local Development
+
+```bash
+pnpm install
+pnpm run build    # build resume.json from YAML
+pnpm run serve    # preview at http://localhost:4000
+pnpm run export   # export to resume.html
+```
+
+---
+
+## Abraham Yang
+
+**Senior Frontend Engineer | Frontend Lead**
 
 📧 [abram.yang@outlook.com](mailto:abram.yang@outlook.com) · 🌐 [https://iay.me](https://iay.me) · 📍 Shanghai, Shanghai
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abramyang) [![Github](https://img.shields.io/badge/Github-0A66C2?style=flat&logo=github&logoColor=white)](https://www.github.com/abramyangCN)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abramyang)
 
 ## Summary
 
