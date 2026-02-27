@@ -21,7 +21,13 @@
 > User/org sites (`<username>.github.io`) have no repo-name prefix — the language switcher paths will need manual adjustment in the workflow.
 
 1. **Fork** this repository
-2. **Enable GitHub Pages**
+2. **Enable GitHub Actions**
+
+   Forked repositories have Actions disabled by default.
+   - Click the **Actions** tab in your forked repo
+   - Click the green **"I understand my workflows, go ahead and enable them"** button
+
+3. **Enable GitHub Pages**
 
    - Go to your forked repository on GitHub
    - Click the **Settings** tab (top menu of the repo)
@@ -31,7 +37,7 @@
 
    > `gh-pages` branch doesn't exist yet — it will be created automatically on the first push to `main`. Come back and set this after your first push if you don't see it.
 
-3. *(Optional)* **Set Gist secrets** if you want JSON Resume registry sync:
+4. *(Optional)* **Set Gist secrets** if you want JSON Resume registry sync:
 
    | Secret | Description |
    |--------|-------------|
@@ -40,7 +46,7 @@
 
    > If these secrets are not set, the Gist sync step will be skipped automatically.
 
-4. **Edit your resume** in `src/*.yaml`:
+5. **Edit your resume** in `src/*.yaml`:
 
    ```
    src/
@@ -51,7 +57,7 @@
    └── misc.yaml     # education, languages, awards
    ```
 
-5. **Push to `main`** — the workflow will automatically:
+6. **Push to `main`** — the workflow will automatically:
    - Build `resume.json` from YAML
    - Translate to `resume.zh.json` via GitHub Models *(only when `resume.json` changes)*
    - Export bilingual HTML → deploy to GitHub Pages
@@ -69,13 +75,13 @@ pnpm run export   # export to resume.html
 
 ---
 
-## Abraham Yang 杨杨
+## Abraham Yang
 
-**Senior Frontend Engineer / Frontend Lead**
+**Senior Frontend Engineer | Frontend Lead**
 
 📧 [abram.yang@outlook.com](mailto:abram.yang@outlook.com) · 🌐 [https://iay.me](https://iay.me) · 📍 Shanghai, Shanghai
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abramyang) [![Github](https://img.shields.io/badge/Github-0A66C2?style=flat&logo=github&logoColor=white)](https://www.github.com/abramyangCN)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abramyang)
 
 ## Summary
 

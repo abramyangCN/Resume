@@ -22,7 +22,14 @@
 
 点击右上角的 **Fork** 按钮。
 
-### 2. 开启 GitHub Pages
+### 2. 启用 GitHub Actions
+
+Fork 后的仓库默认禁用 Actions，需要手动开启：
+
+- 点击仓库顶部的 **Actions** 选项卡
+- 点击绿色按钮 **"I understand my workflows, go ahead and enable them"**
+
+### 3. 开启 GitHub Pages
 
 - 进入你 Fork 后的仓库页面
 - 点击顶部菜单的 **Settings**（设置）选项卡
@@ -34,7 +41,7 @@
 
 > `gh-pages` 分支还不存在 —— 它会在你第一次推送代码到 `main` 分支后自动创建。如果现在看不到这个选项，先跳过，完成第一次推送后再回来设置。
 
-### 3. 配置 Gist 同步（可选）
+### 4. 配置 Gist 同步（可选）
 
 如果需要 JSON Resume 注册表同步，在 **Settings → Secrets and variables → Actions** 中添加：
 
@@ -45,7 +52,7 @@
 
 > 若不设置，Gist 同步步骤会自动跳过，不影响其他功能。
 
-### 4. 编辑简历内容
+### 5. 编辑简历内容
 
 修改 `src/` 目录下的 YAML 文件：
 
@@ -68,7 +75,7 @@ url: https://example.com
 summary: 拥有 5 年前端开发经验...
 ```
 
-### 5. 推送到 `main` 分支
+### 6. 推送到 `main` 分支
 
 每次 push 后，GitHub Actions 会自动：
 
