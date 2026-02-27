@@ -47,15 +47,15 @@ jobs:
           git diff --staged --quiet || git commit -m "chore: update README [skip ci]"
           git push
 
-      - name: Trigger iay.me redeploy
-        env:
-          IAY_DEPLOY_TOKEN: ${{ secrets.IAY_DEPLOY_TOKEN }}
-          IAY_REPO: ${{ secrets.IAY_REPO }}
-        run: |
-          curl -s -X POST \
-            -H "Authorization: Bearer $IAY_DEPLOY_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            "https://api.github.com/repos/$IAY_REPO/dispatches" \
-            -d '{"event_type":"resume-updated"}'
-          echo "✓ Triggered iay.me redeploy"
+      # - name: Trigger iay.me redeploy
+      #   env:
+      #     IAY_DEPLOY_TOKEN: ${{ secrets.IAY_DEPLOY_TOKEN }}
+      #     IAY_REPO: ${{ secrets.IAY_REPO }}
+      #   run: |
+      #     curl -s -X POST \
+      #       -H "Authorization: Bearer $IAY_DEPLOY_TOKEN" \
+      #       -H "Accept: application/vnd.github+json" \
+      #       -H "X-GitHub-Api-Version: 2022-11-28" \
+      #       "https://api.github.com/repos/$IAY_REPO/dispatches" \
+      #       -d '{"event_type":"resume-updated"}'
+      #     echo "✓ Triggered iay.me redeploy"
