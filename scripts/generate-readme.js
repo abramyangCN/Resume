@@ -39,7 +39,7 @@ docLines.push("");
 docLines.push("### 🚀 Quick Start");
 docLines.push("");
 docLines.push("> **Prerequisites:** This template is designed for **GitHub Pages project sites** (URL: `https://<username>.github.io/<repo-name>/`).  ");
-docLines.push("> If you are not familiar with GitHub Pages, read the [official guide](https://docs.github.com/en/pages/getting-started-with-github-pages) first.  ");
+docLines.push("> If you are not familiar with GitHub Pages, read the [official guide](https://docs.github.com/en/pages) first.  ");
 docLines.push("> User/org sites (`<username>.github.io`) have no repo-name prefix — the language switcher paths will need manual adjustment in the workflow.");
 docLines.push("");
 docLines.push("1. **Fork** this repository");

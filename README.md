@@ -17,7 +17,7 @@
 ### 🚀 Quick Start
 
 > **Prerequisites:** This template is designed for **GitHub Pages project sites** (URL: `https://<username>.github.io/<repo-name>/`).  
-> If you are not familiar with GitHub Pages, read the [official guide](https://docs.github.com/en/pages/getting-started-with-github-pages) first.  
+> If you are not familiar with GitHub Pages, read the [official guide](https://docs.github.com/zh/pages) first.  
 > User/org sites (`<username>.github.io`) have no repo-name prefix — the language switcher paths will need manual adjustment in the workflow.
 
 1. **Fork** this repository
