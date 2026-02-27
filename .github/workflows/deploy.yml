@@ -50,7 +50,7 @@ jobs:
 
       - name: Export resume to HTML
         run: |
-          resume export resume.html
+          pnpm exec resume export resume.html --theme even
           mkdir -p dist
           cp resume.html dist/index.html
 
