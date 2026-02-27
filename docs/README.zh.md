@@ -15,7 +15,7 @@
 ## 🚀 快速开始
 
 > **前置说明：** 本模板基于 **GitHub Pages 项目站点**（URL 格式为 `https://<用户名>.github.io/<仓库名>/`）。  
-> 如果你还不熟悉 GitHub Pages，请先阅读[官方文档](https://docs.github.com/zh/pages/getting-started-with-github-pages)。  
+> 如果你还不熟悉 GitHub Pages，请先阅读[官方文档](https://docs.github.com/zh/pages)。  
 > 若使用用户/组织站点（`<用户名>.github.io`，URL 无仓库名前缀），语言切换按钮的路径需在 workflow 中手动调整。
 
 ### 1. Fork 本仓库
