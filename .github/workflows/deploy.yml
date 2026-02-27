@@ -89,12 +89,13 @@ jobs:
           gh issue create \
             --title "translate: update resume.zh.json from resume.json (${{ github.sha }})" \
             --label "translation" \
-            --assignee "copilot" \
             --body "$(cat << 'EOF'
           ## Task
           Translate \`resume.json\` into Simplified Chinese and write the result to \`resume.zh.json\`.
 
           ## Rules
+
+          ** Abraham Yang's Chinese name is 杨杨
 
           **Keep the following in English (do NOT translate):**
           - All JSON field keys/property names
