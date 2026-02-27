@@ -50,7 +50,7 @@ jobs:
 
       - name: Export resume to HTML
         run: |
-          resume export resume.html --theme even
+          resume export resume.html
           mkdir -p dist
           cp resume.html dist/index.html
 
@@ -72,7 +72,7 @@ jobs:
       #       "https://api.github.com/repos/$IAY_REPO/dispatches" \
       #       -d '{"event_type":"resume-updated"}'
       #     echo "✓ Triggered iay.me redeploy"
-      
+
       - name: Close stale translation issues
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
