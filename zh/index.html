@@ -1,717 +1,1125 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-      <title>Abraham Yang 杨杨</title>
-      <meta name="description" content="拥有7年以上经验的高级前端工程师，专注于构建可扩展的网页、混合和小程序应用。专长于React生态系统、交互式渲染（2D/3D）和SaaS系统架构。领导小型跨职能团队（最多5名工程师），交付服务10,000+用户的生产就绪系统。对前端架构、混合集成、CI/CD管道和云部署有强烈的责任心。具有跨亚太地区协作和推动工程标准的经验。">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
-    <style>:root {
-  color-scheme: light dark;
-
-  --color-background: #ffffff;
-  --color-primary: #212529;
-  --color-secondary: #95a5a6;
-  --color-muted: #f4f6f6;
-  --color-accent: #f1c40f;
-  --color-link: #2ecc71;
-
-  --scale-ratio: 1.25;
-  --scale0: 1rem;
-  --scale1: calc(var(--scale0) * var(--scale-ratio));
-  --scale2: calc(var(--scale1) * var(--scale-ratio));
-  --scale3: calc(var(--scale2) * var(--scale-ratio));
-  --scale4: calc(var(--scale3) * var(--scale-ratio));
-  --scale5: calc(var(--scale4) * var(--scale-ratio));
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Abraham Yang 杨杨</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/><style>@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?z1lat9');
+  src:  url('fonts/icomoon.eot?z1lat9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?z1lat9') format('truetype'),
+    url('fonts/icomoon.woff?z1lat9') format('woff'),
+    url('fonts/icomoon.svg?z1lat9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #181a1b;
-    --color-primary: #d1cdc7;
-    --color-secondary: #aaa398;
-    --color-muted: #1e2021;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gitlab .path1:before {
+  content: "\e906";
+  color: rgb(252, 109, 38);
+}
+.icon-gitlab .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
+}
+.icon-gitlab .path3:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(252, 109, 38);
+}
+.icon-gitlab .path4:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(252, 163, 38);
+}
+.icon-gitlab .path5:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
+}
+.icon-gitlab .path6:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(252, 109, 38);
+}
+.icon-gitlab .path7:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(252, 163, 38);
+}
+.icon-gitlab .path8:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(226, 67, 41);
+}
+.icon-meetup .path1:before {
+  content: "\e901";
+  color: rgb(255, 255, 255);
+}
+.icon-meetup .path2:before {
+  content: "\e902";
+  margin-left: -1.5em;
+  color: rgb(240, 1, 1);
+}
+.icon-meetup .path3:before {
+  content: "\e903";
+  margin-left: -1.5em;
+  color: rgb(3, 3, 3);
+}
+.icon-blogger:before {
+  content: "\e900";
+}
+.icon-exercism:before {
+  content: "\e601";
+}
+.icon-telegram:before {
+  content: "\e904";
+}
+.icon-flickr:before {
+  content: "\f16e";
+}
+.icon-medium:before {
+  content: "\f23a";
+}
+.icon-heart:before {
+  content: "\f004";
+}
+.icon-book:before {
+  content: "\f02d";
+}
+.icon-linkedin:before {
+  content: "\f08c";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-link:before {
+  content: "\f0c1";
+}
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-pinterest:before {
+  content: "\f0d2";
+}
+.icon-googleplus:before {
+  content: "\f0d5";
+}
+.icon-circle:before {
+  content: "\f111";
+}
+.icon-code:before {
+  content: "\f121";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-stackoverflow:before {
+  content: "\f16c";
+}
+.icon-bitbucket:before {
+  content: "\f171";
+}
+.icon-tumblr:before {
+  content: "\f173";
+}
+.icon-dribbble:before {
+  content: "\f17d";
+}
+.icon-skype:before {
+  content: "\f17e";
+}
+.icon-foursquare:before {
+  content: "\f180";
+}
+.icon-gittip:before {
+  content: "\f184";
+}
+.icon-gratipay:before {
+  content: "\f184";
+}
+.icon-stackexchange:before {
+  content: "\f18d";
+}
+.icon-vimeo:before {
+  content: "\f194";
+}
+.icon-graduation-cap:before {
+  content: "\f19d";
+}
+.icon-language:before {
+  content: "\f1ab";
+}
+.icon-child:before {
+  content: "\f1ae";
+}
+.icon-behance:before {
+  content: "\f1b5";
+}
+.icon-spotify:before {
+  content: "\f1bc";
+}
+.icon-soundcloud:before {
+  content: "\f1be";
+}
+.icon-codepen:before {
+  content: "\f1cb";
+}
+.icon-hackernews:before {
+  content: "\f1d4";
+}
+.icon-lastfm:before {
+  content: "\f202";
+}
+.icon-angellist:before {
+  content: "\f209";
+}
+.icon-facebook:before {
+  content: "\f230";
+}
+.icon-instagram:before {
+  content: "\e905";
+}
+.icon-trophy:before {
+  content: "\e605";
+}
+.icon-office:before {
+  content: "\e606";
+}
+.icon-clock:before {
+  content: "\e60a";
+}
+.icon-reddit:before {
+  content: "\e609";
+}
+.icon-profile:before {
+  content: "\e600";
+}
+.icon-tools:before {
+  content: "\e034";
+}
+.icon-location:before {
+  content: "\e602";
+}
+.icon-mail:before {
+  content: "\e603";
+}
+.icon-phone:before {
+  content: "\e03f";
+}
+.icon-newspaper:before {
+  content: "\e607";
+}
+.icon-chevron-down:before {
+  content: "\e60c";
+}
+.icon-chevron-up:before {
+  content: "\e60d";
+}
+.icon-dots-three-horizontal:before {
+  content: "\e60b";
+}
+.icon-thumbs-up:before {
+  content: "\e604";
+}
+.icon-board:before {
+  content: "\e608";
+}
+
+.relative {
+  position: relative;
+}
+.clear-margin {
+  margin: 0;
+}
+.space-top {
+  margin-top: 10px;
+}
+.space-right {
+  margin-right: 10px;
+}
+.space-bottom {
+  margin-bottom: 10px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.ml-5 {
+  margin-left: 5px;
+}
+.labels {
+  line-height: 2;
+}
+.label-keyword {
+  display: inline-block;
+  background: #7eb0db;
+  color: white;
+  font-size: 0.9em;
+  padding: 5px;
+  border: 1px solid #357ebd;
+  margin-right: 5px;
+}
+.label-keyword:last-child {
+  margin-right: 0;
+}
+.label-keyword p {
+  margin: 0;
+}
+.label-keyword a {
+  color: white;
+}
+.label-keyword a:hover {
+  text-decoration: none;
+}
+.link-disguise {
+  color: inherit;
+}
+.link-disguise:hover {
+  color: inherit;
+}
+.clear-margin {
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .clear-margin-sm {
+    margin-bottom: 0;
   }
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
+.fs-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fs-2x {
+  font-size: 2em;
+}
+.fs-3x {
+  font-size: 3em;
+}
+.fs-4x {
+  font-size: 4em;
+}
+.btn-circle-sm {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  text-align: center;
   padding: 0;
+  outline: none !important;
 }
-
-html {
-  font-size: 14px;
-}
-
-body {
-  background: var(--color-background);
-  color: var(--color-primary);
-  display: grid;
-  font: 1em/1.5 Lato, sans-serif;
-  gap: 2em;
-  grid-template-columns:
-    [full-start]
-    1fr
-    [main-start side-start]
-    minmax(min-content, 12em)
-    [side-end content-start]
-    minmax(min-content, 36em)
-    [main-end content-end]
-    1fr
-    [full-end];
-  grid-template-rows: auto [content] 0;
-  margin-bottom: 4em;
-}
-
-body::before {
-  content: '';
-  grid-column: full;
-  grid-row: content;
-}
-
-ol,
-ul {
-  padding-left: 1em;
-}
-
-li + li {
-  margin-top: 0.4em;
-}
-
-li::marker,
-.network {
-  color: var(--color-secondary);
-}
-
-a {
-  color: var(--color-link);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-a:focus,
-a:hover {
-  color: var(--color-accent);
-}
-
-h1,
-h2,
-h3,
-h5 {
+/* the version when the icon file is last updated */
+@font-face {
+  font-family: 'jst-elegant';
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo");
+  src: url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.eot?f218wo#iefix") format('embedded-opentype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.ttf?f218wo") format('truetype'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.woff?f218wo") format('woff'), url("//unpkg.com/jsonresume-theme-elegant@1.12.0/assets/icomoon/fonts/icomoon.svg?f218wo#icomoon") format('svg');
   font-weight: normal;
+  font-style: normal;
 }
-
-h1,
-h2,
-h3 {
-  line-height: 1.2;
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'jst-elegant' !important;
 }
-
-h1 {
-  font-size: var(--scale5);
+body {
+  font-family: 'Lato';
+  background: #f0f0f0;
+  color: #333;
 }
-
-h2 {
-  color: var(--color-secondary);
-  font-size: var(--scale4);
+.main {
+  padding: 5px;
 }
-
-h3 {
-  color: var(--color-accent);
-  font-size: var(--scale3);
-  grid-column: side;
-  margin-bottom: 1rem;
+.card {
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  min-height: 300px;
+  padding: 10px 0;
 }
-
-h4 {
-  font-size: var(--scale2);
+.card-nested {
+  min-height: 0;
+  border-width: 1px 0 0 0;
 }
-
-h5 {
-  font-size: var(--scale1);
+.card-nested:before,
+.card-nested:after {
+  content: " ";
+  display: table;
 }
-
-h6 {
-  font-size: var(--scale0);
+.card-nested:after {
+  clear: both;
 }
-
-blockquote {
-  border-left: 0.2em solid var(--color-muted);
-  padding-left: 1em;
+@media (max-width: 480px) {
+  .card-nested {
+    padding: 5px 0;
+  }
 }
-
-cite {
-  color: var(--color-secondary);
-  font-style: inherit;
+.background-card {
+  padding: 10px 20px;
 }
-
-cite::before {
-  content: '— ';
+.card-wrapper {
+  padding: 5px;
 }
-
-svg {
-  margin-right: 0.2em;
-  vertical-align: -0.2em;
+@media (max-width: 992px) {
+  .card-wrapper {
+    float: none !important;
+  }
 }
-
-.masthead {
-  background: var(--color-muted);
-  display: inherit;
-  gap: inherit;
-  grid-column: full;
-  grid-template-columns: inherit;
-  padding: 4em 0;
+.background-details .detail {
+  display: table;
+}
+.background-details .detail .icon {
+  min-width: 45px;
+  max-width: 45px;
   text-align: center;
 }
-
-.masthead > *,
-section {
-  grid-column: main;
+.background-details .detail .info {
+  width: 100%;
 }
-
-.masthead > img {
+.background-details .detail .title,
+.background-details .detail .icon {
+  color: #707070;
+}
+.background-details .detail .mobile-title {
+  display: none;
+}
+@media (max-width: 480px) {
+  .background-details .detail .mobile-title {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+}
+.background-details .detail .icon,
+.background-details .detail .info {
+  display: table-cell;
+  padding: 0 10px;
+}
+@media (max-width: 480px) {
+  .background-details .detail {
+    display: block;
+  }
+  .background-details .detail .icon {
+    max-width: inherit;
+    min-width: inherit;
+    text-align: left;
+  }
+  .background-details .detail .icon,
+  .background-details .detail .info {
+    display: block;
+    padding: 10px 0;
+  }
+  .background-details .detail .title {
+    display: none;
+  }
+}
+.info .content.has-sidebar {
+  width: 80%;
+  box-sizing: border-box;
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #cdcdcd;
+}
+@media (max-width: 992px) {
+  .info .content.has-sidebar {
+    width: 100%;
+    border-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  .info .content.has-sidebar {
+    padding: 0 2px;
+  }
+}
+.info .sidebar {
+  margin-left: 80%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+@media (max-width: 480px) {
+  ul {
+    padding-left: 25px;
+  }
+}
+.current-event {
+  font-size: 8px;
+  color: #5ACE24;
+  position: absolute;
+  right: 100%;
+  top: 4px;
+  left: -10px;
+}
+.mop-wrapper > p:last-child {
+  margin: 0;
+}
+/*
+    Credits: http://codyhouse.co/demo/smart-fixed-navigation/index.html
+*/
+.floating-nav-trigger {
+  width: 50px;
+  height: 50px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  display: block;
   border-radius: 50%;
-  margin: 0 auto;
-  max-width: 12em;
+  text-align: center;
+  background-color: white;
+  font-size: 1.5em;
+  color: #357ebd;
+  z-index: 100;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none !important;
 }
-
-article > * + *,
-blockquote > * + * {
-  margin-top: 0.6em;
+.floating-nav-trigger > [class^="icon-"],
+.floating-nav-trigger [class*=" icon-"],
+.floating-nav-trigger > .close-icon {
+  line-height: 50px;
 }
-
-.stack {
-  display: grid;
-  gap: 1.5em;
+.floating-nav-trigger .close-icon {
+  display: none;
 }
-
-.icon-list {
-  list-style: none;
-  padding: 0;
+.floating-nav-trigger:hover {
+  color: #1f496e;
+  background-color: #e6e6e6;
 }
-
-.grid-list {
-  display: grid;
-  gap: 1em;
+.floating-nav-trigger.is-open {
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
-
-.spaced-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.floating-nav-trigger.is-open .close-icon {
+  display: inherit;
 }
-
-.spaced-list::before {
-  border-bottom: 1px solid var(--color-muted);
-  content: '';
-  flex-grow: 1;
-  margin: 0 1em;
-  order: 1;
+.floating-nav-trigger.is-open .icon-bars {
+  display: none;
 }
-
-.spaced-list > :nth-child(2) {
-  order: 2;
+.floating-nav-trigger.is-open:hover {
+  background-color: white;
 }
-
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
+.floating-nav {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transition: transform 0.3s, visibility 0s 0.3s;
+  -o-transition: transform 0.3s, visibility 0s 0.3s;
+  transition: transform 0.3s, visibility 0s 0.3s;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.24);
+  position: fixed;
+  z-index: 50;
+  right: 10px;
+  bottom: 10px;
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  visibility: hidden;
+  overflow: hidden;
 }
-
-.tag-list > li {
-  background: var(--color-muted);
-  margin: 0 0.2em 0.2em 0;
-  padding: 0.2em 0.6em;
+.floating-nav ul {
+  font-size: 1.2em;
+  margin: 0;
 }
-
-@media print, (min-width: 48em) {
-  h3 {
-    text-align: right;
-    margin-bottom: inherit;
+.floating-nav ul li {
+  border-bottom: 1px solid #eff2f6;
+}
+.floating-nav ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: #357ebd;
+  display: block;
+}
+.floating-nav ul li a:hover {
+  color: #1f496e;
+}
+.floating-nav ul li:last-child {
+  border-bottom: 0;
+}
+.floating-nav.is-visible {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform 0.3s, visibility 0s 0s;
+  -o-transition: transform 0.3s, visibility 0s 0s;
+  transition: transform 0.3s, visibility 0s 0s;
+  visibility: visible;
+}
+@media (max-width: 992px) {
+  .profile-card-wrapper {
+    position: relative;
   }
-
-  .masthead {
-    text-align: inherit;
-  }
-
-  .masthead > *,
-  section {
-    grid-column: content;
-  }
-
-  .masthead img {
-    grid-column: side;
-    grid-row: span 2;
-    max-width: 100%;
-  }
-
-  section {
-    display: contents;
-  }
-
-  .grid-list {
-    grid-template-columns: 1fr 1fr;
+}
+.profile-card-wrapper .profile-card {
+  padding: 10px;
+}
+.profile-pic {
+  padding: 20px 0;
+}
+@media (max-width: 992px) {
+  .profile-pic {
+    padding: 10px 0;
   }
 }
-</style>
-  </head>
-  <body>
-      <header class="masthead">
-        <div>
-            <h1>Abraham Yang 杨杨</h1>
-            <h2>高级前端工程师 / 前端负责人</h2>
-        </div>
-          <article>
-            <p>拥有7年以上经验的高级前端工程师，专注于构建可扩展的网页、混合和小程序应用。专长于React生态系统、交互式渲染（2D/3D）和SaaS系统架构。领导小型跨职能团队（最多5名工程师），交付服务10,000+用户的生产就绪系统。对前端架构、混合集成、CI/CD管道和云部署有强烈的责任心。具有跨亚太地区协作和推动工程标准的经验。</p>
-          </article>
-        <ul class="icon-list">
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                上海, China
-              </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <a href="mailto:abram.yang@outlook.com">abram.yang@outlook.com</a>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              <a href="tel:+8615921098538">+86 159-2109-8538</a>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-              <a href="https://iay.me">iay.me</a>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                  <a href="https://www.linkedin.com/in/abramyang">abramyang</a>
-                <span class="network">(LinkedIn)</span>
-            </li>
-            <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                  <a href="https://www.github.com/abramyangCN">abramyangCN</a>
-                <span class="network">(Github)</span>
-            </li>
-        </ul>
-      </header>
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 992px) {
+  .name {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .contact-details {
+    text-align: center;
+  }
+}
+.contact-details .detail {
+  display: table;
+  padding: 10px 0;
+}
+.contact-details .detail .icon {
+  padding: 0 10px;
+  color: #707070;
+}
+@media (max-width: 992px) {
+  .contact-details .detail .icon {
+    padding: 0 5px 0 0;
+  }
+}
+.contact-details .detail .info {
+  font-size: 0.8em;
+}
+.contact-details .detail .icon,
+.contact-details .detail .info {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .contact-details .detail {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 10px;
+  }
+  .contact-details .detail .icon,
+  .contact-details .detail .info {
+    display: inline-block;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .contact-details .detail {
+    float: left;
+    width: 25%;
+  }
+}
+.social-links {
+  line-height: 2.5;
+}
+.social-link {
+  margin-left: 5px;
+  min-width: 35px;
+  display: inline-block;
+}
+.social-link:first-child {
+  margin-left: 0;
+}
+.social-link:hover {
+  text-decoration: none;
+}
+.link-github {
+  color: #454545;
+}
+.link-github:hover,
+.link-github:focus {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+.link-twitter {
+  color: #33ccff;
+}
+.link-twitter:hover,
+.link-twitter:focus {
+  text-decoration: none;
+  color: #00bfff;
+}
+.link-blog {
+  color: #f36f24;
+}
+.link-blog:hover,
+.link-blog:focus {
+  text-decoration: none;
+  color: #d8560c;
+}
+.link-linkedin {
+  color: #007bb6;
+}
+.link-linkedin:hover,
+.link-linkedin:focus {
+  text-decoration: none;
+  color: #005983;
+}
+.link-skype {
+  color: #12A5F4;
+}
+.link-skype:hover,
+.link-skype:focus {
+  text-decoration: none;
+  color: #0986ca;
+}
+.link-instagram {
+  color: #e4405f;
+}
+.link-instagram:hover,
+.link-instagram:focus {
+  text-decoration: none;
+  color: #d31e40;
+}
+.link-stackoverflow {
+  color: #8e8e92;
+}
+.link-stackoverflow:hover,
+.link-stackoverflow:focus {
+  text-decoration: none;
+  color: #747479;
+}
+.link-stackexchange {
+  color: #62b0df;
+}
+.link-stackexchange:hover,
+.link-stackexchange:focus {
+  text-decoration: none;
+  color: #389bd6;
+}
+.link-lastfm {
+  color: #d12127;
+}
+.link-lastfm:hover,
+.link-lastfm:focus {
+  text-decoration: none;
+  color: #a51a1f;
+}
+.link-soundcloud {
+  color: #e8822d;
+}
+.link-soundcloud:hover,
+.link-soundcloud:focus {
+  text-decoration: none;
+  color: #cc6916;
+}
+.link-googleplus {
+  color: #dd4b39;
+}
+.link-googleplus:hover,
+.link-googleplus:focus {
+  text-decoration: none;
+  color: #c23321;
+}
+.link-youtube {
+  color: #dd4b39;
+}
+.link-youtube:hover,
+.link-youtube:focus {
+  text-decoration: none;
+  color: #c23321;
+}
+.link-pinterest {
+  color: #bd091f;
+}
+.link-pinterest:hover,
+.link-pinterest:focus {
+  text-decoration: none;
+  color: #8c0717;
+}
+.link-gratipay {
+  color: #630;
+}
+.link-gratipay:hover,
+.link-gratipay:focus {
+  text-decoration: none;
+  color: #331a00;
+}
+.link-vimeo {
+  color: #17b3e8;
+}
+.link-vimeo:hover,
+.link-vimeo:focus {
+  text-decoration: none;
+  color: #128fba;
+}
+.link-behance {
+  color: #2c98cf;
+}
+.link-behance:hover,
+.link-behance:focus {
+  text-decoration: none;
+  color: #2379a5;
+}
+.link-codepen {
+  color: #1c1c1c;
+}
+.link-codepen:hover,
+.link-codepen:focus {
+  text-decoration: none;
+  color: #020202;
+}
+.link-foursquare {
+  color: #fa4778;
+}
+.link-foursquare:hover,
+.link-foursquare:focus {
+  text-decoration: none;
+  color: #f91554;
+}
+.link-reddit {
+  color: #545454;
+}
+.link-reddit:hover,
+.link-reddit:focus {
+  text-decoration: none;
+  color: #3b3b3b;
+}
+.link-spotify {
+  color: #acd200;
+}
+.link-spotify:hover,
+.link-spotify:focus {
+  text-decoration: none;
+  color: #829f00;
+}
+.link-tumblr {
+  color: #2d4661;
+}
+.link-tumblr:hover,
+.link-tumblr:focus {
+  text-decoration: none;
+  color: #1d2d3e;
+}
+.link-dribbble {
+  color: #ce366f;
+}
+.link-dribbble:hover,
+.link-dribbble:focus {
+  text-decoration: none;
+  color: #a82959;
+}
+.link-facebook {
+  color: #4b6daa;
+}
+.link-facebook:hover,
+.link-facebook:focus {
+  text-decoration: none;
+  color: #3b5687;
+}
+.link-angellist {
+  color: black;
+}
+.link-angellist:hover,
+.link-angellist:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.link-bitbucket {
+  color: #205081;
+}
+.link-bitbucket:hover,
+.link-bitbucket:focus {
+  text-decoration: none;
+  color: #163758;
+}
+.link-hackernews {
+  color: #ff6600;
+}
+.link-hackernews:hover,
+.link-hackernews:focus {
+  text-decoration: none;
+  color: #cc5200;
+}
+.link-exercism {
+  color: #d81d4e;
+}
+.link-exercism:hover,
+.link-exercism:focus {
+  text-decoration: none;
+  color: #ab173e;
+}
+.link-blogger {
+  color: #FF9234;
+}
+.link-blogger:hover,
+.link-blogger:focus {
+  text-decoration: none;
+  color: #ff7701;
+}
+.link-medium {
+  color: #00AB6C;
+}
+.link-medium:hover,
+.link-medium:focus {
+  text-decoration: none;
+  color: #00784c;
+}
+.link-flickr {
+  color: black;
+}
+.link-flickr:hover,
+.link-flickr:focus {
+  text-decoration: none;
+  color: #000000;
+}
+.link-telegram {
+  color: #3BABDD;
+}
+.link-telegram:hover,
+.link-telegram:focus {
+  text-decoration: none;
+  color: #2291c3;
+}
+.card-skills {
+  position: relative;
+}
+.skill-level {
+  border-radius: 3px;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0;
+  width: 10px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.skill-level .skill-progress {
+  position: absolute;
+  border-radius: 3px;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: height 1s ease;
+}
+.skill-level .skill-progress.beginner {
+  height: 50%;
+  background: #e74c3c;
+}
+.skill-level .skill-progress.intermediate {
+  height: 70%;
+  background: #f1c40f;
+}
+.skill-level .skill-progress.advanced {
+  height: 80%;
+  background: #428bca;
+}
+.skill-level .skill-progress.master {
+  height: 95%;
+  background: #5cb85c;
+}
+.skill-info {
+  margin-left: 15px;
+}
+@media (max-width: 480px) {
+  .skill-info {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .quote {
+    font-size: inherit;
+  }
+}
+.icon-meetup .path2:before {
+  margin-left: 0;
+}
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  .profile-card {
+    text-align: center;
+  }
+  .profile-pic {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .profile-pic img {
+    border-radius: 0;
+  }
+  .name-and-profession {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+  .contact-details .detail {
+    position: relative;
+    float: left;
+    width: 25%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 0;
+  }
+  .floating-nav,
+  .floating-nav-trigger {
+    display: none;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
+}
+</style></head><body itemscope="itemscope" itemtype="http://schema.org/Person"><div class="container-fluid"><div class="row main clearfix"><a class="js-floating-nav-trigger floating-nav-trigger" href="#"><i class="icon-bars"></i><span class="close-icon">&times;</span></a><nav class="floating-nav js-floating-nav"><ul class="list-unstyled"><li><a href="#about"><i class="mr-10 icon-board"></i>About</a></li><li><a href="#work-experience"><i class="mr-10 icon-office"></i>Work Experience</a></li><li><a href="#projects-experience"><i class="mr-10 icon-code"></i>Projects Experience</a></li><li><a href="#skills"><i class="mr-10 icon-tools"></i>Skills</a></li><li><a href="#education"><i class="mr-10 icon-graduation-cap"></i>Education</a></li><li><a href="#awards"><i class="mr-10 icon-trophy"></i>Awards</a></li><li><a href="#interests"><i class="mr-10 icon-heart"></i>Interests</a></li></ul></nav><section class="col-md-3 card-wrapper profile-card-wrapper affix"><div class="card profile-card"><span class="profile-pic-container"><div class="profile-pic"><img class="media-object img-circle center-block" data-src="holder.js/100x100" alt="Abraham Yang 杨杨" src="https://avatars.githubusercontent.com/u/19504192?v=4" itemprop="image"/></div><div class="name-and-profession text-center"><h3 itemprop="name"><b>Abraham Yang 杨杨</b></h3><h5 class="text-muted" itemprop="jobTitle">高级前端工程师 / 前端负责人</h5></div></span><hr/><div class="contact-details clearfix"><div class="detail"><span class="icon"><i class="icon fs-lg icon-location"></i></span><span class="info">上海, 上海, CN</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-phone"></i></span><span class="info" itemprop="telephone">+86 159-2109-8538</span></div><div class="detail"><span class="icon"><i class="icon fs-lg icon-mail"></i></span><span class="info"><a class="link-disguise" href="mailto:abram.yang@outlook.com" itemprop="email">abram.yang@outlook.com</a></span></div><div class="detail"><span class="icon" title="Languages I speak"><i class="icon fs-lg icon-language"></i></span><span class="info">普通话, 英语</span></div></div><hr/><div class="social-links text-center"><div><a class="fs-2x social-link link-linkedin icon-linkedin" href="https://www.linkedin.com/in/abramyang" target="_blank" data-toggle="tooltip" title="Abraham Yang 杨杨 on LinkedIn"></a><a class="fs-2x social-link link-github icon-github" href="https://www.github.com/abramyangCN" target="_blank" data-toggle="tooltip" title="Abraham Yang 杨杨 on Github"></a></div></div></div></section><section class="col-md-9 card-wrapper pull-right"><div class="card background-card"><h4 class="text-uppercase">Background</h4><hr/><div class="background-details"><div class="detail" id="about"><div class="icon"><i class="fs-lg icon-board"></i><span class="mobile-title">About</span></div><div class="info"><h4 class="title text-uppercase">About</h4><div class="card card-nested"><div class="content mop-wrapper" itemprop="description"><p>拥有7年以上经验的高级前端工程师，专注于构建可扩展的网页、混合和小程序应用。专长于React生态系统、交互式渲染（2D/3D）和SaaS系统架构。领导小型跨职能团队（最多5名工程师），交付服务于10,000+用户的生产就绪系统。对前端架构、混合集成、CI/CD管道和云部署有强烈的责任心。拥有跨亚太地区合作和推动工程标准的经验。</p>
+</div></div></div></div><div class="detail" id="work-experience"><div class="icon"><i class="fs-lg icon-office"></i><span class="mobile-title">Work Experience</span></div><div class="info"><h4 class="title text-uppercase">Work Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>高级前端工程师</strong>,&nbsp;Trajectry (formerly EY Fabernovel China)</p><p class="text-muted"><small><span class="space-right">May, 2023 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>在一家为全球奢侈品和高端品牌服务的精品数字咨询公司担任前端工程师。最初是Fabernovel网络的一部分；在EY全球收购后（重新品牌为EY Studio），中国实体独立运营并重新品牌为Trajectry（法律实体：Trajectry China limited）。</p>
+</div><ul><li class="mop-wrapper"><p>为Christie's WeChat小程序提供持续的保留前端开发，包括私人销售工作流程和多账户管理功能。</p>
+</li><li class="mop-wrapper"><p>为奢侈品和高端品牌开发WeChat小程序，包括Messika、Bucherer、Hermès（售后服务）和Kallista，使用Taro、React和TypeScript。</p>
+</li><li class="mop-wrapper"><p>在中国、台湾和韩国市场构建和本地化Monotype Asia平台，处理区域内容配置和特定地区的适配。</p>
+</li><li class="mop-wrapper"><p>在敏捷保留模型下维护和迭代实时生产小程序，持续收集客户反馈。</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>前端负责人</strong>,&nbsp;上海RJY信息技术有限公司</p><p class="text-muted"><small><span class="space-right">Sep, 2021 - Feb, 2023</span><span><i class="icon-clock mr-5"></i>1 year 5 months</span></small></p><div class="mop-wrapper space-bottom"><p>领导DIY服装应用和WeChat小程序的前端架构和交付，管理敏捷团队并构建CI/CD基础设施。</p>
+</div><ul><li class="mop-wrapper"><p>使用React、Fabric.js和Three.js设计并实现可定制的服装平台，支持实时2D/3D渲染。</p>
+</li><li class="mop-wrapper"><p>为交互式设计工作流程架构基于层的编辑系统（撤销/重做、资产管道、渲染抽象）。</p>
+</li><li class="mop-wrapper"><p>构建服务器端渲染管道，使用Node.js导出高分辨率设计资产。</p>
+</li><li class="mop-wrapper"><p>建立CI/CD管道并管理在阿里云上的生产部署。</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>前端负责人</strong>,&nbsp;<a href="https://www.fumasoft.com" target="_blank">上海Fumasoft有限公司</a></p><p class="text-muted"><small><span class="space-right">Dec, 2020 - Sep, 2021</span><span><i class="icon-clock mr-5"></i>9 months</span></small></p><div class="mop-wrapper space-bottom"><p>SaaS和混合应用的核心前端贡献者。</p>
+</div><ul><li class="mop-wrapper"><p>将React Native应用迁移到混合架构，提高与原生模块的集成灵活性。</p>
+</li><li class="mop-wrapper"><p>设计并实现JS桥，实现WebView与原生层之间的双向通信。</p>
+</li><li class="mop-wrapper"><p>通过结构化路由和生命周期管理提高应用稳定性，减少混合交互问题。</p>
+</li><li class="mop-wrapper"><p>领导一个由5名工程师（前端、iOS、Android）组成的跨职能团队，协调冲刺计划和技术决策。</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>前端工程师</strong>,&nbsp;<a href="https://www.publicisgroupe.com" target="_blank">Publicis Sapient</a></p><p class="text-muted"><small><span class="space-right">Apr, 2019 - Nov, 2020</span><span><i class="icon-clock mr-5"></i>1 year 8 months</span></small></p><div class="mop-wrapper space-bottom"><p>为全球客户交付企业级营销和品牌平台。</p>
+</div><ul><li class="mop-wrapper"><p>为华为、万豪和汽车品牌开发响应式活动网站和迷你网站。</p>
+</li><li class="mop-wrapper"><p>使用现代JS框架和基于canvas的渲染实现互动移动体验。</p>
+</li><li class="mop-wrapper"><p>在分布式交付模型中与新加坡、日本和印度团队合作。</p>
+</li><li class="mop-wrapper"><p>指导实习生并为前端标准和可重用组件设计做出贡献。</p>
+</li></ul></div></li></ul></div></div><div class="detail" id="projects-experience"><div class="icon"><i class="fs-lg icon-code"></i><span class="mobile-title">Projects Experience</span></div><div class="info"><h4 class="title text-uppercase">Projects Experience</h4><ul class="list-unstyled clear-margin"><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>Christie's WeChat小程序</strong><span>,&nbsp;Christie's</span></p><p class="text-muted"><small><span class="space-right">May, 2023 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>为Christie's中国WeChat小程序提供持续的保留前端开发，交付新功能和平台增强。</p>
+</div><ul><li class="mop-wrapper"><p>开发私人销售模块，支持仅限邀请的拍品浏览、竞标访问控制和独家销售工作流程。</p>
+</li><li class="mop-wrapper"><p>实现多账户管理系统，支持在单个会话中在买家和专家账户上下文之间切换。</p>
+</li><li class="mop-wrapper"><p>在持续保留交付模型下维护和迭代生产小程序功能。</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>奢侈品牌小程序</strong><span>,&nbsp;Trajectry</span></p><p class="text-muted"><small><span class="space-right">May, 2023 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>为多个国际奢侈品牌交付WeChat小程序项目，涵盖产品展示、零售和售后服务体验。</p>
+</div><ul><li class="mop-wrapper"><p>构建Messika和Kallista珠宝品牌小程序，具有产品目录、系列浏览和精品店定位功能。</p>
+</li><li class="mop-wrapper"><p>开发Bucherer小程序，支持手表系列展示和服务预约。</p>
+</li><li class="mop-wrapper"><p>实现Hermès售后服务小程序，使客户能够提交维修请求并跟踪服务状态。</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><i class="icon-circle current-event" rel="tooltip" title="Currently Working" data-placement="left"></i><strong>Monotype Asia平台</strong><span>,&nbsp;Monotype</span></p><p class="text-muted"><small><span class="space-right">May, 2023 - Present</span></small></p><div class="mop-wrapper space-bottom"><p>为中国、台湾和韩国市场开发和本地化Monotype Asia网页平台，支持区域用户的字体发现和许可。</p>
+</div><ul><li class="mop-wrapper"><p>实现支持简体中文、繁体中文和韩文内容变体的多区域架构，基于共享代码库。</p>
+</li><li class="mop-wrapper"><p>处理特定区域的配置、路由和资产管理，以确保三个市场之间的一致用户体验。</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Tootools小程序</strong><span>,&nbsp;Tootools</span></p><p class="text-muted"><small><span class="space-right">Sep, 2021 - Feb, 2023</span><span><i class="icon-clock mr-5"></i>1 year 5 months</span></small></p><div class="mop-wrapper space-bottom"><p>功能齐全的WeChat小程序，用于自定义服装设计，具有实时2D编辑和3D预览，作为公司的核心产品。</p>
+</div><ul><li class="mop-wrapper"><p>架构双渲染设计编辑器，支持图层管理、图案/字体/绘图工具和撤销/重做历史，使用Fabric.js在基于React的canvas上实现。</p>
+</li><li class="mop-wrapper"><p>通过Three.js Decal Geometry将用户设计投影到glTF服装模型上，实现实时3D预览。</p>
+</li><li class="mop-wrapper"><p>构建服务器端渲染管道，使用Node.js导出高分辨率的打印准备设计资产。</p>
+</li><li class="mop-wrapper"><p>开发Uniapp小程序外壳，具有自定义路由和生命周期管理，实现无缝跨平台交付。</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>Fumamx混合应用</strong><span>,&nbsp;Fumamx</span></p><p class="text-muted"><small><span class="space-right">Dec, 2020 - Sep, 2021</span><span><i class="icon-clock mr-5"></i>9 months</span></small></p><div class="mop-wrapper space-bottom"><p>将React Native SaaS应用重建为混合架构，以提高原生集成灵活性并加速跨平台交付。</p>
+</div><ul><li class="mop-wrapper"><p>使用postMessage设计并实现双向JS桥，实现WebView与原生iOS/Android层之间的结构化通信。</p>
+</li><li class="mop-wrapper"><p>在WebView层内引入基于Vue Router的导航管理，将路由与原生导航栈解耦。</p>
+</li><li class="mop-wrapper"><p>通过允许独立的web层部署而无需完整的原生应用发布，提高发布速度。</p>
+</li><li class="mop-wrapper"><p>协调一个由5名（前端、iOS、Android）组成的跨职能团队，通过冲刺计划和技术对齐。</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>内部CMS网站</strong><span>,&nbsp;内部</span></p><p class="text-muted"><small><span class="space-right">Apr, 2021 - Jun, 2021</span><span><i class="icon-clock mr-5"></i>2 months</span></small></p><div class="mop-wrapper space-bottom"><p>开发内部CMS网站，具有自动化模板生成，以简化内容发布工作流程。</p>
+</div><ul><li class="mop-wrapper"><p>集成gulp-velocity插件以自动生成Velocity模板文件，减少手动模板工作。</p>
+</li><li class="mop-wrapper"><p>交付可维护的前端代码库，具有模块化组件结构和通过Gulp的构建自动化。</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>DS汽车官方网站</strong><span>,&nbsp;DS汽车</span></p><p class="text-muted"><small><span class="space-right">Apr, 2020 - Aug, 2020</span><span><i class="icon-clock mr-5"></i>4 months</span></small></p><div class="mop-wrapper space-bottom"><p>为DS汽车中国开发官方营销网站，具有动画体验和互动经销商定位功能。</p>
+</div><ul><li class="mop-wrapper"><p>使用CSS和JavaScript构建高保真动画着陆页，具有滚动驱动和入场动画。</p>
+</li><li class="mop-wrapper"><p>集成百度地图SDK，具有自定义标记、聚类渲染和模糊搜索功能，用于全国经销商定位。</p>
+</li><li class="mop-wrapper"><p>为WeChat官方文章活动制作动态图形，增强应用内互动。</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>IQOS EDM电子邮件模板</strong><span>,&nbsp;IQOS</span></p><p class="text-muted"><small><span class="space-right">Apr, 2020 - May, 2020</span><span><i class="icon-clock mr-5"></i>1 month</span></small></p><div class="mop-wrapper space-bottom"><p>为IQOS营销活动交付一系列响应式EDM电子邮件模板，协调国际团队。</p>
+</div><ul><li class="mop-wrapper"><p>使用MJML构建响应式、跨客户端的电子邮件模板，通过Litmus在15个以上的电子邮件客户端中验证。</p>
+</li><li class="mop-wrapper"><p>使用基于Gulp的构建管道自动化电子邮件编译和资产内联。</p>
+</li><li class="mop-wrapper"><p>在3个时区内协调交付，与分布式利益相关者合作。</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>华为活动迷你网站</strong><span>,&nbsp;华为</span></p><p class="text-muted"><small><span class="space-right">Aug, 2019 - Aug, 2020</span><span><i class="icon-clock mr-5"></i>1 year</span></small></p><div class="mop-wrapper space-bottom"><p>为华为活动开发多个互动营销迷你网站，专注于移动优先体验和地图集成。</p>
+</div><ul><li class="mop-wrapper"><p>构建基于canvas的互动移动体验，具有手势控制和帧动画，以提高活动参与度。</p>
+</li><li class="mop-wrapper"><p>集成腾讯地图JSSDK，具有自定义商店定位功能，支持标记聚类和实时搜索。</p>
+</li><li class="mop-wrapper"><p>扩展Swiper.js，具有自定义卡片折叠和3D翻转过渡，以匹配设计规范。</p>
+</li><li class="mop-wrapper"><p>集成WeChat JSSDK，实现社交分享和应用内浏览器优化。</p>
+</li></ul></div></li><li class="card card-nested clearfix"><div class="content"><p class="clear-margin relative"><strong>万豪网站CN本地化</strong><span>,&nbsp;万豪</span></p><p class="text-muted"><small><span class="space-right">Apr, 2019 - Aug, 2019</span><span><i class="icon-clock mr-5"></i>4 months</span></small></p><div class="mop-wrapper space-bottom"><p>将万豪的全球网站适配中国市场，替换不支持的第三方服务，确保功能一致性。</p>
+</div><ul><li class="mop-wrapper"><p>使用百度地图SDK重新实现基于Google Maps的酒店定位，保留搜索、过滤和标记功能，以满足中国用户的需求。</p>
+</li><li class="mop-wrapper"><p>解决中国网络限制引入的跨区域API和地理服务不兼容问题。</p>
+</li><li class="mop-wrapper"><p>与印度开发团队合作，在分布式交付模型中定期进行跨时区同步。</p>
+</li></ul></div></li></ul></div></div><div class="detail" id="skills"><div class="icon"><i class="fs-lg icon-tools"></i><span class="mobile-title">Skills</span></div><div class="info"><h4 class="title text-uppercase">Skills</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested card-skills"><div class="skill-info"><strong>前端</strong><div class="space-top labels"><span class="label label-keyword"><p>React</p>
+</span><span class="label label-keyword"><p>TypeScript</p>
+</span><span class="label label-keyword"><p>Vue</p>
+</span><span class="label label-keyword"><p>TailwindCSS</p>
+</span><span class="label label-keyword"><p>混合架构</p>
+</span><span class="label label-keyword"><p>小程序</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-info"><strong>AI辅助开发</strong><div class="space-top labels"><span class="label label-keyword"><p>Claude Code</p>
+</span><span class="label label-keyword"><p>GitHub Copilot</p>
+</span><span class="label label-keyword"><p>提示工程</p>
+</span><span class="label label-keyword"><p>LLM工作流优化</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-info"><strong>渲染与可视化</strong><div class="space-top labels"><span class="label label-keyword"><p>Fabric.js</p>
+</span><span class="label label-keyword"><p>Three.js</p>
+</span><span class="label label-keyword"><p>WebGL</p>
+</span><span class="label label-keyword"><p>交互式编辑系统</p>
+</span></div></div></li><li class="card card-nested card-skills"><div class="skill-info"><strong>后端与基础设施</strong><div class="space-top labels"><span class="label label-keyword"><p>Node.js</p>
+</span><span class="label label-keyword"><p>REST APIs</p>
+</span><span class="label label-keyword"><p>CI/CD</p>
+</span><span class="label label-keyword"><p>Docker</p>
+</span><span class="label label-keyword"><p>云部署</p>
+</span></div></div></li></ul></div></div></div><div class="detail" id="education"><div class="icon"><i class="fs-lg icon-graduation-cap"></i><span class="mobile-title">Education</span></div><div class="info"><h4 class="title text-uppercase">Education</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin relative"><strong>电子工程, 学士,&nbsp;</strong>上海电机学院</p><p class="text-muted clear-margin"><small>Sep, 2015 - Jun, 2019</small></p><i></i></div></li></ul></div></div></div><div class="detail" id="awards"><div class="icon"><i class="fs-lg icon-trophy"></i><span class="mobile-title">Awards</span></div><div class="info"><h4 class="title text-uppercase">Awards</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><div class="content"><p class="clear-margin" itemprop="award"><strong>奖学金 </strong>,&nbsp;上海电机学院</p><p class="text-muted"><small>Awarded on: Jun 01, 2019</small></p><div class="mop-wrapper"><p>因在学术成就和对大学社区的贡献而获奖。</p>
+</div></div></li></ul></div></div></div><div class="detail" id="interests"><div class="icon"><i class="fs-lg icon-heart"></i><span class="mobile-title">Interests</span></div><div class="info"><h4 class="title text-uppercase">Interests</h4><div class="content"><ul class="list-unstyled clear-margin"><li class="card card-nested"><p><strong>工程</strong></p><div class="space-top labels"><span class="label label-keyword">系统设计</span><span class="label label-keyword">前端架构</span><span class="label label-keyword">开发者生产力</span><span class="label label-keyword">创新</span><span class="label label-keyword">实验</span></div></li><li class="card card-nested"><p><strong>爱好</strong></p><div class="space-top labels"><span class="label label-keyword">旅行</span><span class="label label-keyword">健身</span><span class="label label-keyword">音乐</span><span class="label label-keyword">摄影</span><span class="label label-keyword">书法</span></div></li></ul></div></div></div></div></div></section></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script><script>$(function () {
+  var toggleFloatingMenu = function() {
+    $( '.js-floating-nav' ).toggleClass( 'is-visible' );
+    $( '.js-floating-nav-trigger' ).toggleClass( 'is-open' );
+  };
 
-      <section id="work">
-        <h3>Work</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>高级前端工程师</h4>
-                  <span>
-                    <time datetime="2023-05-01">May 2023</time> –
-                    Present
-                  </span>
-                </div>
-                <strong>Trajectry (formerly EY Fabernovel China)</strong>
-              </header>
-                <p>在一家为全球奢侈品和高端品牌服务的精品数字咨询公司担任前端工程师。最初是Fabernovel网络的一部分；在EY全球收购后（更名为EY Studio），中国实体独立运营并更名为Trajectry（法律实体：Trajectry China limited）。</p>
-                <ul>
-                    <li><p>为Christie's WeChat小程序提供持续的前端开发，包括私人销售工作流程和多账户管理功能。</p></li>
-                    <li><p>为奢侈品和高端品牌开发WeChat小程序，包括Messika、Bucherer、Hermès（售后服务）和Kallista，使用Taro、React和TypeScript。</p></li>
-                    <li><p>在中国、台湾和韩国市场构建并本地化Monotype Asia平台，处理区域内容配置和特定地区的适配。</p></li>
-                    <li><p>在敏捷保留模型下维护和迭代实时生产小程序，持续获取客户反馈。</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>前端负责人</h4>
-                  <span>
-                    <time datetime="2021-09-01">Sep 2021</time> –
-                    <time datetime="2023-02-15">Feb 2023</time>
-                  </span>
-                </div>
-                <strong>上海RJY信息技术有限公司</strong>
-              </header>
-                <p>负责DIY服装应用和WeChat小程序的前端架构和交付，管理敏捷团队并构建CI/CD基础设施。</p>
-                <ul>
-                    <li><p>使用React、Fabric.js和Three.js设计并实现可定制的服装平台，支持实时2D/3D渲染。</p></li>
-                    <li><p>为交互设计工作流程架构基于层的编辑系统（撤销/重做、资产管道、渲染抽象）。</p></li>
-                    <li><p>构建基于Node.js的服务器端渲染管道，以导出高分辨率设计资产。</p></li>
-                    <li><p>建立CI/CD管道并管理在阿里云上的生产部署。</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>前端负责人</h4>
-                  <span>
-                    <time datetime="2020-12-01">Dec 2020</time> –
-                    <time datetime="2021-09-01">Sep 2021</time>
-                  </span>
-                </div>
-                <strong><a href="https://www.fumasoft.com">上海Fumasoft有限公司</a></strong>
-              </header>
-                <p>SaaS和混合应用的核心前端贡献者。</p>
-                <ul>
-                    <li><p>将React Native应用迁移到混合架构，提高与原生模块的集成灵活性。</p></li>
-                    <li><p>设计并实现JS桥，实现WebView与原生层之间的双向通信。</p></li>
-                    <li><p>通过结构化路由和生命周期管理提高应用稳定性，减少混合交互问题。</p></li>
-                    <li><p>领导一个由5名工程师（前端、iOS、Android）组成的跨职能团队，协调冲刺计划和技术决策。</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>前端工程师</h4>
-                  <span>
-                    <time datetime="2019-04-01">Apr 2019</time> –
-                    <time datetime="2020-11-30">Nov 2020</time>
-                  </span>
-                </div>
-                <strong><a href="https://www.publicisgroupe.com">Publicis Sapient</a></strong>
-              </header>
-                <p>为全球客户交付企业级营销和品牌平台。</p>
-                <ul>
-                    <li><p>为华为、万豪和汽车品牌开发响应式活动网站和迷你网站。</p></li>
-                    <li><p>使用现代JS框架和基于canvas的渲染实现交互式移动体验。</p></li>
-                    <li><p>在分布式交付模型中与新加坡、日本和印度团队协作。</p></li>
-                    <li><p>指导实习生并为前端标准和可重用组件设计做出贡献。</p></li>
-                </ul>
-            </article>
-        </div>
-      </section>
-      <section id="education">
-        <h3>Education</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4><a href="https://www.sdju.edu.cn">上海电机学院</a></h4>
-                  <span>
-                    <time datetime="2015-09-01">Sep 2015</time> –
-                    <time datetime="2019-06-01">Jun 2019</time>
-                  </span>
-                </div>
-                  <strong>电子工程</strong>
-              </header>
-                <p>学士</p>
-            </article>
-        </div>
-      </section>
-      <section id="projects">
-        <h3>Projects</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Christie&#x27;s WeChat小程序</h4>
-                  <span>
-                    <time datetime="2023-05-01">May 2023</time> –
-                    Present
-                  </span>
-                </div>
-                <span>
-                    <strong>高级前端工程师</strong>
-                    at <strong>Christie&#x27;s</strong>
-                </span>
-              </header>
-                <p>为Christie's中国WeChat小程序提供持续的前端开发，交付新功能和平台增强，跨发布周期。</p>
-                <ul>
-                    <li><p>开发私人销售模块，支持仅限邀请的拍品浏览、竞标访问控制和独家销售工作流程。</p></li>
-                    <li><p>实现多账户管理系统，支持在单个会话中在买家和专家账户上下文之间切换。</p></li>
-                    <li><p>在持续保留交付模型下维护和迭代生产小程序功能。</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>奢侈品牌小程序</h4>
-                  <span>
-                    <time datetime="2023-05-01">May 2023</time> –
-                    Present
-                  </span>
-                </div>
-                <span>
-                    <strong>高级前端工程师</strong>
-                    at <strong>Trajectry</strong>
-                </span>
-              </header>
-                <p>为多个国际奢侈品牌交付WeChat小程序项目，涵盖产品展示、零售和售后服务体验。</p>
-                <ul>
-                    <li><p>构建Messika和Kallista珠宝品牌小程序，具有产品目录、系列浏览和精品店定位功能。</p></li>
-                    <li><p>开发Bucherer小程序，支持手表系列展示和服务预约。</p></li>
-                    <li><p>实现Hermès售后服务小程序，使客户能够提交维修请求并跟踪服务状态。</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Monotype Asia平台</h4>
-                  <span>
-                    <time datetime="2023-05-01">May 2023</time> –
-                    Present
-                  </span>
-                </div>
-                <span>
-                    <strong>高级前端工程师</strong>
-                    at <strong>Monotype</strong>
-                </span>
-              </header>
-                <p>为中国、台湾和韩国市场开发并本地化Monotype Asia网页平台，支持区域用户的字体发现和许可。</p>
-                <ul>
-                    <li><p>实现支持简体中文、繁体中文和韩文内容变体的多区域架构，基于共享代码库。</p></li>
-                    <li><p>处理特定区域的配置、路由和资产管理，以确保三个市场之间一致的用户体验。</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Tootools小程序</h4>
-                  <span>
-                    <time datetime="2021-09-15">Sep 2021</time> –
-                    <time datetime="2023-02-15">Feb 2023</time>
-                  </span>
-                </div>
-                <span>
-                    <strong>前端负责人</strong>
-                    at <strong>Tootools</strong>
-                </span>
-              </header>
-                <p>全功能WeChat小程序，用于定制服装设计，具有实时2D编辑和3D预览，作为公司的核心产品。</p>
-                <ul>
-                    <li><p>架构一个双渲染设计编辑器，支持图层管理、图案/字体/绘图工具和撤销/重做历史，使用Fabric.js在基于React的canvas上。</p></li>
-                    <li><p>通过Three.js Decal Geometry实现实时3D预览，将用户设计投影到glTF服装模型上。</p></li>
-                    <li><p>构建服务器端渲染管道，使用Node.js导出高分辨率的打印准备设计资产。</p></li>
-                    <li><p>开发Uniapp小程序外壳，具有自定义路由和生命周期管理，实现无缝跨平台交付。</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>Fumamx混合应用</h4>
-                  <span>
-                    <time datetime="2020-12-01">Dec 2020</time> –
-                    <time datetime="2021-09-01">Sep 2021</time>
-                  </span>
-                </div>
-                <span>
-                    <strong>前端负责人</strong>
-                    at <strong>Fumamx</strong>
-                </span>
-              </header>
-                <p>将React Native SaaS应用重建为混合架构，以提高原生集成灵活性并加速跨平台交付。</p>
-                <ul>
-                    <li><p>使用postMessage设计并实现双向JS桥，实现WebView与原生iOS/Android层之间的结构化通信。</p></li>
-                    <li><p>在WebView层内引入基于Vue Router的导航管理，将路由与原生导航栈解耦。</p></li>
-                    <li><p>通过允许独立的Web层部署而无需完全的原生应用发布，提高发布速度。</p></li>
-                    <li><p>协调一个由5名（前端、iOS、Android）组成的跨职能团队，通过冲刺计划和技术对齐。</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>内部CMS网站</h4>
-                  <span>
-                    <time datetime="2021-04-01">Apr 2021</time> –
-                    <time datetime="2021-06-01">Jun 2021</time>
-                  </span>
-                </div>
-                <span>
-                    <strong>前端工程师</strong>
-                    at <strong>内部</strong>
-                </span>
-              </header>
-                <p>开发一个内部CMS网站，具有自动化模板生成，以简化内容发布工作流程。</p>
-                <ul>
-                    <li><p>集成gulp-velocity插件，自动生成Velocity模板文件，减少手动模板工作量。</p></li>
-                    <li><p>交付可维护的前端代码库，具有模块化组件结构和通过Gulp的构建自动化。</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>DS汽车官方网站</h4>
-                  <span>
-                    <time datetime="2020-04-01">Apr 2020</time> –
-                    <time datetime="2020-08-01">Aug 2020</time>
-                  </span>
-                </div>
-                <span>
-                    <strong>前端工程师</strong>
-                    at <strong>DS汽车</strong>
-                </span>
-              </header>
-                <p>为DS汽车中国开发官方营销网站，具有动画体验和互动经销商定位功能。</p>
-                <ul>
-                    <li><p>构建高保真动画着陆页，使用CSS和JavaScript实现滚动驱动和进入动画。</p></li>
-                    <li><p>集成百度地图SDK，具有自定义标记、聚类渲染和模糊搜索功能，用于全国经销商定位。</p></li>
-                    <li><p>为WeChat官方文章活动制作动态图形，增强应用内参与度。</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>IQOS EDM电子邮件模板</h4>
-                  <span>
-                    <time datetime="2020-04-01">Apr 2020</time> –
-                    <time datetime="2020-05-01">May 2020</time>
-                  </span>
-                </div>
-                <span>
-                    <strong>前端工程师</strong>
-                    at <strong>IQOS</strong>
-                </span>
-              </header>
-                <p>为IQOS营销活动交付一系列响应式EDM电子邮件模板，跨国际团队协调。</p>
-                <ul>
-                    <li><p>使用MJML构建响应式、跨客户端的电子邮件模板，通过Litmus在15个以上的电子邮件客户端中验证。</p></li>
-                    <li><p>通过基于Gulp的构建管道自动化电子邮件编译和资产内联。</p></li>
-                    <li><p>跨3个时区与分布式利益相关者协调交付。</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>华为活动迷你网站</h4>
-                  <span>
-                    <time datetime="2019-08-01">Aug 2019</time> –
-                    <time datetime="2020-08-01">Aug 2020</time>
-                  </span>
-                </div>
-                <span>
-                    <strong>前端工程师</strong>
-                    at <strong>华为</strong>
-                </span>
-              </header>
-                <p>为华为活动开发多个互动营销迷你网站，专注于移动优先体验和地图集成。</p>
-                <ul>
-                    <li><p>构建基于canvas的互动移动体验，具有手势控制和帧动画，以增强活动参与度。</p></li>
-                    <li><p>集成腾讯地图JSSDK，具有自定义商店定位功能，支持标记聚类和实时搜索。</p></li>
-                    <li><p>扩展Swiper.js，具有自定义卡片折叠和3D翻转过渡，以符合设计规范。</p></li>
-                    <li><p>集成WeChat JSSDK，实现社交分享和应用内浏览器优化。</p></li>
-                </ul>
-            </article>
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>万豪网站CN本地化</h4>
-                  <span>
-                    <time datetime="2019-04-01">Apr 2019</time> –
-                    <time datetime="2019-08-01">Aug 2019</time>
-                  </span>
-                </div>
-                <span>
-                    <strong>前端工程师</strong>
-                    at <strong>万豪</strong>
-                </span>
-              </header>
-                <p>将万豪的全球网站适配中国市场，替换不支持的第三方服务，确保功能一致性。</p>
-                <ul>
-                    <li><p>重新实现基于Google Maps的酒店定位器，使用百度地图SDK，保留搜索、过滤和标记功能，以满足中国用户的需求。</p></li>
-                    <li><p>解决中国网络限制引入的跨区域API和地理服务不兼容问题。</p></li>
-                    <li><p>与位于印度的开发团队在分布式交付模型中协作，定期进行跨时区同步。</p></li>
-                </ul>
-            </article>
-        </div>
-      </section>
-      <section id="awards">
-        <h3>Awards</h3>
-        <div class="stack">
-            <article>
-              <header>
-                <div class="spaced-list">
-                  <h4>奖学金</h4>
-                    <time datetime="2019-06-01">Jun 2019</time>
-                </div>
-                  <span>
-                    Awarded by <strong>上海电机学院</strong>
-                  </span>
-              </header>
-                <p>因在学术成就和对大学社区的贡献而获奖。</p>
-            </article>
-        </div>
-      </section>
-      <section id="skills">
-        <h3>Skills</h3>
-        <div class="grid-list">
-            <div>
-                <h4>前端</h4>
-                <ul class="tag-list">
-                    <li>React</li>
-                    <li>TypeScript</li>
-                    <li>Vue</li>
-                    <li>TailwindCSS</li>
-                    <li>混合架构</li>
-                    <li>小程序</li>
-                </ul>
-            </div>
-            <div>
-                <h4>AI辅助开发</h4>
-                <ul class="tag-list">
-                    <li>Claude Code</li>
-                    <li>GitHub Copilot</li>
-                    <li>提示工程</li>
-                    <li>LLM工作流优化</li>
-                </ul>
-            </div>
-            <div>
-                <h4>渲染与可视化</h4>
-                <ul class="tag-list">
-                    <li>Fabric.js</li>
-                    <li>Three.js</li>
-                    <li>WebGL</li>
-                    <li>交互式编辑系统</li>
-                </ul>
-            </div>
-            <div>
-                <h4>后端与基础设施</h4>
-                <ul class="tag-list">
-                    <li>Node.js</li>
-                    <li>REST APIs</li>
-                    <li>CI/CD</li>
-                    <li>Docker</li>
-                    <li>云部署</li>
-                </ul>
-            </div>
-        </div>
-      </section>
-      <section id="languages">
-        <h3>Languages</h3>
-        <div class="grid-list">
-            <div>
-                <h4>普通话</h4>
-              母语
-            </div>
-            <div>
-                <h4>英语</h4>
-              专业工作能力
-            </div>
-        </div>
-      </section>
-      <section id="interests">
-        <h3>Interests</h3>
-        <div class="grid-list">
-            <div>
-                <h4>工程</h4>
-                <ul class="tag-list">
-                    <li>系统设计</li>
-                    <li>前端架构</li>
-                    <li>开发者生产力</li>
-                    <li>创新</li>
-                    <li>实验</li>
-                </ul>
-            </div>
-            <div>
-                <h4>爱好</h4>
-                <ul class="tag-list">
-                    <li>旅行</li>
-                    <li>健身</li>
-                    <li>音乐</li>
-                    <li>摄影</li>
-                    <li>书法</li>
-                </ul>
-            </div>
-        </div>
-      </section>
-  
+  $( ".background-card" ).css( "min-height", window.screen.availHeight + "px" );
+  $( "[data-toggle=tooltip]" ).tooltip();
+  $( '.js-floating-nav-trigger' ).on( 'click', function(e) {
+    e.preventDefault();
+    toggleFloatingMenu();
+  });
+  $( '.js-floating-nav a' ).on( 'click', toggleFloatingMenu );
+
+  $("#remaining-profiles").on('show.bs.collapse', function() {
+    $( '.js-profiles-collapse > i' )
+      .removeClass( 'icon-chevron-down' )
+      .addClass( 'icon-chevron-up' );
+  });
+
+  $("#remaining-profiles").on('hidden.bs.collapse', function() {
+    $( '.js-profiles-collapse > i' )
+      .removeClass( 'icon-chevron-up' )
+      .addClass( 'icon-chevron-down' );
+  });
+});
+</script><script>WebFontConfig = {
+  google: { families: [ 'Lato:300,400,700:latin' ] }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();</script>
 <style>
   #lang-switcher {
     position: fixed;
@@ -732,5 +1140,4 @@ blockquote > * + * {
   #lang-switcher:hover { background: #555; }
 </style>
 <a id="lang-switcher" href="/resume/">English</a>
-</body>
-</html>
+</body></html>
