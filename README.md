@@ -16,8 +16,21 @@
 
 ### 🚀 Quick Start
 
+> **Prerequisites:** This template is designed for **GitHub Pages project sites** (URL: `https://<username>.github.io/<repo-name>/`).  
+> If you are not familiar with GitHub Pages, read the [official guide](https://docs.github.com/en/pages/getting-started-with-github-pages) first.  
+> User/org sites (`<username>.github.io`) have no repo-name prefix — the language switcher paths will need manual adjustment in the workflow.
+
 1. **Fork** this repository
-2. **Enable GitHub Pages** → Settings → Pages → Source: `gh-pages` branch
+2. **Enable GitHub Pages**
+
+   - Go to your forked repository on GitHub
+   - Click the **Settings** tab (top menu of the repo)
+   - In the left sidebar, click **Pages**
+   - Under **Build and deployment → Source**, select **Deploy from a branch**
+   - Under **Branch**, select `gh-pages` and keep the folder as `/ (root)`, then click **Save**
+
+   > `gh-pages` branch doesn't exist yet — it will be created automatically on the first push to `main`. Come back and set this after your first push if you don't see it.
+
 3. *(Optional)* **Set Gist secrets** if you want JSON Resume registry sync:
 
    | Secret | Description |

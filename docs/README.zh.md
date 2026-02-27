@@ -14,13 +14,25 @@
 
 ## 🚀 快速开始
 
+> **前置说明：** 本模板基于 **GitHub Pages 项目站点**（URL 格式为 `https://<用户名>.github.io/<仓库名>/`）。  
+> 如果你还不熟悉 GitHub Pages，请先阅读[官方文档](https://docs.github.com/zh/pages/getting-started-with-github-pages)。  
+> 若使用用户/组织站点（`<用户名>.github.io`，URL 无仓库名前缀），语言切换按钮的路径需在 workflow 中手动调整。
+
 ### 1. Fork 本仓库
 
 点击右上角的 **Fork** 按钮。
 
 ### 2. 开启 GitHub Pages
 
-进入仓库 **Settings → Pages → Source**，选择 `gh-pages` 分支。
+- 进入你 Fork 后的仓库页面
+- 点击顶部菜单的 **Settings**（设置）选项卡
+- 在左侧边栏找到 **Pages**
+- 在 **Build and deployment → Source** 下选择 **Deploy from a branch**
+- 在 **Branch** 下拉菜单中选择 `gh-pages`，文件夹保持 `/ (root)` 不变，点击 **Save**
+
+> `gh-pages` 分支还不存在 —— 它会在你第一次推送代码到 `main` 分支后自动创建。如果现在看不到这个选项，先跳过，完成第一次推送后再回来设置。
+
+> `gh-pages` 分支还不存在 —— 它会在你第一次推送代码到 `main` 分支后自动创建。如果现在看不到这个选项，先跳过，完成第一次推送后再回来设置。
 
 ### 3. 配置 Gist 同步（可选）
 
