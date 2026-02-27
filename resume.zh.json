@@ -1,13 +1,13 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.2.1/schema.json",
   "basics": {
-    "name": "杨开明",
-    "label": "资深前端开发工程师 | 前端负责人",
+    "name": "Abraham Yang",
+    "label": "高级前端工程师 / 前端负责人",
     "picture": "https://avatars.githubusercontent.com/u/19504192?v=4",
     "email": "abram.yang@outlook.com",
     "phone": "+86 159-2109-8538",
     "url": "https://iay.me",
-    "summary": "资深前端开发工程师，拥有 7 年以上构建可扩展网页、混合应用及小程序的经验。专注于 React 生态系统、2D/3D 交互渲染及 SaaS 系统架构。曾带领多达 5 人的跨职能团队，交付服务超过 1 万用户的生产级系统。在前端架构设计、混合应用集成、CI/CD 流水线及云端部署方面具有强烈的主人翁意识。具备跨亚太地区协作及推动工程规范落地的丰富经验。",
+    "summary": "拥有7年以上经验的高级前端工程师，专注于构建可扩展的网页、混合和小程序应用。专长于React生态系统、交互式渲染（2D/3D）和SaaS系统架构。领导小型跨职能团队（最多5名工程师），交付服务于10,000+用户的生产就绪系统。对前端架构、混合集成、CI/CD管道和云部署具有强烈的责任心。拥有跨亚太地区协作和推动工程标准的经验。",
     "location": {
       "city": "上海",
       "region": "上海",
@@ -23,82 +23,82 @@
   },
   "work": [
     {
-      "name": "Trajectry（原 EY Fabernovel 中国）",
-      "location": "中国上海",
-      "position": "资深前端开发工程师",
+      "name": "Trajectry (前身为EY Fabernovel China)",
+      "location": "上海, 中国",
+      "position": "高级前端工程师",
       "startDate": "2023-05-01",
-      "summary": "服务于全球奢侈品及高端品牌的精品数字咨询公司。公司前身为 Fabernovel 网络成员；EY 完成全球收购并更名为 EY Studio 后，中国实体独立运营，更名为 Trajectry（法律主体：维登营销咨询有限公司）。",
+      "summary": "在一家为全球奢侈品和高端品牌服务的精品数字咨询公司担任前端工程师。最初是Fabernovel网络的一部分；在EY全球收购后（更名为EY Studio），中国实体独立运营并更名为Trajectry（法律实体：Trajectry China limited）。",
       "highlights": [
-        "持续为佳士得（Christie's）微信小程序提供 Retainer 前端开发服务，涵盖私洽拍卖流程及多账号管理功能。",
-        "使用 Taro、React 及 TypeScript 为 Messika、Bucherer、爱马仕（售后服务）、Kallista 等多个国际奢侈品牌开发微信小程序。",
-        "构建并本地化 Monotype Asia 平台，覆盖中国大陆、台湾及韩国三个市场，完成区域内容配置与语言适配。",
-        "在敏捷 Retainer 模式下持续维护和迭代线上生产小程序，保持与客户的高频反馈协作。"
+        "为Christie's的微信小程序提供持续的前端开发，包括私人销售工作流程和多账户管理功能。",
+        "为包括Messika、Bucherer、Hermès（售后服务）和Kallista在内的奢侈品和高端品牌开发微信小程序，使用Taro、React和TypeScript。",
+        "在中国、台湾和韩国市场构建和本地化Monotype Asia平台，处理区域内容配置和特定于区域的适配。",
+        "在敏捷保留模型下维护和迭代实时生产小程序，持续与客户反馈循环。"
       ]
     },
     {
-      "name": "上海容界衣信息技术有限公司",
-      "location": "中国上海",
+      "name": "上海RJY信息技术有限公司",
+      "location": "上海, 中国",
       "position": "前端负责人",
       "startDate": "2021-09-01",
       "endDate": "2023-02-15",
-      "summary": "主导 DIY 定制服装应用与微信小程序的前端架构设计与交付，管理敏捷团队并搭建 CI/CD 基础设施。",
+      "summary": "负责DIY服装应用和微信小程序的前端架构和交付，管理敏捷团队并构建CI/CD基础设施。",
       "highlights": [
-        "使用 React、Fabric.js 和 Three.js 设计并实现支持实时 2D/3D 渲染的服装定制平台。",
-        "设计基于图层的编辑系统（撤销/重做、资产流水线、渲染抽象），支持交互式设计工作流。",
-        "使用 Node.js 构建服务端渲染流水线，用于导出高分辨率印刷级设计资产。",
-        "搭建 CI/CD 流水线并管理阿里云生产环境部署。"
+        "使用React、Fabric.js和Three.js设计并实现可定制的服装平台，支持实时2D/3D渲染。",
+        "为交互式设计工作流程架构基于层的编辑系统（撤销/重做、资产管道、渲染抽象）。",
+        "构建服务器端渲染管道，使用Node.js导出高分辨率设计资产。",
+        "建立CI/CD管道并管理在阿里云上的生产部署。"
       ]
     },
     {
-      "name": "上海富玛软件有限公司",
-      "location": "中国上海",
+      "name": "上海Fumasoft有限公司",
+      "location": "上海, 中国",
       "position": "前端负责人",
       "url": "https://www.fumasoft.com",
       "startDate": "2020-12-01",
       "endDate": "2021-09-01",
-      "summary": "SaaS 及混合应用的核心前端开发贡献者。",
+      "summary": "SaaS和混合应用的核心前端贡献者。",
       "highlights": [
-        "将 React Native 应用迁移为混合架构，提升与原生模块的集成灵活性。",
-        "设计并实现 JS Bridge，实现 WebView 与原生层之间的双向通信。",
-        "通过规范化路由与生命周期管理，提升应用稳定性并减少混合交互异常。",
-        "带领由前端、iOS、Android 工程师组成的 5 人跨职能团队，协调迭代规划与技术决策。"
+        "将React Native应用迁移到混合架构，提高与原生模块的集成灵活性。",
+        "设计并实现JS桥，支持WebView与原生层之间的双向通信。",
+        "通过结构化路由和生命周期管理提高应用稳定性，减少混合交互问题。",
+        "领导一个由5名工程师（前端、iOS、Android）组成的跨职能团队，协调冲刺计划和技术决策。"
       ]
     },
     {
-      "name": "阳狮睿德（Publicis Sapient）",
-      "location": "中国上海",
-      "position": "前端开发工程师",
+      "name": "Publicis Sapient",
+      "location": "上海, 中国",
+      "position": "前端工程师",
       "url": "https://www.publicisgroupe.com",
       "startDate": "2019-04-01",
       "endDate": "2020-11-30",
-      "summary": "为全球客户交付企业级营销与品牌数字化平台。",
+      "summary": "为全球客户交付企业级营销和品牌平台。",
       "highlights": [
-        "为华为、万豪及汽车品牌开发响应式营销活动网站与微站。",
-        "使用现代 JS 框架及 Canvas 渲染技术实现移动端交互体验。",
-        "在分布式交付模式下，与新加坡、日本、印度团队跨地区协作。",
-        "辅导实习生，参与前端规范制定及可复用组件设计。"
+        "为华为、万豪和汽车品牌开发响应式活动网站和迷你网站。",
+        "使用现代JS框架和基于画布的渲染实现交互式移动体验。",
+        "在分布式交付模型中与新加坡、日本和印度团队协作。",
+        "指导实习生并为前端标准和可重用组件设计做出贡献。"
       ]
     }
   ],
   "skills": [
     {
-      "name": "前端开发",
+      "name": "前端",
       "keywords": [
         "React",
         "TypeScript",
         "Vue",
         "TailwindCSS",
-        "混合应用架构",
-        "微信小程序"
+        "混合架构",
+        "小程序"
       ]
     },
     {
-      "name": "AI 辅助开发",
+      "name": "AI辅助开发",
       "keywords": [
         "Claude Code",
         "GitHub Copilot",
-        "提示词工程",
-        "LLM 工作流优化"
+        "提示工程",
+        "LLM工作流优化"
       ]
     },
     {
@@ -117,7 +117,7 @@
         "REST API",
         "CI/CD",
         "Docker",
-        "云端部署"
+        "云部署"
       ]
     }
   ],
@@ -127,19 +127,19 @@
       "institution": "上海电机学院",
       "url": "https://www.sdju.edu.cn",
       "area": "电子工程",
-      "studyType": "本科",
+      "studyType": "学士",
       "startDate": "2015-09-01",
       "endDate": "2019-06-01"
     }
   ],
   "projects": [
     {
-      "name": "佳士得微信小程序",
-      "description": "以 Retainer 模式持续为佳士得中国微信小程序提供前端开发服务，跨多个发布周期交付新功能与平台优化。",
+      "name": "Christie's微信小程序",
+      "description": "为Christie's中国微信小程序提供持续的前端开发，交付新功能和平台增强。",
       "highlights": [
-        "开发私洽拍卖模块，支持受邀浏览拍品、出价权限管控及专属拍卖工作流。",
-        "实现多账号管理系统，支持在同一会话中切换买家与专家账号上下文。",
-        "以持续 Retainer 交付模式维护和迭代生产小程序功能。"
+        "开发私人销售模块，支持仅限邀请的拍品浏览、竞标访问控制和独家销售工作流程。",
+        "实现多账户管理系统，支持在单个会话中在买家和专家账户上下文之间切换。",
+        "在持续保留交付模型下维护和迭代生产小程序功能。"
       ],
       "keywords": [
         "Taro",
@@ -149,18 +149,18 @@
       ],
       "startDate": "2023-05-01",
       "roles": [
-        "资深前端开发工程师"
+        "高级前端工程师"
       ],
       "entity": "Christie's",
       "type": "application"
     },
     {
-      "name": "奢侈品牌小程序群",
-      "description": "为多个国际奢侈品牌交付微信小程序项目，涵盖产品展示、零售及售后服务场景。",
+      "name": "奢侈品牌小程序",
+      "description": "为多个国际奢侈品牌交付微信小程序项目，涵盖产品展示、零售和售后服务体验。",
       "highlights": [
-        "开发 Messika 与 Kallista 珠宝品牌小程序，支持产品目录、系列浏览及精品店查找功能。",
-        "开发 Bucherer 小程序，支持腕表系列展示与服务预约。",
-        "实现爱马仕售后服务小程序，支持客户提交维修申请并查看服务进度。"
+        "构建Messika和Kallista珠宝品牌小程序，具有产品目录、系列浏览和精品店定位功能。",
+        "开发Bucherer小程序，支持手表系列展示和服务预约。",
+        "实现Hermès售后服务小程序，使客户能够提交维修请求并跟踪服务状态。"
       ],
       "keywords": [
         "Taro",
@@ -170,40 +170,40 @@
       ],
       "startDate": "2023-05-01",
       "roles": [
-        "资深前端开发工程师"
+        "高级前端工程师"
       ],
       "entity": "Trajectry",
       "type": "application"
     },
     {
-      "name": "Monotype Asia 平台",
-      "description": "开发并本地化 Monotype Asia 网页平台，面向中国大陆、台湾及韩国市场，支持区域用户的字体发现与授权服务。",
+      "name": "Monotype Asia平台",
+      "description": "为中国、台湾和韩国市场开发和本地化Monotype Asia网页平台，支持区域用户的字体发现和许可。",
       "highlights": [
-        "基于共享代码库实现多语言架构，支持简体中文、繁体中文及韩语内容变体。",
-        "处理区域差异化配置、路由及资源管理，确保三个市场的一致用户体验。"
+        "实现支持简体中文、繁体中文和韩文内容变体的多区域架构，基于共享代码库。",
+        "处理特定区域的配置、路由和资产管理，以确保三个市场之间的一致用户体验。"
       ],
       "keywords": [
         "React",
         "Next.js",
         "TypeScript",
-        "国际化（i18n）",
+        "国际化",
         "本地化"
       ],
       "startDate": "2023-05-01",
       "roles": [
-        "资深前端开发工程师"
+        "高级前端工程师"
       ],
       "entity": "Monotype",
       "type": "website"
     },
     {
-      "name": "Tootools 微信小程序",
-      "description": "支持服装定制的全功能微信小程序，具备实时 2D 编辑与 3D 预览能力，为公司核心产品。",
+      "name": "Tootools小程序",
+      "description": "功能齐全的微信小程序，用于定制服装设计，具有实时2D编辑和3D预览，作为公司的核心产品。",
       "highlights": [
-        "基于 React + Fabric.js Canvas 架构，设计支持图层管理、图案/字体/绘画工具及撤销/重做历史的双渲染设计编辑器。",
-        "通过 Three.js Decal Geometry 将用户设计投影至 glTF 服装模型，实现实时 3D 预览。",
-        "使用 Node.js 构建服务端渲染流水线，导出高分辨率印刷级设计资产。",
-        "开发 Uniapp 小程序外壳，实现自定义路由与生命周期管理，支持跨平台无缝交付。"
+        "架构一个支持图层管理、图案/字体/绘图工具和撤销/重做历史的双渲染设计编辑器，使用Fabric.js在基于React的画布上。",
+        "通过Three.js Decal Geometry将用户设计投影到glTF服装模型上，实现实时3D预览。",
+        "构建服务器端渲染管道，使用Node.js导出高分辨率的打印就绪设计资产。",
+        "开发Uniapp小程序外壳，具有自定义路由和生命周期管理，实现无缝跨平台交付。"
       ],
       "keywords": [
         "React.js",
@@ -222,19 +222,19 @@
       "type": "application"
     },
     {
-      "name": "Fumamx 混合应用",
-      "description": "将 React Native SaaS 应用重构为混合架构，提升原生集成灵活性并加快跨平台交付效率。",
+      "name": "Fumamx混合应用",
+      "description": "将React Native SaaS应用重建为混合架构，以提高原生集成灵活性并加速跨平台交付。",
       "highlights": [
-        "设计并实现基于 postMessage 的双向 JS Bridge，支持 WebView 与 iOS/Android 原生层之间的结构化通信。",
-        "在 WebView 层引入 Vue Router 导航管理，将路由逻辑与原生导航栈解耦。",
-        "通过支持独立的 Web 层部署，无需完整原生应用发布即可上线更新，提升发布效率。",
-        "协调由前端、iOS、Android 组成的 5 人团队，推进迭代规划与技术对齐。"
+        "使用postMessage设计并实现双向JS桥，支持WebView与原生iOS/Android层之间的结构化通信。",
+        "在WebView层内引入基于Vue Router的导航管理，将路由与原生导航栈解耦。",
+        "通过允许独立的Web层部署而无需完全的原生应用发布，提高发布速度。",
+        "通过冲刺计划和技术对齐协调一个由5名（前端、iOS、Android）组成的跨职能团队。"
       ],
       "keywords": [
         "React Native",
         "Vue.js",
-        "混合应用架构",
-        "JS Bridge",
+        "混合架构",
+        "JS桥",
         "iOS",
         "Android"
       ],
@@ -247,11 +247,11 @@
       "type": "application"
     },
     {
-      "name": "内部 CMS 网站",
-      "description": "开发内部 CMS 网站并实现模板自动生成，简化内容发布工作流。",
+      "name": "内部CMS网站",
+      "description": "开发一个内部CMS网站，具有自动化模板生成，以简化内容发布工作流程。",
       "highlights": [
-        "集成 gulp-velocity 插件自动生成 Velocity 模板文件，减少手动模板编写工作量。",
-        "交付结构清晰、使用 Gulp 构建自动化的可维护前端代码库。"
+        "集成gulp-velocity插件以自动生成Velocity模板文件，减少手动模板工作量。",
+        "交付一个可维护的前端代码库，具有模块化组件结构和通过Gulp的构建自动化。"
       ],
       "keywords": [
         "Velocity",
@@ -262,87 +262,87 @@
       "startDate": "2021-04-01",
       "endDate": "2021-06-01",
       "roles": [
-        "前端开发工程师"
+        "前端工程师"
       ],
-      "entity": "内部项目",
+      "entity": "内部",
       "type": "website"
     },
     {
-      "name": "DS 汽车官方网站",
-      "description": "开发 DS 汽车中国官方营销网站，包含动效体验与交互式经销商查找功能。",
+      "name": "DS汽车官方网站",
+      "description": "为DS汽车中国开发官方营销网站，具有动画体验和互动经销商定位功能。",
       "highlights": [
-        "使用 CSS 与 JavaScript 构建高还原度入场动效与滚动驱动动画的落地页。",
-        "集成百度地图 SDK，支持自定义标注、聚合渲染及模糊搜索，实现全国经销商查找功能。",
-        "制作微信公众号文章动态图，提升公众号内容互动效果。"
+        "构建高保真动画着陆页，使用CSS和JavaScript实现滚动驱动和进入动画。",
+        "集成百度地图SDK，具有自定义标记、聚类渲染和模糊搜索功能，用于全国经销商定位。",
+        "为微信官方文章活动制作动态图形，增强应用内参与度。"
       ],
       "keywords": [
         "JavaScript",
         "百度地图",
-        "CSS 动画",
+        "CSS动画",
         "微信"
       ],
       "startDate": "2020-04-01",
       "endDate": "2020-08-01",
       "roles": [
-        "前端开发工程师"
+        "前端工程师"
       ],
-      "entity": "DS 汽车",
+      "entity": "DS汽车",
       "type": "website"
     },
     {
-      "name": "IQOS EDM 邮件模板",
-      "description": "为 IQOS 营销活动交付系列响应式 EDM 邮件模板，协调国际团队协作完成。",
+      "name": "IQOS EDM电子邮件模板",
+      "description": "为IQOS营销活动交付一系列响应式EDM电子邮件模板，跨国际团队协调。",
       "highlights": [
-        "使用 MJML 构建响应式跨客户端邮件模板，通过 Litmus 在 15+ 邮件客户端完成兼容性验证。",
-        "使用基于 Gulp 的构建流水线自动化邮件编译与资源内联。",
-        "与跨 3 个时区的分布式利益相关方协调交付。"
+        "使用MJML构建响应式、跨客户端的电子邮件模板，通过Litmus在15个以上的电子邮件客户端中验证。",
+        "使用基于Gulp的构建管道自动化电子邮件编译和资产内联。",
+        "在3个时区内协调交付，与分布式利益相关者沟通。"
       ],
       "keywords": [
         "MJML",
         "Gulp.js",
-        "响应式邮件",
+        "响应式电子邮件",
         "Litmus"
       ],
       "startDate": "2020-04-01",
       "endDate": "2020-05-01",
       "roles": [
-        "前端开发工程师"
+        "前端工程师"
       ],
       "entity": "IQOS",
       "type": "application"
     },
     {
-      "name": "华为营销微站",
-      "description": "为华为营销活动开发多个交互式微站，聚焦移动端优先体验与地图集成。",
+      "name": "华为活动迷你网站",
+      "description": "为华为活动开发多个互动营销迷你网站，专注于移动优先体验和地图集成。",
       "highlights": [
-        "构建基于 Canvas 的交互式移动端体验，支持手势控制与逐帧动画，提升活动互动效果。",
-        "集成腾讯地图 JSSDK，实现自定义门店查找，支持标注聚合与实时搜索。",
-        "扩展 Swiper.js，实现自定义卡片折叠与 3D 翻转过渡效果，精准还原设计稿。",
-        "集成微信 JSSDK，实现社交分享与微信内置浏览器优化。"
+        "构建基于画布的互动移动体验，具有手势控制和帧动画，以增强活动参与度。",
+        "集成腾讯地图JSSDK，具有自定义商店定位器，支持标记聚类和实时搜索。",
+        "扩展Swiper.js，具有自定义卡片折叠和3D翻转过渡，以符合设计规范。",
+        "集成微信JSSDK，实现社交分享和应用内浏览器优化。"
       ],
       "keywords": [
         "React.js",
         "Canvas",
         "腾讯地图",
-        "微信 JSSDK",
+        "微信JSSDK",
         "Swiper.js",
         "Material UI"
       ],
       "startDate": "2019-08-01",
       "endDate": "2020-08-01",
       "roles": [
-        "前端开发工程师"
+        "前端工程师"
       ],
       "entity": "华为",
       "type": "website"
     },
     {
-      "name": "万豪网站中国本地化",
-      "description": "将万豪全球官网适配中国市场，替换不可用的第三方服务并确保功能对齐。",
+      "name": "万豪网站CN本地化",
+      "description": "将万豪的全球网站适配中国市场，替换不支持的第三方服务，确保功能一致性。",
       "highlights": [
-        "使用百度地图 SDK 重新实现基于 Google Maps 的酒店查找功能，为中国用户保留搜索、筛选及标注能力。",
-        "解决中国网络限制导致的跨区域 API 及地理服务不兼容问题。",
-        "在分布式交付模式下与印度开发团队协作，定期进行跨时区同步沟通。"
+        "使用百度地图SDK重新实现基于Google Maps的酒店定位器，保留搜索、过滤和标记功能，以满足中国用户的需求。",
+        "解决中国网络限制引入的跨区域API和地理服务不兼容问题。",
+        "与印度开发团队合作，在分布式交付模型中定期进行跨时区同步。"
       ],
       "keywords": [
         "百度地图",
@@ -353,7 +353,7 @@
       "startDate": "2019-04-01",
       "endDate": "2019-08-01",
       "roles": [
-        "前端开发工程师"
+        "前端工程师"
       ],
       "entity": "万豪",
       "type": "website"
@@ -364,7 +364,7 @@
       "title": "奖学金",
       "date": "2019-06-01",
       "awarder": "上海电机学院",
-      "summary": "因突出的学业成绩及对学校社区的贡献获得表彰。"
+      "summary": "因在学术成就和对大学社区的贡献而获奖。"
     }
   ],
   "publications": [],
@@ -375,22 +375,22 @@
     },
     {
       "language": "英语",
-      "fluency": "职业工作语言"
+      "fluency": "专业工作能力"
     }
   ],
   "interests": [
     {
-      "name": "技术研究",
+      "name": "工程",
       "keywords": [
         "系统设计",
         "前端架构",
-        "开发效率",
-        "技术创新",
-        "实验探索"
+        "开发者生产力",
+        "创新",
+        "实验"
       ]
     },
     {
-      "name": "个人爱好",
+      "name": "爱好",
       "keywords": [
         "旅行",
         "健身",
@@ -404,6 +404,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2026-02-26T00:00:00"
+    "lastModified": "2026-02-27T08:02:27"
   }
 }
