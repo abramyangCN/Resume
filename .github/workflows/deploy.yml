@@ -61,9 +61,8 @@ jobs:
           git push origin HEAD
 
       - name: Export resume to HTML
-        env:
-          REPO_NAME: ${{ github.event.repository.name }}
         run: |
+          REPO_NAME="${GITHUB_REPOSITORY##*/}"
           # Export English version
           pnpm exec resume export resume.html --theme even
           # Export Chinese version
