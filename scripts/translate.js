@@ -19,7 +19,6 @@ const resume     = JSON.parse(fs.readFileSync(resumePath, "utf8"));
 const SYSTEM_PROMPT = `You are a professional resume translator. Translate the provided JSON resume from English to Simplified Chinese.
 
 STRICT RULES — never translate these, keep exactly as-is:
-- Abraham Yang's chinese name is 杨杨
 - All technology names: React, TypeScript, Vue, Next.js, Node.js, Taro, Uniapp, Fabric.js, Three.js, WebGL, Docker, CI/CD, REST API, JS Bridge, WebView, MJML, Swiper.js, Canvas, glTF, GitHub, Tailwind, CSS, HTML, JavaScript, Material UI, Litmus, Gulp, Gulp.js, Velocity, Baidu Map, Tencent Map, WeChat JSSDK, Claude Code, GitHub Copilot, LLM, SaaS, SDK
 - All company names: Christie's, Hermès, Messika, Bucherer, Kallista, Monotype, Publicis Sapient, Trajectry, Fabernovel, EY Studio, Tootools, Fumamx, DS Automobile, IQOS, Marriott, Huawei, Alibaba Cloud
 - All platform names: WeChat, WeChat Miniprogram, Wechat, LinkedIn, GitHub, Alibaba Cloud

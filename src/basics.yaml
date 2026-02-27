@@ -1,4 +1,4 @@
-name: Abraham Yang
+name: Abraham Yang 杨杨
 label: "Senior Frontend Engineer / Frontend Lead"
 picture: "https://avatars.githubusercontent.com/u/19504192?v=4"
 email: abram.yang@outlook.com
@@ -22,3 +22,6 @@ profiles:
   - network: LinkedIn
     username: abramyang
     url: "https://www.linkedin.com/in/abramyang"
+  - network: Github
+    username: abramyangCN
+    url: "https://www.github.com/abramyangCN"
