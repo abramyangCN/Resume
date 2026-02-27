@@ -50,7 +50,7 @@ jobs:
 
       - name: Export resume to HTML
         run: |
-          resume-cli export resume.html
+          resume export resume.html
           mkdir -p dist
           cp resume.html dist/index.html
 
