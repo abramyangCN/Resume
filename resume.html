@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Abraham Yang</title>
+    <meta name="description" content="Senior Frontend Engineer with 7+ years of experience building scalable web, hybrid, and mini-program applications. Specialized in React ecosystem, interactive rendering (2D/3D), and SaaS systems architecture. Led small cross-functional teams (up to 5 engineers) delivering production-ready systems serving 10k+ users. Strong ownership mindset across frontend architecture, hybrid integration, CI/CD pipelines, and cloud deployment. Experienced collaborating across APAC regions and driving engineering standards." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <style>
+      @font-face {
+  font-family: 'Octicons';
+  font-style: normal;
+  font-weight: normal;
+  src: url('data:font/woff;base64,d09GRgABAAAAAAWgAAsAAAAABVQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAGAAAABgDxIMrGNtYXAAAAFoAAAAXAAAAFzxE/EEZ2FzcAAAAcQAAAAIAAAACAAAABBnbHlmAAABzAAAAXwAAAF8tFkZ3GhlYWQAAANIAAAANgAAADYYMkpraGhlYQAAA4AAAAAkAAAAJAfBA8dobXR4AAADpAAAABgAAAAYDAAAAWxvY2EAAAO8AAAADgAAAA4A5gBgbWF4cAAAA8wAAAAgAAAAIAAKAFBuYW1lAAAD7AAAAZIAAAGSxxxndHBvc3QAAAWAAAAAIAAAACAAAwAAAAMCqwGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAA8NcDwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEAEAAAAAMAAgAAgAEAAEAIPBS8Nf//f//AAAAAAAg8FLw1//9//8AAf/jD7IPLgADAAEAAAAAAAAAAAAAAAAAAQAB//8ADwABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAwAIAAsAAGwAAEzQ3PgE3NjMyFx4BFxYVFAcOAQcGIyInLgEnJgAUFEYvLjU1Li9GFBQUFEYvLjU1Li9GFBQBwDUuL0YUFBQURi8uNTUuL0YUFBQURi8uAAMAAQCZA/8DDgAzAEEATQAAAQcFHgEVFAYHBQYiJyUVHgEVFAYHHgEdARQiPQE0NjcuATU0Njc1Jy4BNTQ2NyUyNjMyFgEXIxYyPwEVFAYjIiY1ExQWMzI2NTQmIyIGAgcBAekHCQkH/hcDBwP+xw4SBQQEBYAFBAQFEg5vBwkJBwHpAgMCAQT++vUBBgwF9ZZqapbBJhobJSUbGiYDDQGZAgwHCAwCmAEBYl0IHRIJEAcHEAmlGhqlCRAHBxAJER4IcSQCCwgICwKZAQH+s0wCAkygMDAwMAFADRMTDQ0TEwAAAAEAAAABAADtMnsXXw889QALBAAAAAAA2oqDMAAAAADaioMwAAAAAAP/Aw4AAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAAA/8AAQAAAAAAAAAAAAAAAAAAAAYEAAAAAAAAAAAAAAACAAAAAgAAAAQAAAEAAAAAAAoAFAAeAEwAvgAAAAEAAAAGAE4AAwAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQAIAAAAAQAAAAAAAgAHAGkAAQAAAAAAAwAIADkAAQAAAAAABAAIAH4AAQAAAAAABQALABgAAQAAAAAABgAIAFEAAQAAAAAACgAaAJYAAwABBAkAAQAQAAgAAwABBAkAAgAOAHAAAwABBAkAAwAQAEEAAwABBAkABAAQAIYAAwABBAkABQAWACMAAwABBAkABgAQAFkAAwABBAkACgA0ALBvY3RpY29ucwBvAGMAdABpAGMAbwBuAHNWZXJzaW9uIDEuMABWAGUAcgBzAGkAbwBuACAAMQAuADBvY3RpY29ucwBvAGMAdABpAGMAbwBuAHNvY3RpY29ucwBvAGMAdABpAGMAbwBuAHNSZWd1bGFyAFIAZQBnAHUAbABhAHJvY3RpY29ucwBvAGMAdABpAGMAbwBuAHNGb250IGdlbmVyYXRlZCBieSBJY29Nb29uLgBGAG8AbgB0ACAAZwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAC4AAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA')
+    format('woff');
+}
+html {
+  font-size: 14px;
+}
+body {
+  background: #fff;
+  font-family: Lato, sans-serif;
+  margin: 0 0 6rem;
+}
+a {
+  color: #2ecc71;
+}
+a:focus,
+a:hover {
+  color: #f1c40f;
+  text-decoration: none;
+}
+section {
+  margin-top: 2rem;
+}
+li {
+  line-height: 1.8;
+  list-style: none;
+}
+li:before {
+  content: '\f052';
+  float: left;
+  font: 13px Octicons;
+  margin-top: 6px;
+  margin-left: -20px;
+  opacity: 0.1;
+  position: absolute;
+}
+blockquote {
+  border-left: 5px solid #e7e9ec;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+em {
+  color: #95a5a6;
+  font-weight: normal;
+  font-style: normal;
+}
+h4 span:first-child {
+  font-weight: bold;
+}
+.container {
+  max-width: 750px;
+  padding: 0 2rem;
+}
+.col-sm-6 {
+  margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+  margin-top: 1rem;
+}
+.col-sm-12 + .col-sm-12 {
+  margin-top: 2rem;
+}
+.keywords {
+  padding: 0;
+}
+.keywords > li {
+  display: inline-block;
+  background: #f4f6f6;
+  margin: 0 4px 4px 0;
+  padding: 2px 8px;
+}
+.keywords > li:before {
+  content: none;
+}
+#header {
+  background: #f4f6f6;
+  padding: 4rem 0;
+  margin-bottom: 4rem;
+}
+#header h2 {
+  color: #95a5a6;
+}
+#content h3 {
+  color: #f1c40f;
+}
+#content aside {
+  text-align: right;
+  padding-right: 2rem;
+}
+#work .position,
+#volunteer .position {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#education .area {
+  font-weight: bold;
+}
+#education .area:before {
+  content: '\f0d7';
+  font: 16px Octicons;
+  margin-right: 6px;
+  vertical-align: bottom;
+}
+#education .studyType {
+  margin-left: 25px;
+}
+#awards .summary,
+#publications .summary,
+#projects .description {
+  margin-top: 8px;
+}
+#publications .website a:before {
+  content: attr(href);
+}
+#interests .row,
+#skills .row {
+  display: block;
+}
+#interests .col-sm-6,
+#skills .col-sm-6 {
+  float: left;
+}
+
+@media (min-width: 480px) {
+  .strike-through {
+    border-top: 1px solid #f4f6f6;
+    height: 20px;
+    margin-top: 12px;
+    margin-bottom: -2px;
+    position: relative;
+  }
+  .strike-through span,
+  .strike-through a {
+    background: #fff;
+    position: absolute;
+  }
+  .strike-through span:first-child {
+    padding-right: 20px;
+    margin-top: -12px;
+  }
+  .strike-through span + span {
+    font-size: 1rem;
+    margin-top: -10px;
+    padding-left: 20px;
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .col-sm-6:last-child {
+    margin-bottom: 0;
+  }
+  #content aside {
+    margin-bottom: 20px;
+    padding-right: 0;
+    text-align: left;
+  }
+  #publications .website a:before {
+    content: 'View publication';
+  }
+}
+@media (max-width: 480px) {
+  .date {
+    font-size: 1rem;
+  }
+  .strike-through span:first-child {
+    margin-bottom: 7px;
+  }
+  .strike-through span {
+    display: block;
+  }
+  #header {
+    margin-bottom: 10px;
+    padding: 40px 0;
+  }
+  #actions {
+    display: none;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-9 offset-sm-3">
+                <h1>Abraham Yang</h1>
+                <h2>Senior Frontend Engineer | Frontend Lead</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="content" class="container">
+        <section id="contact" class="row">
+          <aside class="col-sm-3">
+            <h3>Contact</h3>
+          </aside>
+          <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-6">
+                  <strong>Email</strong>
+                  <div class="email">
+                    <a href="mailto:abram.yang@outlook.com">abram.yang@outlook.com</a>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <strong>Phone</strong>
+                  <div class="phone">
+                    +86 159-2109-8538
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <strong>Website</strong>
+                  <div class="website">
+                    <a href="https://iay.me">https://iay.me</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+          <section id="about" class="row">
+            <aside class="col-sm-3">
+              <h3>About</h3>
+            </aside>
+            <div class="col-sm-9">
+              <p>Senior Frontend Engineer with 7+ years of experience building scalable web, hybrid, and mini-program applications. Specialized in React ecosystem, interactive rendering (2D/3D), and SaaS systems architecture. Led small cross-functional teams (up to 5 engineers) delivering production-ready systems serving 10k+ users. Strong ownership mindset across frontend architecture, hybrid integration, CI/CD pipelines, and cloud deployment. Experienced collaborating across APAC regions and driving engineering standards.</p>
+            </div>
+          </section>
+          <section id="profiles" class="row">
+            <aside class="col-sm-3">
+              <h3>Profiles</h3>
+            </aside>
+            <div class="col-sm-9">
+              <div class="row">
+                  <div class="col-sm-6">
+                      <strong class="network">LinkedIn</strong>
+                      <div class="username">
+                          <div class="url">
+                            <a href="https://www.linkedin.com/in/abramyang">abramyang</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+
+        <section id="work" class="row">
+          <aside class="col-sm-3">
+            <h3>Work</h3>
+          </aside>
+          <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-12">
+                  <h4 class="strike-through">
+                    <span>Shanghai RJY Information Technology Co., Ltd.</span>
+                    <span class="date">
+                      Sep 2021 — Feb 2023
+                    </span>
+                  </h4>
+                    <div class="position">
+                      Senior/Leader Frontend Software Engineer
+                    </div>
+                    <div class="summary">
+                      <p>Led frontend development for DIY clothing application and Wechat Miniapp, managed agile teams and built CI/CD infrastructure.</p>
+                    </div>
+                    <h4>Highlights</h4>
+                    <ul class="highlights">
+                        <li class="bullet">Built a DIY clothing App with React.js + Fabric.js + Three.js for clients to create customized clothes.</li>
+                        <li class="bullet">Wechat Miniapp with Uniapp + Vue.js + UniUI. Handling communication between WebView and Wechat Miniapp.</li>
+                        <li class="bullet">Agile Management by using scrum framework, lead business team to confirm and analyze requirements, and executive team to complete.</li>
+                        <li class="bullet">Used fabric.js on server side with node.js for exporting high quality images.</li>
+                        <li class="bullet">Purchased Alibaba cloud server, put domain on record, project implementing, and built CI/CD environment.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12">
+                  <h4 class="strike-through">
+                    <span>Shanghai Fumasoft Co., Ltd.</span>
+                    <span class="date">
+                      Dec 2020 — Sep 2021
+                    </span>
+                  </h4>
+                    <div class="website float-right">
+                      <a href="https://www.fumasoft.com">https://www.fumasoft.com</a>
+                    </div>
+                    <div class="position">
+                      Senior/Leader Frontend Software Engineer
+                    </div>
+                    <div class="summary">
+                      <p>Developed SaaS application with Vue.js, managed cross-platform engineering team, and maintained company&#x27;s main product.</p>
+                    </div>
+                    <h4>Highlights</h4>
+                    <ul class="highlights">
+                        <li class="bullet">SaaS application with vue.js. Created js bridge for hybrid app enabling both sending and receiving of messages each other so that solved issues caused by network and latency and improved the UX.</li>
+                        <li class="bullet">Charged and fixed various issues of company main product, and collaborated with team members using version control systems such as Git to organize modifications and assign tasks.</li>
+                        <li class="bullet">Managed 1 FE engineer, 1 iOS engineer and 1 Android engineer; led and designed the method for every sprint and requirement.</li>
+                        <li class="bullet">Built CMS website by using velocity template, creating gulp task to compile velocity template automatically to save lots of time to debug.</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12">
+                  <h4 class="strike-through">
+                    <span>Publicis Groupe - Publicis Sapient</span>
+                    <span class="date">
+                      Apr 2019 — Aug 2021
+                    </span>
+                  </h4>
+                    <div class="website float-right">
+                      <a href="https://www.publicisgroupe.com/">https://www.publicisgroupe.com/</a>
+                    </div>
+                    <div class="position">
+                      Software Engineer
+                    </div>
+                    <div class="summary">
+                      <p>Developed UI for enterprise clients including Huawei, Marriott, DS Auto and SAIC Motor, collaborating with international teams across multiple time zones.</p>
+                    </div>
+                    <h4>Highlights</h4>
+                    <ul class="highlights">
+                        <li class="bullet">Worked on the UI of various Minisites for Huawei events and meetings like MBBF, HDC, etc.</li>
+                        <li class="bullet">Built creative and effective official websites for Marriott, DS auto and SAIC motor.</li>
+                        <li class="bullet">Collaborated with team members from 3 time zones (Singapore, Japan, India) and produced EDMs made on time.</li>
+                        <li class="bullet">Managed SWE interns; led the launches and frameworks of their projects; received outstanding feedback on my leadership and problem-solving.</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="education" class="row">
+          <aside class="col-sm-3">
+            <h3>Education</h3>
+          </aside>
+          <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-12">
+                  <h4 class="strike-through">
+                    <span>Shanghai Dianji University</span>
+                    <span class="date">
+                      Sep 2015 — Jun 2019
+                    </span>
+                  </h4>
+                    <div class="website float-right">
+                      <a href="https://www.sdju.edu.cn">https://www.sdju.edu.cn</a>
+                    </div>
+                    <div class="area">
+                      Electronic Engineering
+                    </div>
+                    <div class="studyType">
+                      Bachelor
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="row">
+          <aside class="col-sm-3">
+            <h3>Projects</h3>
+          </aside>
+          <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-12">
+                  <h4 class="strike-through">
+                    <span>Tootools Miniapp</span>
+                    <span class="date">
+                      Sep 2021 — Feb 2023
+                    </span>
+                  </h4>
+                  <div class="roles">
+                    <strong>Frontend Engineer</strong>
+                      <em>at</em>
+                      <strong>Tootools</strong>
+                  </div>
+                    <div class="description">
+                      <p>Miniapp for customizing clothes with 2D editing and 3D preview.</p>
+                    </div>
+                    <h4>Highlights</h4>
+                    <ul class="highlights">
+                        <li class="bullet">Built routing management and interaction system with React.js</li>
+                        <li class="bullet">Implemented pattern, font, drawing, layer management and undo/redo using Fabric.js</li>
+                        <li class="bullet">Built 3D preview with Three.js using Decal Geometry on glTF models</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12">
+                  <h4 class="strike-through">
+                    <span>Fumamx Hybrid App</span>
+                    <span class="date">
+                      Dec 2020 — Sep 2021
+                    </span>
+                  </h4>
+                  <div class="roles">
+                    <strong>Frontend Lead, Project Coordinator</strong>
+                      <em>at</em>
+                      <strong>Fumamx</strong>
+                  </div>
+                    <div class="description">
+                      <p>Migrated React Native application to hybrid architecture.</p>
+                    </div>
+                    <h4>Highlights</h4>
+                    <ul class="highlights">
+                        <li class="bullet">Migrated React Native app to hybrid app for better native integration</li>
+                        <li class="bullet">Implemented Vue router listeners and wrapped postMessage bridge</li>
+                        <li class="bullet">Managed iOS and Android engineers for cross-team collaboration</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12">
+                  <h4 class="strike-through">
+                    <span>CMS Website</span>
+                    <span class="date">
+                      Apr 2021 — Jun 2021
+                    </span>
+                  </h4>
+                  <div class="roles">
+                    <strong>Frontend Engineer</strong>
+                      <em>at</em>
+                      <strong>Internal CMS</strong>
+                  </div>
+                    <div class="description">
+                      <p>CMS website development with velocity template automation.</p>
+                    </div>
+                    <h4>Highlights</h4>
+                    <ul class="highlights">
+                        <li class="bullet">Integrated gulp-velocity plugin for auto-generating velocity files</li>
+                        <li class="bullet">Planned development roadmap using Gantt chart</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12">
+                  <h4 class="strike-through">
+                    <span>DS Automobile Official Website</span>
+                    <span class="date">
+                      Apr 2020 — Aug 2020
+                    </span>
+                  </h4>
+                  <div class="roles">
+                    <strong>Frontend Developer</strong>
+                      <em>at</em>
+                      <strong>DS Automobile</strong>
+                  </div>
+                    <div class="description">
+                      <p>Official website development for DS Automobile.</p>
+                    </div>
+                    <h4>Highlights</h4>
+                    <ul class="highlights">
+                        <li class="bullet">Implemented animated landing page and dealer search system</li>
+                        <li class="bullet">Integrated Baidu Map with markers, clusters and fuzzy search</li>
+                        <li class="bullet">Designed animations for WeChat official articles</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12">
+                  <h4 class="strike-through">
+                    <span>IQOS EDM Email Template</span>
+                    <span class="date">
+                      Apr 2020 — May 2020
+                    </span>
+                  </h4>
+                  <div class="roles">
+                    <strong>Frontend Developer</strong>
+                      <em>at</em>
+                      <strong>IQOS</strong>
+                  </div>
+                    <div class="description">
+                      <p>Responsive EDM email template development.</p>
+                    </div>
+                    <h4>Highlights</h4>
+                    <ul class="highlights">
+                        <li class="bullet">Collaborated across 3 time zones</li>
+                        <li class="bullet">Built responsive email templates using media queries</li>
+                        <li class="bullet">Used MJML and Litmus for debugging and cross-platform validation</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12">
+                  <h4 class="strike-through">
+                    <span>Huawei Minisites</span>
+                    <span class="date">
+                      Aug 2019 — Aug 2020
+                    </span>
+                  </h4>
+                  <div class="roles">
+                    <strong>Frontend Developer</strong>
+                      <em>at</em>
+                      <strong>Huawei</strong>
+                  </div>
+                    <div class="description">
+                      <p>Marketing minisites for Huawei campaign.</p>
+                    </div>
+                    <h4>Highlights</h4>
+                    <ul class="highlights">
+                        <li class="bullet">Built interactive canvas-based mobile experience</li>
+                        <li class="bullet">Integrated Tencent Map JSSDK with store locator</li>
+                        <li class="bullet">Refactored Swiper with custom card collapse and flip effects</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12">
+                  <h4 class="strike-through">
+                    <span>The Marriott CN Locale</span>
+                    <span class="date">
+                      Apr 2019 — Aug 2019
+                    </span>
+                  </h4>
+                  <div class="roles">
+                    <strong>Frontend Developer</strong>
+                      <em>at</em>
+                      <strong>Marriott</strong>
+                  </div>
+                    <div class="description">
+                      <p>CN locale adaptation for Marriott website.</p>
+                    </div>
+                    <h4>Highlights</h4>
+                    <ul class="highlights">
+                        <li class="bullet">Collaborated with Indian team across regions</li>
+                        <li class="bullet">Re-implemented Google Map features using Baidu Map</li>
+                        <li class="bullet">Handled cross-region communication and reporting</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="awards" class="row">
+          <aside class="col-sm-3">
+            <h3>Awards</h3>
+          </aside>
+          <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-12">
+                  <h4 class="strike-through">
+                    <span>Scholarships</span>
+                  </h4>
+                    <div class="date float-right">
+                      <em>Awarded</em>
+                      Jun 2019
+                    </div>
+                    <div class="awarder">
+                      <em>by</em>
+                      <strong>Shanghai Dianji University</strong>
+                    </div>
+                    <div class="summary">
+                      Awarded for distinguished academic achievements and contributions to the university community.
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="skills" class="row">
+          <aside class="col-sm-3">
+            <h3>Skills</h3>
+          </aside>
+          <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="name">
+                      <h4>Soft Skills</h4>
+                    </div>
+                    <ul class="keywords">
+                      <li>Leadership</li><li>Technique Sharing</li><li>Contributor</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <div class="name">
+                      <h4>Technique</h4>
+                    </div>
+                    <ul class="keywords">
+                      <li>Typescript</li><li>HTML5</li><li>CSS3/SASS/Tailwind</li><li>React.js</li><li>Vue.js</li><li>Fabric.js</li><li>Node.js</li><li>Three.js</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <div class="name">
+                      <h4>Tools</h4>
+                    </div>
+                    <ul class="keywords">
+                      <li>Claude Code</li><li>Copilot</li><li>Git</li><li>GPT</li><li>Webpack</li><li>Figma</li><li>Jira</li><li>Photoshop</li><li>Illustrator</li><li>Microsoft Office</li><li>Gulp</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="languages" class="row">
+          <aside class="col-sm-3">
+            <h3>Languages</h3>
+          </aside>
+          <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="language">
+                      <strong>Mandarin Chinese</strong>
+                    </div>
+                    <div class="fluency">
+                      Native speaker
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="language">
+                      <strong>English</strong>
+                    </div>
+                    <div class="fluency">
+                      Working Proficiency
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="interests" class="row">
+          <aside class="col-sm-3">
+            <h3>Interests</h3>
+          </aside>
+          <div class="col-sm-9">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="name">
+                      <h4>Research and Development</h4>
+                    </div>
+                    <ul class="keywords">
+                      <li>Innovations</li><li>Experimentation</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <div class="name">
+                      <h4>Hobbies</h4>
+                    </div>
+                    <ul class="keywords">
+                      <li>Traveling</li><li>Fitness</li><li>Music</li><li>Photography</li><li>Calligraphy</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </section>
+
+    </div>
+  </body>
+</html>

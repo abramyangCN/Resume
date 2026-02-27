@@ -1,0 +1,66 @@
+- name: "Trajectry (formerly EY Fabernovel China)"
+  location: "Shanghai, China"
+  position: Senior Frontend Engineer
+  startDate: "2023-05-01"
+  summary: >-
+    Frontend engineer at a boutique digital consultancy serving global luxury
+    and premium brands. Originally part of the Fabernovel network; following
+    EY's global acquisition (rebrand as EY Studio), the China entity operated
+    independently and rebrand as Trajectry (legal entity: Trajectry China limited).
+  highlights:
+    - "Delivered ongoing retainer frontend development for Christie's WeChat Miniprogram,
+      including private sale workflows and multi-account management features."
+    - "Developed WeChat Miniprograms for luxury and premium brands including Messika,
+      Bucherer, Hermès (after-sales service), and Kallista using Taro, React, and TypeScript."
+    - "Built and localized the Monotype Asia platform across CN, TW, and KR markets,
+      handling regional content configuration and locale-specific adaptations."
+    - "Maintained and iterated on live production Miniprograms under an agile retainer
+      model with continuous client feedback cycles."
+
+- name: Shanghai RJY Information Technology Co., Ltd
+  location: "Shanghai, China"
+  position: Frontend Lead
+  startDate: "2021-09-01"
+  endDate: "2023-02-15"
+  summary: >-
+    Led frontend architecture and delivery for DIY clothing application and
+    WeChat Miniprogram, managed agile teams and built CI/CD infrastructure.
+  highlights:
+    - "Designed and implemented a customizable clothing platform with real-time 2D/3D
+      rendering using React, Fabric.js, and Three.js."
+    - "Architected layer-based editing system (undo/redo, asset pipeline, rendering
+      abstraction) for interactive design workflow."
+    - "Built server-side rendering pipeline with Node.js to export high-resolution design assets."
+    - "Established CI/CD pipeline and managed production deployment on Alibaba Cloud."
+
+- name: Shanghai Fumasoft Co., Ltd
+  location: "Shanghai, China"
+  position: Frontend Lead
+  url: "https://www.fumasoft.com"
+  startDate: "2020-12-01"
+  endDate: "2021-09-01"
+  summary: Core frontend contributor for SaaS and hybrid applications.
+  highlights:
+    - "Migrated React Native application to hybrid architecture, improving integration
+      flexibility with native modules."
+    - "Designed and implemented JS bridge for bidirectional communication between
+      WebView and native layers."
+    - "Improved application stability and reduced hybrid interaction issues through
+      structured routing and lifecycle management."
+    - "Led a cross-functional team of 5 engineers (FE, iOS, Android) coordinating
+      sprint planning and technical decisions."
+
+- name: Publicis Sapient
+  location: "Shanghai, China"
+  position: Frontend Engineer
+  url: "https://www.publicisgroupe.com"
+  startDate: "2019-04-01"
+  endDate: "2020-11-30"
+  summary: Delivered enterprise-grade marketing and brand platforms for global clients.
+  highlights:
+    - "Developed responsive campaign websites and minisites for Huawei, Marriott,
+      and automotive brands."
+    - "Implemented interactive mobile experiences using modern JS frameworks and
+      canvas-based rendering."
+    - "Collaborated across Singapore, Japan, and India teams in distributed delivery model."
+    - "Mentored interns and contributed to frontend standards and reusable component design."

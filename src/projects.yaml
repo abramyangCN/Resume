@@ -1,0 +1,175 @@
+- name: "Christie's WeChat Miniprogram"
+  description: >-
+    Ongoing retainer frontend development for Christie's China WeChat Miniprogram,
+    delivering new features and platform enhancements across release cycles.
+  highlights:
+    - "Developed private sale module enabling invitation-only lot browsing,
+      bidding access control, and exclusive sale workflows."
+    - "Implemented multi-account management system supporting switching between
+      buyer and specialist account contexts within a single session."
+    - "Maintained and iterated on production miniprogram features under a
+      continuous retainer delivery model."
+  keywords: [Taro, React, TypeScript, WeChat Miniprogram]
+  startDate: "2023-05-01"
+  roles: [Senior Frontend Engineer]
+  entity: "Christie's"
+  type: application
+
+- name: Luxury Brand Miniprograms
+  description: >-
+    Delivered WeChat Miniprogram projects for multiple international luxury brands,
+    covering product showcase, retail, and after-sales service experiences.
+  highlights:
+    - "Built Messika and Kallista jewelry brand miniprograms featuring product catalog,
+      collection browsing, and boutique locator."
+    - "Developed Bucherer miniprogram supporting watch collection display and
+      service appointment booking."
+    - "Implemented Hermès after-sales service miniprogram, enabling customers to
+      submit repair requests and track service status."
+  keywords: [Taro, React, TypeScript, WeChat Miniprogram]
+  startDate: "2023-05-01"
+  roles: [Senior Frontend Engineer]
+  entity: Trajectry
+  type: application
+
+- name: Monotype Asia Platform
+  description: >-
+    Developed and localized the Monotype Asia web platform for CN, TW, and KR
+    markets, supporting font discovery and licensing for regional users.
+  highlights:
+    - "Implemented multi-locale architecture supporting Simplified Chinese, Traditional
+      Chinese, and Korean content variants from a shared codebase."
+    - "Handled region-specific configuration, routing, and asset management to
+      ensure consistent UX across three markets."
+  keywords: [React, Next.js, TypeScript, i18n, Localization]
+  startDate: "2023-05-01"
+  roles: [Senior Frontend Engineer]
+  entity: Monotype
+  type: website
+
+- name: Tootools Miniprogram
+  description: >-
+    Full-featured WeChat Miniprogram for custom clothing design with real-time
+    2D editing and 3D preview, serving as the core product of the company.
+  highlights:
+    - "Architected a dual-rendering design editor supporting layer management,
+      pattern/font/drawing tools, and undo/redo history using Fabric.js on a React-based canvas."
+    - "Implemented real-time 3D preview by projecting user designs onto glTF clothing
+      models via Three.js Decal Geometry."
+    - "Built server-side rendering pipeline with Node.js to export high-resolution
+      print-ready design assets."
+    - "Developed the Uniapp Miniprogram shell with custom routing and lifecycle
+      management for seamless cross-platform delivery."
+  keywords: [React.js, Fabric.js, Three.js, Uniapp, Node.js, WeChat Miniprogram]
+  startDate: "2021-09-15"
+  endDate: "2023-02-15"
+  roles: [Frontend Lead]
+  entity: Tootools
+  type: application
+
+- name: Fumamx Hybrid App
+  description: >-
+    Rebuilt a React Native SaaS application into a hybrid architecture to improve
+    native integration flexibility and accelerate cross-platform delivery.
+  highlights:
+    - "Designed and implemented a bidirectional JS bridge using postMessage, enabling
+      structured communication between WebView and native iOS/Android layers."
+    - "Introduced Vue Router-based navigation management within the WebView layer,
+      decoupling routing from native navigation stacks."
+    - "Improved release velocity by enabling independent web-layer deployments
+      without full native app releases."
+    - "Coordinated a cross-functional team of 5 (FE, iOS, Android) through sprint
+      planning and technical alignment."
+  keywords: [React Native, Vue.js, Hybrid Architecture, JS Bridge, iOS, Android]
+  startDate: "2020-12-01"
+  endDate: "2021-09-01"
+  roles: [Frontend Lead]
+  entity: Fumamx
+  type: application
+
+- name: Internal CMS Website
+  description: >-
+    Developed an internal CMS website with automated template generation to
+    streamline content publishing workflows.
+  highlights:
+    - "Integrated gulp-velocity plugin to auto-generate Velocity template files,
+      reducing manual templating effort."
+    - "Delivered a maintainable frontend codebase with modular component structure
+      and build automation via Gulp."
+  keywords: [Velocity, Gulp, CMS, JavaScript]
+  startDate: "2021-04-01"
+  endDate: "2021-06-01"
+  roles: [Frontend Engineer]
+  entity: Internal
+  type: website
+
+- name: DS Automobile Official Website
+  description: >-
+    Developed the official marketing website for DS Automobile China, featuring
+    animated experiences and an interactive dealer locator.
+  highlights:
+    - "Built a high-fidelity animated landing page with scroll-driven and entrance
+      animations using CSS and JavaScript."
+    - "Integrated Baidu Map SDK with custom markers, cluster rendering, and fuzzy
+      search for a nationwide dealer locator."
+    - "Produced motion graphics for WeChat official article campaigns, enhancing
+      in-app engagement."
+  keywords: [JavaScript, Baidu Map, CSS Animation, WeChat]
+  startDate: "2020-04-01"
+  endDate: "2020-08-01"
+  roles: [Frontend Engineer]
+  entity: DS Automobile
+  type: website
+
+- name: IQOS EDM Email Templates
+  description: >-
+    Delivered a series of responsive EDM email templates for IQOS marketing
+    campaigns, coordinated across international teams.
+  highlights:
+    - "Built responsive, cross-client email templates using MJML, validated across
+      15+ email clients via Litmus."
+    - "Automated email compilation and asset inlining with a Gulp-based build pipeline."
+    - "Coordinated deliverables across 3 time zones with distributed stakeholders."
+  keywords: [MJML, Gulp.js, Responsive Email, Litmus]
+  startDate: "2020-04-01"
+  endDate: "2020-05-01"
+  roles: [Frontend Engineer]
+  entity: IQOS
+  type: application
+
+- name: Huawei Campaign Minisites
+  description: >-
+    Developed multiple interactive marketing minisites for Huawei campaigns,
+    focusing on mobile-first experiences and map integration.
+  highlights:
+    - "Built canvas-based interactive mobile experience with gesture controls and
+      frame animation for campaign engagement."
+    - "Integrated Tencent Map JSSDK with custom store locator, supporting marker
+      clustering and real-time search."
+    - "Extended Swiper.js with custom card collapse and 3D flip transitions to
+      match design specifications."
+    - "Integrated WeChat JSSDK for social sharing and in-app browser optimization."
+  keywords: [React.js, Canvas, Tencent Map, WeChat JSSDK, Swiper.js, Material UI]
+  startDate: "2019-08-01"
+  endDate: "2020-08-01"
+  roles: [Frontend Engineer]
+  entity: Huawei
+  type: website
+
+- name: Marriott Website CN Localization
+  description: >-
+    Adapted Marriott's global website for the Chinese market, replacing unsupported
+    third-party services and ensuring feature parity.
+  highlights:
+    - "Re-implemented Google Maps-based hotel locator with Baidu Map SDK, preserving
+      search, filtering, and marker functionality for CN users."
+    - "Resolved cross-region API and geo-service incompatibilities introduced by
+      China's web restrictions."
+    - "Collaborated with the India-based development team in a distributed delivery
+      model with regular cross-timezone syncs."
+  keywords: [Baidu Map, Localization, JavaScript, Cross-region Collaboration]
+  startDate: "2019-04-01"
+  endDate: "2019-08-01"
+  roles: [Frontend Engineer]
+  entity: Marriott
+  type: website

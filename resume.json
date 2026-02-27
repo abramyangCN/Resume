@@ -1,0 +1,409 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.2.1/schema.json",
+  "basics": {
+    "name": "Abraham Yang",
+    "label": "Senior Frontend Engineer | Frontend Lead",
+    "picture": "https://avatars.githubusercontent.com/u/19504192?v=4",
+    "email": "abram.yang@outlook.com",
+    "phone": "+86 159-2109-8538",
+    "url": "https://iay.me",
+    "summary": "Senior Frontend Engineer with 7+ years of experience building scalable web, hybrid, and mini-program applications. Specialized in React ecosystem, interactive rendering (2D/3D), and SaaS systems architecture. Led small cross-functional teams (up to 5 engineers) delivering production-ready systems serving 10k+ users. Strong ownership mindset across frontend architecture, hybrid integration, CI/CD pipelines, and cloud deployment. Experienced collaborating across APAC regions and driving engineering standards.",
+    "location": {
+      "city": "Shanghai",
+      "region": "Shanghai",
+      "countryCode": "CN"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "abramyang",
+        "url": "https://www.linkedin.com/in/abramyang"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Trajectry (formerly EY Fabernovel China)",
+      "location": "Shanghai, China",
+      "position": "Senior Frontend Engineer",
+      "startDate": "2023-05-01",
+      "summary": "Frontend engineer at a boutique digital consultancy serving global luxury and premium brands. Originally part of the Fabernovel network; following EY's global acquisition (rebrand as EY Studio), the China entity operated independently and rebrand as Trajectry (legal entity: Trajectry China limited).",
+      "highlights": [
+        "Delivered ongoing retainer frontend development for Christie's WeChat Miniprogram, including private sale workflows and multi-account management features.",
+        "Developed WeChat Miniprograms for luxury and premium brands including Messika, Bucherer, Hermès (after-sales service), and Kallista using Taro, React, and TypeScript.",
+        "Built and localized the Monotype Asia platform across CN, TW, and KR markets, handling regional content configuration and locale-specific adaptations.",
+        "Maintained and iterated on live production Miniprograms under an agile retainer model with continuous client feedback cycles."
+      ]
+    },
+    {
+      "name": "Shanghai RJY Information Technology Co., Ltd",
+      "location": "Shanghai, China",
+      "position": "Frontend Lead",
+      "startDate": "2021-09-01",
+      "endDate": "2023-02-15",
+      "summary": "Led frontend architecture and delivery for DIY clothing application and WeChat Miniprogram, managed agile teams and built CI/CD infrastructure.",
+      "highlights": [
+        "Designed and implemented a customizable clothing platform with real-time 2D/3D rendering using React, Fabric.js, and Three.js.",
+        "Architected layer-based editing system (undo/redo, asset pipeline, rendering abstraction) for interactive design workflow.",
+        "Built server-side rendering pipeline with Node.js to export high-resolution design assets.",
+        "Established CI/CD pipeline and managed production deployment on Alibaba Cloud."
+      ]
+    },
+    {
+      "name": "Shanghai Fumasoft Co., Ltd",
+      "location": "Shanghai, China",
+      "position": "Frontend Lead",
+      "url": "https://www.fumasoft.com",
+      "startDate": "2020-12-01",
+      "endDate": "2021-09-01",
+      "summary": "Core frontend contributor for SaaS and hybrid applications.",
+      "highlights": [
+        "Migrated React Native application to hybrid architecture, improving integration flexibility with native modules.",
+        "Designed and implemented JS bridge for bidirectional communication between WebView and native layers.",
+        "Improved application stability and reduced hybrid interaction issues through structured routing and lifecycle management.",
+        "Led a cross-functional team of 5 engineers (FE, iOS, Android) coordinating sprint planning and technical decisions."
+      ]
+    },
+    {
+      "name": "Publicis Sapient",
+      "location": "Shanghai, China",
+      "position": "Frontend Engineer",
+      "url": "https://www.publicisgroupe.com",
+      "startDate": "2019-04-01",
+      "endDate": "2020-11-30",
+      "summary": "Delivered enterprise-grade marketing and brand platforms for global clients.",
+      "highlights": [
+        "Developed responsive campaign websites and minisites for Huawei, Marriott, and automotive brands.",
+        "Implemented interactive mobile experiences using modern JS frameworks and canvas-based rendering.",
+        "Collaborated across Singapore, Japan, and India teams in distributed delivery model.",
+        "Mentored interns and contributed to frontend standards and reusable component design."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend",
+      "keywords": [
+        "React",
+        "TypeScript",
+        "Vue",
+        "TailwindCSS",
+        "Hybrid Architecture",
+        "Mini Program"
+      ]
+    },
+    {
+      "name": "AI-assisted Development",
+      "keywords": [
+        "Claude Code",
+        "GitHub Copilot",
+        "Prompt Engineering",
+        "LLM Workflow Optimization"
+      ]
+    },
+    {
+      "name": "Rendering & Visualization",
+      "keywords": [
+        "Fabric.js",
+        "Three.js",
+        "WebGL",
+        "Interactive Editing Systems"
+      ]
+    },
+    {
+      "name": "Backend & Infrastructure",
+      "keywords": [
+        "Node.js",
+        "REST APIs",
+        "CI/CD",
+        "Docker",
+        "Cloud Deployment"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Shanghai Dianji University",
+      "url": "https://www.sdju.edu.cn",
+      "area": "Electronic Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2015-09-01",
+      "endDate": "2019-06-01"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Christie's WeChat Miniprogram",
+      "description": "Ongoing retainer frontend development for Christie's China WeChat Miniprogram, delivering new features and platform enhancements across release cycles.",
+      "highlights": [
+        "Developed private sale module enabling invitation-only lot browsing, bidding access control, and exclusive sale workflows.",
+        "Implemented multi-account management system supporting switching between buyer and specialist account contexts within a single session.",
+        "Maintained and iterated on production miniprogram features under a continuous retainer delivery model."
+      ],
+      "keywords": [
+        "Taro",
+        "React",
+        "TypeScript",
+        "WeChat Miniprogram"
+      ],
+      "startDate": "2023-05-01",
+      "roles": [
+        "Senior Frontend Engineer"
+      ],
+      "entity": "Christie's",
+      "type": "application"
+    },
+    {
+      "name": "Luxury Brand Miniprograms",
+      "description": "Delivered WeChat Miniprogram projects for multiple international luxury brands, covering product showcase, retail, and after-sales service experiences.",
+      "highlights": [
+        "Built Messika and Kallista jewelry brand miniprograms featuring product catalog, collection browsing, and boutique locator.",
+        "Developed Bucherer miniprogram supporting watch collection display and service appointment booking.",
+        "Implemented Hermès after-sales service miniprogram, enabling customers to submit repair requests and track service status."
+      ],
+      "keywords": [
+        "Taro",
+        "React",
+        "TypeScript",
+        "WeChat Miniprogram"
+      ],
+      "startDate": "2023-05-01",
+      "roles": [
+        "Senior Frontend Engineer"
+      ],
+      "entity": "Trajectry",
+      "type": "application"
+    },
+    {
+      "name": "Monotype Asia Platform",
+      "description": "Developed and localized the Monotype Asia web platform for CN, TW, and KR markets, supporting font discovery and licensing for regional users.",
+      "highlights": [
+        "Implemented multi-locale architecture supporting Simplified Chinese, Traditional Chinese, and Korean content variants from a shared codebase.",
+        "Handled region-specific configuration, routing, and asset management to ensure consistent UX across three markets."
+      ],
+      "keywords": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "i18n",
+        "Localization"
+      ],
+      "startDate": "2023-05-01",
+      "roles": [
+        "Senior Frontend Engineer"
+      ],
+      "entity": "Monotype",
+      "type": "website"
+    },
+    {
+      "name": "Tootools Miniprogram",
+      "description": "Full-featured WeChat Miniprogram for custom clothing design with real-time 2D editing and 3D preview, serving as the core product of the company.",
+      "highlights": [
+        "Architected a dual-rendering design editor supporting layer management, pattern/font/drawing tools, and undo/redo history using Fabric.js on a React-based canvas.",
+        "Implemented real-time 3D preview by projecting user designs onto glTF clothing models via Three.js Decal Geometry.",
+        "Built server-side rendering pipeline with Node.js to export high-resolution print-ready design assets.",
+        "Developed the Uniapp Miniprogram shell with custom routing and lifecycle management for seamless cross-platform delivery."
+      ],
+      "keywords": [
+        "React.js",
+        "Fabric.js",
+        "Three.js",
+        "Uniapp",
+        "Node.js",
+        "WeChat Miniprogram"
+      ],
+      "startDate": "2021-09-15",
+      "endDate": "2023-02-15",
+      "roles": [
+        "Frontend Lead"
+      ],
+      "entity": "Tootools",
+      "type": "application"
+    },
+    {
+      "name": "Fumamx Hybrid App",
+      "description": "Rebuilt a React Native SaaS application into a hybrid architecture to improve native integration flexibility and accelerate cross-platform delivery.",
+      "highlights": [
+        "Designed and implemented a bidirectional JS bridge using postMessage, enabling structured communication between WebView and native iOS/Android layers.",
+        "Introduced Vue Router-based navigation management within the WebView layer, decoupling routing from native navigation stacks.",
+        "Improved release velocity by enabling independent web-layer deployments without full native app releases.",
+        "Coordinated a cross-functional team of 5 (FE, iOS, Android) through sprint planning and technical alignment."
+      ],
+      "keywords": [
+        "React Native",
+        "Vue.js",
+        "Hybrid Architecture",
+        "JS Bridge",
+        "iOS",
+        "Android"
+      ],
+      "startDate": "2020-12-01",
+      "endDate": "2021-09-01",
+      "roles": [
+        "Frontend Lead"
+      ],
+      "entity": "Fumamx",
+      "type": "application"
+    },
+    {
+      "name": "Internal CMS Website",
+      "description": "Developed an internal CMS website with automated template generation to streamline content publishing workflows.",
+      "highlights": [
+        "Integrated gulp-velocity plugin to auto-generate Velocity template files, reducing manual templating effort.",
+        "Delivered a maintainable frontend codebase with modular component structure and build automation via Gulp."
+      ],
+      "keywords": [
+        "Velocity",
+        "Gulp",
+        "CMS",
+        "JavaScript"
+      ],
+      "startDate": "2021-04-01",
+      "endDate": "2021-06-01",
+      "roles": [
+        "Frontend Engineer"
+      ],
+      "entity": "Internal",
+      "type": "website"
+    },
+    {
+      "name": "DS Automobile Official Website",
+      "description": "Developed the official marketing website for DS Automobile China, featuring animated experiences and an interactive dealer locator.",
+      "highlights": [
+        "Built a high-fidelity animated landing page with scroll-driven and entrance animations using CSS and JavaScript.",
+        "Integrated Baidu Map SDK with custom markers, cluster rendering, and fuzzy search for a nationwide dealer locator.",
+        "Produced motion graphics for WeChat official article campaigns, enhancing in-app engagement."
+      ],
+      "keywords": [
+        "JavaScript",
+        "Baidu Map",
+        "CSS Animation",
+        "WeChat"
+      ],
+      "startDate": "2020-04-01",
+      "endDate": "2020-08-01",
+      "roles": [
+        "Frontend Engineer"
+      ],
+      "entity": "DS Automobile",
+      "type": "website"
+    },
+    {
+      "name": "IQOS EDM Email Templates",
+      "description": "Delivered a series of responsive EDM email templates for IQOS marketing campaigns, coordinated across international teams.",
+      "highlights": [
+        "Built responsive, cross-client email templates using MJML, validated across 15+ email clients via Litmus.",
+        "Automated email compilation and asset inlining with a Gulp-based build pipeline.",
+        "Coordinated deliverables across 3 time zones with distributed stakeholders."
+      ],
+      "keywords": [
+        "MJML",
+        "Gulp.js",
+        "Responsive Email",
+        "Litmus"
+      ],
+      "startDate": "2020-04-01",
+      "endDate": "2020-05-01",
+      "roles": [
+        "Frontend Engineer"
+      ],
+      "entity": "IQOS",
+      "type": "application"
+    },
+    {
+      "name": "Huawei Campaign Minisites",
+      "description": "Developed multiple interactive marketing minisites for Huawei campaigns, focusing on mobile-first experiences and map integration.",
+      "highlights": [
+        "Built canvas-based interactive mobile experience with gesture controls and frame animation for campaign engagement.",
+        "Integrated Tencent Map JSSDK with custom store locator, supporting marker clustering and real-time search.",
+        "Extended Swiper.js with custom card collapse and 3D flip transitions to match design specifications.",
+        "Integrated WeChat JSSDK for social sharing and in-app browser optimization."
+      ],
+      "keywords": [
+        "React.js",
+        "Canvas",
+        "Tencent Map",
+        "WeChat JSSDK",
+        "Swiper.js",
+        "Material UI"
+      ],
+      "startDate": "2019-08-01",
+      "endDate": "2020-08-01",
+      "roles": [
+        "Frontend Engineer"
+      ],
+      "entity": "Huawei",
+      "type": "website"
+    },
+    {
+      "name": "Marriott Website CN Localization",
+      "description": "Adapted Marriott's global website for the Chinese market, replacing unsupported third-party services and ensuring feature parity.",
+      "highlights": [
+        "Re-implemented Google Maps-based hotel locator with Baidu Map SDK, preserving search, filtering, and marker functionality for CN users.",
+        "Resolved cross-region API and geo-service incompatibilities introduced by China's web restrictions.",
+        "Collaborated with the India-based development team in a distributed delivery model with regular cross-timezone syncs."
+      ],
+      "keywords": [
+        "Baidu Map",
+        "Localization",
+        "JavaScript",
+        "Cross-region Collaboration"
+      ],
+      "startDate": "2019-04-01",
+      "endDate": "2019-08-01",
+      "roles": [
+        "Frontend Engineer"
+      ],
+      "entity": "Marriott",
+      "type": "website"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Scholarships",
+      "date": "2019-06-01",
+      "awarder": "Shanghai Dianji University",
+      "summary": "Awarded for distinguished academic achievements and contributions to the university community."
+    }
+  ],
+  "publications": [],
+  "languages": [
+    {
+      "language": "Mandarin Chinese",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional Working Proficiency"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Engineering",
+      "keywords": [
+        "System Design",
+        "Frontend Architecture",
+        "Developer Productivity",
+        "Innovations",
+        "Experimentation"
+      ]
+    },
+    {
+      "name": "Hobbies",
+      "keywords": [
+        "Traveling",
+        "Fitness",
+        "Music",
+        "Photography",
+        "Calligraphy"
+      ]
+    }
+  ],
+  "references": [],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2026-02-26T05:03:20"
+  }
+}

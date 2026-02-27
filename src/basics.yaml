@@ -1,0 +1,24 @@
+name: Abraham Yang
+label: "Senior Frontend Engineer / Frontend Lead"
+picture: "https://avatars.githubusercontent.com/u/19504192?v=4"
+email: abram.yang@outlook.com
+phone: "+86 159-2109-8538"
+url: "https://iay.me"
+summary: >-
+  Senior Frontend Engineer with 7+ years of experience building scalable web,
+  hybrid, and mini-program applications. Specialized in React ecosystem,
+  interactive rendering (2D/3D), and SaaS systems architecture. Led small
+  cross-functional teams (up to 5 engineers) delivering production-ready systems
+  serving 10k+ users. Strong ownership mindset across frontend architecture,
+  hybrid integration, CI/CD pipelines, and cloud deployment. Experienced
+  collaborating across APAC regions and driving engineering standards.
+
+location:
+  city: Shanghai
+  region: Shanghai
+  countryCode: CN
+
+profiles:
+  - network: LinkedIn
+    username: abramyang
+    url: "https://www.linkedin.com/in/abramyang"

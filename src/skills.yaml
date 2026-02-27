@@ -1,0 +1,11 @@
+- name: Frontend
+  keywords: [React, TypeScript, Vue, TailwindCSS, Hybrid Architecture, Mini Program]
+
+- name: AI-assisted Development
+  keywords: [Claude Code, GitHub Copilot, Prompt Engineering, LLM Workflow Optimization]
+
+- name: Rendering & Visualization
+  keywords: [Fabric.js, Three.js, WebGL, Interactive Editing Systems]
+
+- name: Backend & Infrastructure
+  keywords: [Node.js, REST APIs, CI/CD, Docker, Cloud Deployment]

@@ -1,0 +1,17 @@
+{
+  "name": "json-resume",
+  "version": "1.0.0",
+  "description": "My JSON Resume",
+  "scripts": {
+    "build": "node build.js",
+    "readme": "node build.js && node scripts/generate-readme.js",
+    "export": "node build.js && resume export resume.html --theme even",
+    "validate": "node build.js && resume validate",
+    "serve": "node build.js && resume serve --theme even"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.1",
+    "jsonresume-theme-even": "^0.14.0",
+    "resume-cli": "^3.1.2"
+  }
+}
