@@ -49,12 +49,25 @@ jobs:
           git diff --staged --quiet || git commit -m "chore: update README [skip ci]"
           git push origin HEAD
 
+      - name: Check if resume.json changed
+        id: check_resume
+        run: |
+          if git diff --quiet HEAD^ HEAD -- resume.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "resume.json unchanged, skipping translation"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "resume.json changed, will translate"
+          fi
+
       - name: Translate resume to Chinese
+        if: steps.check_resume.outputs.changed == 'true'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/translate.js
 
       - name: Commit translated resume
+        if: steps.check_resume.outputs.changed == 'true'
         run: |
           git add resume.zh.json
           git diff --staged --quiet || git commit -m "chore: update resume.zh.json [skip ci]"
