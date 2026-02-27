@@ -64,4 +64,4 @@ Senior Frontend Engineer with 7+ years of experience building scalable web, hybr
 
 ---
 
-*Generated automatically from [resume.json](./resume.json) · Last updated: 2026-02-26*
+*Generated automatically from [resume.json](./resume.json) · Last updated: 2026-02-27*
