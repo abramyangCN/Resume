@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+      <title>Abraham Yang</title>
+      <meta name="description" content="Senior Frontend Engineer with 7+ years of experience building scalable web, hybrid, and mini-program applications. Specialized in React ecosystem, interactive rendering (2D/3D), and SaaS systems architecture. Led small cross-functional teams (up to 5 engineers) delivering production-ready systems serving 10k+ users. Strong ownership mindset across frontend architecture, hybrid integration, CI/CD pipelines, and cloud deployment. Experienced collaborating across APAC regions and driving engineering standards.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
+    <style>:root {
+  color-scheme: light dark;
+
+  --color-background: #ffffff;
+  --color-primary: #212529;
+  --color-secondary: #95a5a6;
+  --color-muted: #f4f6f6;
+  --color-accent: #f1c40f;
+  --color-link: #2ecc71;
+
+  --scale-ratio: 1.25;
+  --scale0: 1rem;
+  --scale1: calc(var(--scale0) * var(--scale-ratio));
+  --scale2: calc(var(--scale1) * var(--scale-ratio));
+  --scale3: calc(var(--scale2) * var(--scale-ratio));
+  --scale4: calc(var(--scale3) * var(--scale-ratio));
+  --scale5: calc(var(--scale4) * var(--scale-ratio));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #181a1b;
+    --color-primary: #d1cdc7;
+    --color-secondary: #aaa398;
+    --color-muted: #1e2021;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-primary);
+  display: grid;
+  font: 1em/1.5 Lato, sans-serif;
+  gap: 2em;
+  grid-template-columns:
+    [full-start]
+    1fr
+    [main-start side-start]
+    minmax(min-content, 12em)
+    [side-end content-start]
+    minmax(min-content, 36em)
+    [main-end content-end]
+    1fr
+    [full-end];
+  grid-template-rows: auto [content] 0;
+  margin-bottom: 4em;
+}
+
+body::before {
+  content: '';
+  grid-column: full;
+  grid-row: content;
+}
+
+ol,
+ul {
+  padding-left: 1em;
+}
+
+li + li {
+  margin-top: 0.4em;
+}
+
+li::marker,
+.network {
+  color: var(--color-secondary);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:focus,
+a:hover {
+  color: var(--color-accent);
+}
+
+h1,
+h2,
+h3,
+h5 {
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--scale5);
+}
+
+h2 {
+  color: var(--color-secondary);
+  font-size: var(--scale4);
+}
+
+h3 {
+  color: var(--color-accent);
+  font-size: var(--scale3);
+  grid-column: side;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: var(--scale2);
+}
+
+h5 {
+  font-size: var(--scale1);
+}
+
+h6 {
+  font-size: var(--scale0);
+}
+
+blockquote {
+  border-left: 0.2em solid var(--color-muted);
+  padding-left: 1em;
+}
+
+cite {
+  color: var(--color-secondary);
+  font-style: inherit;
+}
+
+cite::before {
+  content: '— ';
+}
+
+svg {
+  margin-right: 0.2em;
+  vertical-align: -0.2em;
+}
+
+.masthead {
+  background: var(--color-muted);
+  display: inherit;
+  gap: inherit;
+  grid-column: full;
+  grid-template-columns: inherit;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.masthead > *,
+section {
+  grid-column: main;
+}
+
+.masthead > img {
+  border-radius: 50%;
+  margin: 0 auto;
+  max-width: 12em;
+}
+
+article > * + *,
+blockquote > * + * {
+  margin-top: 0.6em;
+}
+
+.stack {
+  display: grid;
+  gap: 1.5em;
+}
+
+.icon-list {
+  list-style: none;
+  padding: 0;
+}
+
+.grid-list {
+  display: grid;
+  gap: 1em;
+}
+
+.spaced-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.spaced-list::before {
+  border-bottom: 1px solid var(--color-muted);
+  content: '';
+  flex-grow: 1;
+  margin: 0 1em;
+  order: 1;
+}
+
+.spaced-list > :nth-child(2) {
+  order: 2;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.tag-list > li {
+  background: var(--color-muted);
+  margin: 0 0.2em 0.2em 0;
+  padding: 0.2em 0.6em;
+}
+
+@media print, (min-width: 48em) {
+  h3 {
+    text-align: right;
+    margin-bottom: inherit;
+  }
+
+  .masthead {
+    text-align: inherit;
+  }
+
+  .masthead > *,
+  section {
+    grid-column: content;
+  }
+
+  .masthead img {
+    grid-column: side;
+    grid-row: span 2;
+    max-width: 100%;
+  }
+
+  section {
+    display: contents;
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+  </head>
+  <body>
+      <header class="masthead">
+        <div>
+            <h1>Abraham Yang</h1>
+            <h2>Senior Frontend Engineer / Frontend Lead</h2>
+        </div>
+          <article>
+            <p>Senior Frontend Engineer with 7+ years of experience building scalable web, hybrid, and mini-program applications. Specialized in React ecosystem, interactive rendering (2D/3D), and SaaS systems architecture. Led small cross-functional teams (up to 5 engineers) delivering production-ready systems serving 10k+ users. Strong ownership mindset across frontend architecture, hybrid integration, CI/CD pipelines, and cloud deployment. Experienced collaborating across APAC regions and driving engineering standards.</p>
+          </article>
+        <ul class="icon-list">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Shanghai, China
+              </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:abram.yang@outlook.com">abram.yang@outlook.com</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:+8615921098538">+86 159-2109-8538</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              <a href="https://iay.me">iay.me</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  <a href="https://www.linkedin.com/in/abramyang">abramyang</a>
+                <span class="network">(LinkedIn)</span>
+            </li>
+        </ul>
+      </header>
+
+      <section id="work">
+        <h3>Work</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Senior Frontend Engineer</h4>
+                  <span>
+                    <time datetime="2023-05-01">May 2023</time> –
+                    Present
+                  </span>
+                </div>
+                <strong>Trajectry (formerly EY Fabernovel China)</strong>
+              </header>
+                <p>Frontend engineer at a boutique digital consultancy serving global luxury and premium brands. Originally part of the Fabernovel network; following EY's global acquisition (rebrand as EY Studio), the China entity operated independently and rebrand as Trajectry (legal entity: Trajectry China limited).</p>
+                <ul>
+                    <li><p>Delivered ongoing retainer frontend development for Christie's WeChat Miniprogram, including private sale workflows and multi-account management features.</p></li>
+                    <li><p>Developed WeChat Miniprograms for luxury and premium brands including Messika, Bucherer, Hermès (after-sales service), and Kallista using Taro, React, and TypeScript.</p></li>
+                    <li><p>Built and localized the Monotype Asia platform across CN, TW, and KR markets, handling regional content configuration and locale-specific adaptations.</p></li>
+                    <li><p>Maintained and iterated on live production Miniprograms under an agile retainer model with continuous client feedback cycles.</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Frontend Lead</h4>
+                  <span>
+                    <time datetime="2021-09-01">Sep 2021</time> –
+                    <time datetime="2023-02-15">Feb 2023</time>
+                  </span>
+                </div>
+                <strong>Shanghai RJY Information Technology Co., Ltd</strong>
+              </header>
+                <p>Led frontend architecture and delivery for DIY clothing application and WeChat Miniprogram, managed agile teams and built CI/CD infrastructure.</p>
+                <ul>
+                    <li><p>Designed and implemented a customizable clothing platform with real-time 2D/3D rendering using React, Fabric.js, and Three.js.</p></li>
+                    <li><p>Architected layer-based editing system (undo/redo, asset pipeline, rendering abstraction) for interactive design workflow.</p></li>
+                    <li><p>Built server-side rendering pipeline with Node.js to export high-resolution design assets.</p></li>
+                    <li><p>Established CI/CD pipeline and managed production deployment on Alibaba Cloud.</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Frontend Lead</h4>
+                  <span>
+                    <time datetime="2020-12-01">Dec 2020</time> –
+                    <time datetime="2021-09-01">Sep 2021</time>
+                  </span>
+                </div>
+                <strong><a href="https://www.fumasoft.com">Shanghai Fumasoft Co., Ltd</a></strong>
+              </header>
+                <p>Core frontend contributor for SaaS and hybrid applications.</p>
+                <ul>
+                    <li><p>Migrated React Native application to hybrid architecture, improving integration flexibility with native modules.</p></li>
+                    <li><p>Designed and implemented JS bridge for bidirectional communication between WebView and native layers.</p></li>
+                    <li><p>Improved application stability and reduced hybrid interaction issues through structured routing and lifecycle management.</p></li>
+                    <li><p>Led a cross-functional team of 5 engineers (FE, iOS, Android) coordinating sprint planning and technical decisions.</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Frontend Engineer</h4>
+                  <span>
+                    <time datetime="2019-04-01">Apr 2019</time> –
+                    <time datetime="2020-11-30">Nov 2020</time>
+                  </span>
+                </div>
+                <strong><a href="https://www.publicisgroupe.com">Publicis Sapient</a></strong>
+              </header>
+                <p>Delivered enterprise-grade marketing and brand platforms for global clients.</p>
+                <ul>
+                    <li><p>Developed responsive campaign websites and minisites for Huawei, Marriott, and automotive brands.</p></li>
+                    <li><p>Implemented interactive mobile experiences using modern JS frameworks and canvas-based rendering.</p></li>
+                    <li><p>Collaborated across Singapore, Japan, and India teams in distributed delivery model.</p></li>
+                    <li><p>Mentored interns and contributed to frontend standards and reusable component design.</p></li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="education">
+        <h3>Education</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4><a href="https://www.sdju.edu.cn">Shanghai Dianji University</a></h4>
+                  <span>
+                    <time datetime="2015-09-01">Sep 2015</time> –
+                    <time datetime="2019-06-01">Jun 2019</time>
+                  </span>
+                </div>
+                  <strong>Electronic Engineering</strong>
+              </header>
+                <p>Bachelor</p>
+            </article>
+        </div>
+      </section>
+      <section id="projects">
+        <h3>Projects</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Christie&#x27;s WeChat Miniprogram</h4>
+                  <span>
+                    <time datetime="2023-05-01">May 2023</time> –
+                    Present
+                  </span>
+                </div>
+                <span>
+                    <strong>Senior Frontend Engineer</strong>
+                    at <strong>Christie&#x27;s</strong>
+                </span>
+              </header>
+                <p>Ongoing retainer frontend development for Christie's China WeChat Miniprogram, delivering new features and platform enhancements across release cycles.</p>
+                <ul>
+                    <li><p>Developed private sale module enabling invitation-only lot browsing, bidding access control, and exclusive sale workflows.</p></li>
+                    <li><p>Implemented multi-account management system supporting switching between buyer and specialist account contexts within a single session.</p></li>
+                    <li><p>Maintained and iterated on production miniprogram features under a continuous retainer delivery model.</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Luxury Brand Miniprograms</h4>
+                  <span>
+                    <time datetime="2023-05-01">May 2023</time> –
+                    Present
+                  </span>
+                </div>
+                <span>
+                    <strong>Senior Frontend Engineer</strong>
+                    at <strong>Trajectry</strong>
+                </span>
+              </header>
+                <p>Delivered WeChat Miniprogram projects for multiple international luxury brands, covering product showcase, retail, and after-sales service experiences.</p>
+                <ul>
+                    <li><p>Built Messika and Kallista jewelry brand miniprograms featuring product catalog, collection browsing, and boutique locator.</p></li>
+                    <li><p>Developed Bucherer miniprogram supporting watch collection display and service appointment booking.</p></li>
+                    <li><p>Implemented Hermès after-sales service miniprogram, enabling customers to submit repair requests and track service status.</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Monotype Asia Platform</h4>
+                  <span>
+                    <time datetime="2023-05-01">May 2023</time> –
+                    Present
+                  </span>
+                </div>
+                <span>
+                    <strong>Senior Frontend Engineer</strong>
+                    at <strong>Monotype</strong>
+                </span>
+              </header>
+                <p>Developed and localized the Monotype Asia web platform for CN, TW, and KR markets, supporting font discovery and licensing for regional users.</p>
+                <ul>
+                    <li><p>Implemented multi-locale architecture supporting Simplified Chinese, Traditional Chinese, and Korean content variants from a shared codebase.</p></li>
+                    <li><p>Handled region-specific configuration, routing, and asset management to ensure consistent UX across three markets.</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Tootools Miniprogram</h4>
+                  <span>
+                    <time datetime="2021-09-15">Sep 2021</time> –
+                    <time datetime="2023-02-15">Feb 2023</time>
+                  </span>
+                </div>
+                <span>
+                    <strong>Frontend Lead</strong>
+                    at <strong>Tootools</strong>
+                </span>
+              </header>
+                <p>Full-featured WeChat Miniprogram for custom clothing design with real-time 2D editing and 3D preview, serving as the core product of the company.</p>
+                <ul>
+                    <li><p>Architected a dual-rendering design editor supporting layer management, pattern/font/drawing tools, and undo/redo history using Fabric.js on a React-based canvas.</p></li>
+                    <li><p>Implemented real-time 3D preview by projecting user designs onto glTF clothing models via Three.js Decal Geometry.</p></li>
+                    <li><p>Built server-side rendering pipeline with Node.js to export high-resolution print-ready design assets.</p></li>
+                    <li><p>Developed the Uniapp Miniprogram shell with custom routing and lifecycle management for seamless cross-platform delivery.</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Fumamx Hybrid App</h4>
+                  <span>
+                    <time datetime="2020-12-01">Dec 2020</time> –
+                    <time datetime="2021-09-01">Sep 2021</time>
+                  </span>
+                </div>
+                <span>
+                    <strong>Frontend Lead</strong>
+                    at <strong>Fumamx</strong>
+                </span>
+              </header>
+                <p>Rebuilt a React Native SaaS application into a hybrid architecture to improve native integration flexibility and accelerate cross-platform delivery.</p>
+                <ul>
+                    <li><p>Designed and implemented a bidirectional JS bridge using postMessage, enabling structured communication between WebView and native iOS/Android layers.</p></li>
+                    <li><p>Introduced Vue Router-based navigation management within the WebView layer, decoupling routing from native navigation stacks.</p></li>
+                    <li><p>Improved release velocity by enabling independent web-layer deployments without full native app releases.</p></li>
+                    <li><p>Coordinated a cross-functional team of 5 (FE, iOS, Android) through sprint planning and technical alignment.</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Internal CMS Website</h4>
+                  <span>
+                    <time datetime="2021-04-01">Apr 2021</time> –
+                    <time datetime="2021-06-01">Jun 2021</time>
+                  </span>
+                </div>
+                <span>
+                    <strong>Frontend Engineer</strong>
+                    at <strong>Internal</strong>
+                </span>
+              </header>
+                <p>Developed an internal CMS website with automated template generation to streamline content publishing workflows.</p>
+                <ul>
+                    <li><p>Integrated gulp-velocity plugin to auto-generate Velocity template files, reducing manual templating effort.</p></li>
+                    <li><p>Delivered a maintainable frontend codebase with modular component structure and build automation via Gulp.</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>DS Automobile Official Website</h4>
+                  <span>
+                    <time datetime="2020-04-01">Apr 2020</time> –
+                    <time datetime="2020-08-01">Aug 2020</time>
+                  </span>
+                </div>
+                <span>
+                    <strong>Frontend Engineer</strong>
+                    at <strong>DS Automobile</strong>
+                </span>
+              </header>
+                <p>Developed the official marketing website for DS Automobile China, featuring animated experiences and an interactive dealer locator.</p>
+                <ul>
+                    <li><p>Built a high-fidelity animated landing page with scroll-driven and entrance animations using CSS and JavaScript.</p></li>
+                    <li><p>Integrated Baidu Map SDK with custom markers, cluster rendering, and fuzzy search for a nationwide dealer locator.</p></li>
+                    <li><p>Produced motion graphics for WeChat official article campaigns, enhancing in-app engagement.</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>IQOS EDM Email Templates</h4>
+                  <span>
+                    <time datetime="2020-04-01">Apr 2020</time> –
+                    <time datetime="2020-05-01">May 2020</time>
+                  </span>
+                </div>
+                <span>
+                    <strong>Frontend Engineer</strong>
+                    at <strong>IQOS</strong>
+                </span>
+              </header>
+                <p>Delivered a series of responsive EDM email templates for IQOS marketing campaigns, coordinated across international teams.</p>
+                <ul>
+                    <li><p>Built responsive, cross-client email templates using MJML, validated across 15+ email clients via Litmus.</p></li>
+                    <li><p>Automated email compilation and asset inlining with a Gulp-based build pipeline.</p></li>
+                    <li><p>Coordinated deliverables across 3 time zones with distributed stakeholders.</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Huawei Campaign Minisites</h4>
+                  <span>
+                    <time datetime="2019-08-01">Aug 2019</time> –
+                    <time datetime="2020-08-01">Aug 2020</time>
+                  </span>
+                </div>
+                <span>
+                    <strong>Frontend Engineer</strong>
+                    at <strong>Huawei</strong>
+                </span>
+              </header>
+                <p>Developed multiple interactive marketing minisites for Huawei campaigns, focusing on mobile-first experiences and map integration.</p>
+                <ul>
+                    <li><p>Built canvas-based interactive mobile experience with gesture controls and frame animation for campaign engagement.</p></li>
+                    <li><p>Integrated Tencent Map JSSDK with custom store locator, supporting marker clustering and real-time search.</p></li>
+                    <li><p>Extended Swiper.js with custom card collapse and 3D flip transitions to match design specifications.</p></li>
+                    <li><p>Integrated WeChat JSSDK for social sharing and in-app browser optimization.</p></li>
+                </ul>
+            </article>
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Marriott Website CN Localization</h4>
+                  <span>
+                    <time datetime="2019-04-01">Apr 2019</time> –
+                    <time datetime="2019-08-01">Aug 2019</time>
+                  </span>
+                </div>
+                <span>
+                    <strong>Frontend Engineer</strong>
+                    at <strong>Marriott</strong>
+                </span>
+              </header>
+                <p>Adapted Marriott's global website for the Chinese market, replacing unsupported third-party services and ensuring feature parity.</p>
+                <ul>
+                    <li><p>Re-implemented Google Maps-based hotel locator with Baidu Map SDK, preserving search, filtering, and marker functionality for CN users.</p></li>
+                    <li><p>Resolved cross-region API and geo-service incompatibilities introduced by China's web restrictions.</p></li>
+                    <li><p>Collaborated with the India-based development team in a distributed delivery model with regular cross-timezone syncs.</p></li>
+                </ul>
+            </article>
+        </div>
+      </section>
+      <section id="awards">
+        <h3>Awards</h3>
+        <div class="stack">
+            <article>
+              <header>
+                <div class="spaced-list">
+                  <h4>Scholarships</h4>
+                    <time datetime="2019-06-01">Jun 2019</time>
+                </div>
+                  <span>
+                    Awarded by <strong>Shanghai Dianji University</strong>
+                  </span>
+              </header>
+                <p>Awarded for distinguished academic achievements and contributions to the university community.</p>
+            </article>
+        </div>
+      </section>
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Frontend</h4>
+                <ul class="tag-list">
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>Vue</li>
+                    <li>TailwindCSS</li>
+                    <li>Hybrid Architecture</li>
+                    <li>Mini Program</li>
+                </ul>
+            </div>
+            <div>
+                <h4>AI-assisted Development</h4>
+                <ul class="tag-list">
+                    <li>Claude Code</li>
+                    <li>GitHub Copilot</li>
+                    <li>Prompt Engineering</li>
+                    <li>LLM Workflow Optimization</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Rendering &amp; Visualization</h4>
+                <ul class="tag-list">
+                    <li>Fabric.js</li>
+                    <li>Three.js</li>
+                    <li>WebGL</li>
+                    <li>Interactive Editing Systems</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Backend &amp; Infrastructure</h4>
+                <ul class="tag-list">
+                    <li>Node.js</li>
+                    <li>REST APIs</li>
+                    <li>CI/CD</li>
+                    <li>Docker</li>
+                    <li>Cloud Deployment</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section id="languages">
+        <h3>Languages</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Mandarin Chinese</h4>
+              Native
+            </div>
+            <div>
+                <h4>English</h4>
+              Professional Working Proficiency
+            </div>
+        </div>
+      </section>
+      <section id="interests">
+        <h3>Interests</h3>
+        <div class="grid-list">
+            <div>
+                <h4>Engineering</h4>
+                <ul class="tag-list">
+                    <li>System Design</li>
+                    <li>Frontend Architecture</li>
+                    <li>Developer Productivity</li>
+                    <li>Innovations</li>
+                    <li>Experimentation</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Hobbies</h4>
+                <ul class="tag-list">
+                    <li>Traveling</li>
+                    <li>Fitness</li>
+                    <li>Music</li>
+                    <li>Photography</li>
+                    <li>Calligraphy</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+  </body>
+</html>
