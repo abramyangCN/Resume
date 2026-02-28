@@ -3,13 +3,14 @@
     Ongoing retainer frontend development for Christie's China WeChat Miniprogram,
     delivering new features and platform enhancements across release cycles.
   highlights:
-    - "Led incremental Taro migration from v1 → v3 → v4, refactoring class components to React Hooks and modernizing the build pipeline without disrupting ongoing delivery."
+    - "Led incremental Taro migration from v1 → v3 → v4, refactoring class components to React Hooks and modernizing the build workflow without disrupting ongoing delivery."
     - "Adopted Redux for global state management, establishing a predictable data flow across complex auction and account workflows."
     - "Designed a WebSocket manager module handling dual concurrent connections (global + local), with automatic reconnection and session recovery to ensure reliability during online auctions."
     - "Refactored multi-account module to support switching among authorized sub-accounts under an enterprise account, with per-account permission control and isolated state management."
     - "Built a reusable UI component library inspired by shadcn/ui, keeping components fully owned and customizable per page."
     - "Restructured the codebase into a pnpm workspaces monorepo to support a LINE LIFF page alongside the WeChat Miniprogram, extracting shared components, utilities, and types into independent packages reused across both platforms."
-  keywords: [Taro, React, TypeScript, WeChat Miniprogram]
+    - "Introduced Orval to auto-generate fully-typed API client code from the backend's OpenAPI spec, eliminating manual type maintenance and keeping the client in sync with API changes across release cycles."
+  keywords: [Taro, React, TypeScript, WeChat Miniprogram, Orval]
   startDate: "2023-05-01"
   roles: [Senior Frontend Engineer]
   entity: "Christie's"
@@ -24,7 +25,7 @@
     - "Implemented real-time in-app chat via WebSocket with message queuing, delivery tracking, and automatic reconnection."
     - "Integrated WeChat Map with geo-based store search, custom markers, and POI filtering across multiple miniprograms."
     - "Implemented cascaded multi-dimension filtering with debounced queries for complex product discovery."
-  keywords: [Taro, React, TypeScript, WeChat Miniprogram]
+  keywords: [Taro, React, TypeScript, WeChat Miniprogram, Orval]
   startDate: "2023-05-01"
   roles: [Senior Frontend Engineer]
   entity: Trajectry
