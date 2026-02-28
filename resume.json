@@ -1,13 +1,13 @@
 {
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.2.1/schema.json",
   "basics": {
-    "name": "Abraham Yang",
-    "label": "Senior Frontend Engineer | Frontend Lead",
+    "name": "Abraham Yang 杨杨",
+    "label": "Senior Frontend Engineer / Frontend Lead",
     "picture": "https://avatars.githubusercontent.com/u/19504192?v=4",
     "email": "abram.yang@outlook.com",
     "phone": "+86 159-2109-8538",
-    "url": "https://iay.me",
-    "summary": "Senior Frontend Engineer with 7+ years of experience building scalable web, hybrid, and mini-program applications. Specialized in React ecosystem, interactive rendering (2D/3D), and SaaS systems architecture. Led small cross-functional teams (up to 5 engineers) delivering production-ready systems serving 10k+ users. Strong ownership mindset across frontend architecture, hybrid integration, CI/CD pipelines, and cloud deployment. Experienced collaborating across APAC regions and driving engineering standards.",
+    "url": "https://gh.abramyang.com/resume",
+    "summary": "Senior Frontend Engineer with 7+ years in React and Mini Program ecosystems. Drives AI-first engineering to accelerate execution and architectural clarity. Experienced in canvas-based 2D systems and Three.js-driven 3D model customization. Collaborates across APAC markets and leads a cross-platform engineering team.",
     "location": {
       "city": "Shanghai",
       "region": "Shanghai",
@@ -18,6 +18,11 @@
         "network": "LinkedIn",
         "username": "abramyang",
         "url": "https://www.linkedin.com/in/abramyang"
+      },
+      {
+        "network": "Github",
+        "username": "abramyangCN",
+        "url": "https://www.github.com/abramyangCN"
       }
     ]
   },
@@ -27,12 +32,13 @@
       "location": "Shanghai, China",
       "position": "Senior Frontend Engineer",
       "startDate": "2023-05-01",
-      "summary": "Frontend engineer at a boutique digital consultancy serving global luxury and premium brands. Originally part of the Fabernovel network; following EY's global acquisition (rebrand as EY Studio), the China entity operated independently and rebrand as Trajectry (legal entity: Trajectry China limited).",
+      "url": "https://www.trajectry.com",
+      "summary": "Frontend engineer at a boutique digital consultancy serving global luxury and premium brands.",
       "highlights": [
-        "Delivered ongoing retainer frontend development for Christie's WeChat Miniprogram, including private sale workflows and multi-account management features.",
-        "Developed WeChat Miniprograms for luxury and premium brands including Messika, Bucherer, Hermès (after-sales service), and Kallista using Taro, React, and TypeScript.",
-        "Built and localized the Monotype Asia platform across CN, TW, and KR markets, handling regional content configuration and locale-specific adaptations.",
-        "Maintained and iterated on live production Miniprograms under an agile retainer model with continuous client feedback cycles."
+        "Architected and delivered production-grade WeChat and WeCom Mini Program platforms with complex workflow and account systems.",
+        "Designed and integrated AI-driven customer support and multilingual translation services into production systems.",
+        "Built scalable Mini Program solutions using Taro, React, and TypeScript for global luxury brands including Christie's, Hermès, Messika, and Bucherer.",
+        "Coordinated cross-market delivery across CN, TW, and KR regions while maintaining stable production operations."
       ]
     },
     {
@@ -52,7 +58,7 @@
     {
       "name": "Shanghai Fumasoft Co., Ltd",
       "location": "Shanghai, China",
-      "position": "Frontend Lead",
+      "position": "Senior Frontend Engineer",
       "url": "https://www.fumasoft.com",
       "startDate": "2020-12-01",
       "endDate": "2021-09-01",
@@ -404,6 +410,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2026-02-26T05:03:20"
+    "lastModified": "2026-02-28T03:50:02"
   }
 }
