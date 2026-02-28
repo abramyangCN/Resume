@@ -85,7 +85,7 @@ pnpm run export   # export to resume.html
 
 ## Summary
 
-Senior Frontend Engineer with 7+ years in React and Mini Program ecosystems. Drives AI-first engineering to accelerate execution and architectural clarity. Experienced in canvas-based 2D systems and Three.js-driven 3D model customization. Collaborates across APAC markets and leads a cross-platform engineering team.
+Senior Frontend Engineer with 7+ years in React and Mini Program ecosystems. Applies AI-driven workflows to accelerate development cycles and improve architectural decisions. Experienced in canvas-based 2D interaction systems and Three.js-powered 3D rendering development. Collaborates across APAC markets and leads a cross-platform engineering team.
 
 ## Experience
 
