@@ -29,15 +29,15 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Check if src/ changed
+      - name: Check if src/ or scripts/ changed
         id: check_src
         run: |
-          if git diff --quiet HEAD^ HEAD -- src/; then
+          if git diff --quiet HEAD^ HEAD -- src/ scripts/; then
             echo "changed=false" >> $GITHUB_OUTPUT
-            echo "src/ unchanged, skipping build and translation"
+            echo "src/ and scripts/ unchanged, skipping build and translation"
           else
             echo "changed=true" >> $GITHUB_OUTPUT
-            echo "src/ changed, will rebuild and translate"
+            echo "src/ or scripts/ changed, will rebuild and translate"
           fi
 
       - name: Build resume.json from YAML sources

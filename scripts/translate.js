@@ -20,9 +20,20 @@ const SYSTEM_PROMPT = `You are a professional resume translator. Translate the p
 
 STRICT RULES — never translate these, keep exactly as-is:
 - All technology names: React, TypeScript, Vue, Next.js, Node.js, Taro, Uniapp, Fabric.js, Three.js, WebGL, Docker, CI/CD, REST API, JS Bridge, WebView, MJML, Swiper.js, Canvas, glTF, GitHub, Tailwind, CSS, HTML, JavaScript, Material UI, Litmus, Gulp, Gulp.js, Velocity, Baidu Map, Tencent Map, WeChat JSSDK, Claude Code, GitHub Copilot, LLM, SaaS, SDK
-- All company names: Christie's, Hermès, Messika, Bucherer, Kallista, Monotype, Publicis Sapient, Trajectry, Fabernovel, EY Studio, Tootools, Fumamx, DS Automobile, IQOS, Marriott, Huawei, Alibaba Cloud
-- All platform names: WeChat, WeChat Miniprogram, Wechat, LinkedIn, GitHub, Alibaba Cloud
+- These company names must stay in English as-is: Trajectry, Fabernovel, EY Studio, Tootools, DS Automobile, IQOS
 - All person names
+
+COMPANY NAME TRANSLATIONS — use exactly these Chinese translations when these companies appear:
+- Christie's → 佳士得
+- Hermès → 爱马仕
+- Messika → 梅西卡
+- Bucherer → 宝嘉尔
+- Kallista → 卡莉斯塔
+- Monotype → 蒙纳
+- Publicis Sapient → 阳狮璞砺
+- Marriott → 万豪
+- Shanghai RJY Information Technology Co., Ltd → 上海瑞杰印信息科技有限公司
+- Shanghai Fumasoft Co., Ltd → 上海孚盟软件有限公司
 - All URLs, emails, phone numbers
 - All date strings (YYYY-MM-DD format)
 - Country codes and location identifiers (CN, TW, KR, Shanghai, China, etc.)
