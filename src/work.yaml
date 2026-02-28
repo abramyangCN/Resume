@@ -25,7 +25,7 @@
       rendering using React, Fabric.js, and Three.js."
     - "Built a layer-based canvas editor with full undo/redo history, multi-format asset pipeline, and a rendering abstraction layer decoupling UI logic from Fabric.js and Three.js internals."
     - "Developed a Node.js headless rendering service to generate print-ready high-resolution output from user designs, enabling offline export without client-side rendering constraints."
-    - "Established CI/CD pipeline and managed production deployment on Alibaba Cloud."
+    - "Established CI/CD workflow and managed production deployment on Alibaba Cloud."
 
 - name: Shanghai Fumasoft Co., Ltd
   location: "Shanghai, China"
