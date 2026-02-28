@@ -92,34 +92,28 @@ Senior Frontend Engineer with 7+ years in React and Mini Program ecosystems. App
 ### Senior Frontend Engineer · Trajectry (formerly EY Fabernovel China)
 *May 2023 – Present · Shanghai, China*
 
-- Architected and delivered production-grade WeChat and WeCom Mini Program platforms with complex workflow and account systems.
+- Architected and delivered production-grade WeChat and WeCom Mini Program using Taro, React, Weapp-tailwindcss and TypeScript.
 - Designed and integrated AI-driven customer support and multilingual translation services into production systems.
-- Built scalable Mini Program solutions using Taro, React, and TypeScript for global luxury brands including Christie's, Hermès, Messika, and Bucherer.
-- Coordinated cross-market delivery across APAC regions while maintaining stable production operations.
+- Served global luxury and premium brands including Christie's, Hermès, Kallista, Messika, Bucherer, Bulgari, etc.
 
 ### Frontend Lead · Shanghai RJY Information Technology Co., Ltd
 *Sep 2021 – Feb 2023 · Shanghai, China*
 
 - Designed and implemented a customizable clothing platform with real-time 2D/3D rendering using React, Fabric.js, and Three.js.
-- Built a layer-based canvas editor with full undo/redo history, multi-format asset pipeline, and a rendering abstraction layer decoupling UI logic from Fabric.js and Three.js internals.
+- Led frontend architecture and delivery for DIY clothing application and WeChat Miniprogram, managed agile teams and built CI/CD infrastructure.
 - Developed a Node.js headless rendering service to generate print-ready high-resolution output from user designs, enabling offline export without client-side rendering constraints.
-- Established CI/CD workflow and managed production deployment on Alibaba Cloud.
 
 ### Senior Frontend Engineer · Shanghai Fumasoft Co., Ltd
 *Dec 2020 – Sep 2021 · Shanghai, China*
 
 - Refactored a React Native app into a WebView-based hybrid architecture, enabling a shared codebase across iOS, Android, and H5.
-- Designed a JS bridge exposing native capabilities to WebView with async callback and error handling support.
-- Improved application stability and reduced hybrid interaction issues through structured routing and lifecycle management.
 - Led a cross-functional team of 5 engineers (FE, iOS, Android) coordinating sprint planning and technical decisions.
 
 ### Frontend Engineer · Publicis Sapient
 *Apr 2019 – Nov 2020 · Shanghai, China*
 
 - Developed responsive campaign websites and minisites for Huawei, Marriott, and automotive brands.
-- Implemented interactive mobile experiences using modern JS frameworks and canvas-based rendering.
 - Collaborated across Singapore, Japan, and India teams in distributed delivery model.
-- Mentored interns and contributed to frontend standards and reusable component design.
 
 ## Skills
 
