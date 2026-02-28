@@ -95,7 +95,7 @@ Senior Frontend Engineer with 7+ years in React and Mini Program ecosystems. Dri
 - Architected and delivered production-grade WeChat and WeCom Mini Program platforms with complex workflow and account systems.
 - Designed and integrated AI-driven customer support and multilingual translation services into production systems.
 - Built scalable Mini Program solutions using Taro, React, and TypeScript for global luxury brands including Christie's, Hermès, Messika, and Bucherer.
-- Coordinated cross-market delivery across CN, TW, and KR regions while maintaining stable production operations.
+- Coordinated cross-market delivery across APAC regions while maintaining stable production operations.
 
 ### Frontend Lead · Shanghai RJY Information Technology Co., Ltd
 *Sep 2021 – Feb 2023 · Shanghai, China*
