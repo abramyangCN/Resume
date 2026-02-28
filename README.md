@@ -85,17 +85,17 @@ pnpm run export   # export to resume.html
 
 ## Summary
 
-Senior Frontend Engineer with 7+ years of experience building scalable web, hybrid, and mini-program applications. Specialized in React ecosystem, interactive rendering (2D/3D), and SaaS systems architecture. Led small cross-functional teams (up to 5 engineers) delivering production-ready systems serving 10k+ users. Strong ownership mindset across frontend architecture, hybrid integration, CI/CD pipelines, and cloud deployment. Experienced collaborating across APAC regions and driving engineering standards.
+Senior Frontend Engineer with 7+ years in React and Mini Program ecosystems. Drives AI-first engineering to accelerate execution and architectural clarity. Experienced in canvas-based 2D systems and Three.js-driven 3D model customization. Collaborates across APAC markets and leads a cross-platform engineering team.
 
 ## Experience
 
 ### Senior Frontend Engineer · Trajectry (formerly EY Fabernovel China)
 *May 2023 – Present · Shanghai, China*
 
-- Delivered ongoing retainer frontend development for Christie's WeChat Miniprogram, including private sale workflows and multi-account management features.
-- Developed WeChat Miniprograms for luxury and premium brands including Messika, Bucherer, Hermès (after-sales service), and Kallista using Taro, React, and TypeScript.
-- Built and localized the Monotype Asia platform across CN, TW, and KR markets, handling regional content configuration and locale-specific adaptations.
-- Maintained and iterated on live production Miniprograms under an agile retainer model with continuous client feedback cycles.
+- Architected and delivered production-grade WeChat and WeCom Mini Program platforms with complex workflow and account systems.
+- Designed and integrated AI-driven customer support and multilingual translation services into production systems.
+- Built scalable Mini Program solutions using Taro, React, and TypeScript for global luxury brands including Christie's, Hermès, Messika, and Bucherer.
+- Coordinated cross-market delivery across CN, TW, and KR regions while maintaining stable production operations.
 
 ### Frontend Lead · Shanghai RJY Information Technology Co., Ltd
 *Sep 2021 – Feb 2023 · Shanghai, China*
@@ -105,7 +105,7 @@ Senior Frontend Engineer with 7+ years of experience building scalable web, hybr
 - Built server-side rendering pipeline with Node.js to export high-resolution design assets.
 - Established CI/CD pipeline and managed production deployment on Alibaba Cloud.
 
-### Frontend Lead · Shanghai Fumasoft Co., Ltd
+### Senior Frontend Engineer · Shanghai Fumasoft Co., Ltd
 *Dec 2020 – Sep 2021 · Shanghai, China*
 
 - Migrated React Native application to hybrid architecture, improving integration flexibility with native modules.
@@ -141,4 +141,4 @@ Senior Frontend Engineer with 7+ years of experience building scalable web, hybr
 
 ---
 
-*Generated automatically from [resume.json](./resume.json) · Last updated: 2026-02-27*
+*Generated automatically from [resume.json](./resume.json) · Last updated: 2026-02-28*
