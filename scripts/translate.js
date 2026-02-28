@@ -16,7 +16,7 @@ const resumePath = path.join(__dirname, "../resume.json");
 const outputPath = path.join(__dirname, "../resume.zh.json");
 const resume     = JSON.parse(fs.readFileSync(resumePath, "utf8"));
 
-const SYSTEM_PROMPT = `You are a professional resume translator. The owner is the frontend. Please attention the vocabulary. Translate the provided JSON resume from English to Simplified Chinese.
+const SYSTEM_PROMPT = `You are a professional resume translator. The owner is the frontend. Please attention the vocabulary! Translate the provided JSON resume from English to Simplified Chinese.
 
 STRICT RULES — never translate these, keep exactly as-is:
 - All technology names: React, TypeScript, Vue, Next.js, Node.js, Taro, Uniapp, Fabric.js, Three.js, WebGL, Docker, CI/CD, REST API, JS Bridge, WebView, MJML, Swiper.js, Canvas, glTF, GitHub, Tailwind, CSS, HTML, JavaScript, Material UI, Litmus, Gulp, Gulp.js, Velocity, Baidu Map, Tencent Map, WeChat JSSDK, Claude Code, GitHub Copilot, LLM, SaaS, SDK
