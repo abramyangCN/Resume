@@ -7,7 +7,7 @@
     "email": "abram.yang@outlook.com",
     "phone": "+86 159-2109-8538",
     "url": "https://gh.abramyang.com/resume",
-    "summary": "Senior Frontend Engineer with 7+ years in React and Mini Program ecosystems. Drives AI-first engineering to accelerate execution and architectural clarity. Experienced in canvas-based 2D systems and Three.js-driven 3D model customization. Collaborates across APAC markets and leads a cross-platform engineering team.",
+    "summary": "Senior Frontend Engineer with 7+ years in React and Mini Program ecosystems. Applies AI-driven workflows to accelerate development cycles and improve architectural decisions. Experienced in canvas-based 2D interaction systems and Three.js-powered 3D rendering development. Collaborates across APAC markets and leads a cross-platform engineering team.",
     "location": {
       "city": "Shanghai",
       "region": "Shanghai",
@@ -410,6 +410,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2026-02-28T06:03:42"
+    "lastModified": "2026-02-28T06:13:02"
   }
 }
