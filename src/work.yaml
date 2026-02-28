@@ -3,29 +3,20 @@
   position: Senior Frontend Engineer
   startDate: "2023-05-01"
   url: "https://www.trajectry.com"
-  summary: >-
-    Frontend engineer at a boutique digital consultancy serving global luxury
-    and premium brands.
   highlights:
-    - Architected and delivered production-grade WeChat and WeCom Mini Program platforms with complex workflow and account systems.
+    - Architected and delivered production-grade WeChat and WeCom Mini Program using Taro, React, Weapp-tailwindcss and TypeScript.
     - Designed and integrated AI-driven customer support and multilingual translation services into production systems.
-    - Built scalable Mini Program solutions using Taro, React, and TypeScript for global luxury brands including Christie's, Hermès, Messika, and Bucherer.
-    - Coordinated cross-market delivery across APAC regions while maintaining stable production operations.
+    - Served global luxury and premium brands including Christie's, Hermès, Kallista, Messika, Bucherer, Bulgari, etc.
 
 - name: Shanghai RJY Information Technology Co., Ltd
   location: "Shanghai, China"
   position: Frontend Lead
   startDate: "2021-09-01"
   endDate: "2023-02-15"
-  summary: >-
-    Led frontend architecture and delivery for DIY clothing application and
-    WeChat Miniprogram, managed agile teams and built CI/CD infrastructure.
   highlights:
-    - "Designed and implemented a customizable clothing platform with real-time 2D/3D
-      rendering using React, Fabric.js, and Three.js."
-    - "Built a layer-based canvas editor with full undo/redo history, multi-format asset pipeline, and a rendering abstraction layer decoupling UI logic from Fabric.js and Three.js internals."
+    - "Designed and implemented a customizable clothing platform with real-time 2D/3D rendering using React, Fabric.js, and Three.js."
+    - "Led frontend architecture and delivery for DIY clothing application and WeChat Miniprogram, managed agile teams and built CI/CD infrastructure."
     - "Developed a Node.js headless rendering service to generate print-ready high-resolution output from user designs, enabling offline export without client-side rendering constraints."
-    - "Established CI/CD workflow and managed production deployment on Alibaba Cloud."
 
 - name: Shanghai Fumasoft Co., Ltd
   location: "Shanghai, China"
@@ -33,14 +24,9 @@
   url: "https://www.fumasoft.com"
   startDate: "2020-12-01"
   endDate: "2021-09-01"
-  summary: Core frontend contributor for SaaS and hybrid applications.
   highlights:
     - "Refactored a React Native app into a WebView-based hybrid architecture, enabling a shared codebase across iOS, Android, and H5."
-    - "Designed a JS bridge exposing native capabilities to WebView with async callback and error handling support."
-    - "Improved application stability and reduced hybrid interaction issues through
-      structured routing and lifecycle management."
-    - "Led a cross-functional team of 5 engineers (FE, iOS, Android) coordinating
-      sprint planning and technical decisions."
+    - "Led a cross-functional team of 5 engineers (FE, iOS, Android) coordinating sprint planning and technical decisions."
 
 - name: Publicis Sapient
   location: "Shanghai, China"
@@ -48,11 +34,7 @@
   url: "https://www.publicisgroupe.com"
   startDate: "2019-04-01"
   endDate: "2020-11-30"
-  summary: Delivered enterprise-grade marketing and brand platforms for global clients.
   highlights:
     - "Developed responsive campaign websites and minisites for Huawei, Marriott,
       and automotive brands."
-    - "Implemented interactive mobile experiences using modern JS frameworks and
-      canvas-based rendering."
     - "Collaborated across Singapore, Japan, and India teams in distributed delivery model."
-    - "Mentored interns and contributed to frontend standards and reusable component design."

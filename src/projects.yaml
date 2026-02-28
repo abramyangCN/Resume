@@ -50,14 +50,10 @@
     Full-featured WeChat Miniprogram for custom clothing design with real-time
     2D editing and 3D preview, serving as the core product of the company.
   highlights:
-    - "Architected a dual-rendering design editor supporting layer management,
-      pattern/font/drawing tools, and undo/redo history using Fabric.js on a React-based canvas."
-    - "Implemented real-time 3D preview by projecting user designs onto glTF clothing
-      models via Three.js Decal Geometry."
-    - "Built server-side rendering pipeline with Node.js to export high-resolution
-      print-ready design assets."
-    - "Developed the Uniapp Miniprogram shell with custom routing and lifecycle
-      management for seamless cross-platform delivery."
+    - "Architected a dual-rendering design editor with layer management, pattern/font/drawing tools, and undo/redo history, built on a rendering abstraction layer that decouples UI logic from Fabric.js and Three.js internals."
+    - "Implemented real-time 3D preview by projecting user designs onto glTF clothing models via Three.js Decal Geometry."
+    - "Built server-side rendering pipeline with Node.js to export high-resolution print-ready design assets."
+    - "Developed the Uniapp Miniprogram shell with custom routing and lifecycle management for seamless cross-platform delivery."
   keywords: [React.js, Fabric.js, Three.js, Uniapp, Node.js, WeChat Miniprogram]
   startDate: "2021-09-15"
   endDate: "2023-02-15"
