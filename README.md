@@ -108,8 +108,8 @@ Senior Frontend Engineer with 7+ years in React and Mini Program ecosystems. App
 ### Senior Frontend Engineer · Shanghai Fumasoft Co., Ltd
 *Dec 2020 – Sep 2021 · Shanghai, China*
 
-- Migrated React Native application to hybrid architecture, improving integration flexibility with native modules.
-- Designed and implemented JS bridge for bidirectional communication between WebView and native layers.
+- Refactored a React Native app into a WebView-based hybrid architecture, enabling a shared codebase across iOS, Android, and H5.
+- Designed a JS bridge exposing native capabilities to WebView with async callback and error handling support.
 - Improved application stability and reduced hybrid interaction issues through structured routing and lifecycle management.
 - Led a cross-functional team of 5 engineers (FE, iOS, Android) coordinating sprint planning and technical decisions.
 
