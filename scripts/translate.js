@@ -32,6 +32,7 @@ COMPANY NAME TRANSLATIONS — use exactly these Chinese translations when these 
 - Monotype → 蒙纳
 - Publicis Sapient → 阳狮璞砺
 - Marriott → 万豪
+- Trajectry(formally EY Fabernovel China) → Trajectry (前身为安永Fabernovel中国)
 - Shanghai RJY Information Technology Co., Ltd → 上海瑞杰印信息科技有限公司
 - Shanghai Fumasoft Co., Ltd → 上海孚盟软件有限公司
 - All URLs, emails, phone numbers
