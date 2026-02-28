@@ -131,7 +131,7 @@
   "projects": [
     {
       "name": "Christie's WeChat Miniprogram",
-      "description": "Ongoing retainer frontend development for Christie's China WeChat Miniprogram, delivering new features and platform enhancements across release cycles.",
+      "description": "Ongoing retainer frontend development for Christie's China WeChat Miniprogram, delivering new features and platform enhancements across release cycles. Tech: Taro, React, TypeScript, Redux, WebSocket, Orval, pnpm workspaces.",
       "highlights": [
         "Adopted Redux for global state management, establishing a predictable data flow across complex auction and account workflows.",
         "Designed a WebSocket manager module handling dual concurrent connections (global + local), with automatic reconnection and session recovery to ensure reliability during online auctions.",
@@ -156,7 +156,7 @@
     },
     {
       "name": "Luxury Brand Miniprograms",
-      "description": "Delivered WeChat Miniprogram projects for Hermès, Kallista, Messika, and Bucherer, covering after-sales service, e-commerce, appointment booking, and product showcase.",
+      "description": "Delivered WeChat Miniprogram projects for Hermès, Kallista, Messika, and Bucherer, covering after-sales service, e-commerce, appointment booking, and product showcase. Tech: Taro, React, TypeScript, WeChat Miniprogram.",
       "highlights": [
         "Built a full e-commerce flow with persisted cart state, WeChat Pay integration, and multi-step (shouqianba) checkout",
         "Implemented real-time in-app chat via WebSocket with message queuing, delivery tracking, and automatic reconnection.",
@@ -178,7 +178,7 @@
     },
     {
       "name": "Monotype Asia Website",
-      "description": "Built and localized the Monotype Asia website for China Mainland, Taiwan, and Korea.",
+      "description": "Built and localized the Monotype Asia website for China Mainland, Taiwan, and Korea. Tech: Astro, TypeScript, Tailwind, Strapi, SSR, i18n, Node.js.",
       "highlights": [
         "Architected a single Astro SSR codebase deployable across China Mainland, Taiwan, and Korea markets, with region-specific locale, routing, and configuration driven by build-time environment variables.",
         "Integrated Strapi as a headless CMS to serve region-specific content, with dynamic sitemap generation and full SSR data fetching per market.",
@@ -202,7 +202,7 @@
     },
     {
       "name": "Tootools Miniprogram",
-      "description": "Full-featured WeChat Miniprogram for custom clothing design with real-time 2D editing and 3D preview, serving as the core product of the company.",
+      "description": "Full-featured WeChat Miniprogram for custom clothing design with real-time 2D editing and 3D preview, serving as the core product of the company. Tech: React, Fabric.js, Three.js, Uniapp, Node.js.",
       "highlights": [
         "Architected a dual-rendering design editor with layer management, pattern/font/drawing tools, and undo/redo history, built on a rendering abstraction layer that decouples UI logic from Fabric.js and Three.js internals.",
         "Implemented real-time 3D preview by projecting user designs onto glTF clothing models via Three.js Decal Geometry.",
@@ -226,7 +226,7 @@
     },
     {
       "name": "Fumamx Hybrid App",
-      "description": "Rebuilt a React Native SaaS application into a hybrid architecture to improve user experience and accelerate cross-platform delivery.",
+      "description": "Rebuilt a React Native SaaS application into a hybrid architecture to improve user experience and accelerate cross-platform delivery. Tech: React Native, Vue.js, JS Bridge, iOS, Android.",
       "highlights": [
         "Designed and implemented a bidirectional JS bridge using postMessage, enabling structured communication between WebView and native iOS/Android layers."
       ],
@@ -248,7 +248,7 @@
     },
     {
       "name": "DS Automobile Official Website",
-      "description": "Developed the official marketing website for DS Automobile China.",
+      "description": "Developed the official marketing website for DS Automobile China. Tech: JavaScript, CSS Animation, Baidu Map SDK.",
       "highlights": [
         "Built a high-fidelity animated landing page with scroll-driven and entrance animations using CSS and JavaScript.",
         "Integrated Baidu Map SDK with custom markers, cluster rendering, and fuzzy search for a nationwide dealer."
@@ -269,7 +269,7 @@
     },
     {
       "name": "IQOS EDM Email Templates",
-      "description": "Delivered a series of responsive EDM email templates for IQOS marketing campaigns, coordinated across APAC teams.",
+      "description": "Delivered a series of responsive EDM email templates for IQOS marketing campaigns, coordinated across APAC teams. Tech: MJML, Gulp.js, Litmus.",
       "highlights": [
         "Built responsive, cross-client email templates using MJML, validated across 15+ email clients via Litmus.",
         "Automated email compilation and asset inlining with a Gulp-based build workflow."
@@ -290,7 +290,7 @@
     },
     {
       "name": "Huawei Campaign Minisites",
-      "description": "Developed multiple interactive marketing minisites for Huawei campaigns, focusing on mobile-first experiences and map integration.",
+      "description": "Developed multiple interactive marketing minisites for Huawei campaigns, focusing on mobile-first experiences and map integration. Tech: React.js, Canvas, Tencent Map, WeChat JSSDK, Swiper.js.",
       "highlights": [
         "Built canvas-based interactive mobile experience with gesture controls and frame animation for campaign engagement.",
         "Extended Swiper.js with custom card collapse and 3D flip transitions to match design specifications."
@@ -313,7 +313,7 @@
     },
     {
       "name": "Marriott Website CN Localization",
-      "description": "Adapted Marriott's global website for the Chinese market, replacing unsupported third-party services and ensuring feature parity.",
+      "description": "Adapted Marriott's global website for the Chinese market, replacing unsupported third-party services and ensuring feature parity. Tech: JavaScript, Baidu Map SDK.",
       "highlights": [
         "Re-implemented Google Maps-based hotel locator with Baidu Map SDK, preserving search, filtering, and marker functionality for CN users.",
         "Collaborated with the India-based development team"
@@ -371,6 +371,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2026-02-28T10:54:06"
+    "lastModified": "2026-02-28T10:57:31"
   }
 }
