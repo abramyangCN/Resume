@@ -50,8 +50,8 @@
       "summary": "Led frontend architecture and delivery for DIY clothing application and WeChat Miniprogram, managed agile teams and built CI/CD infrastructure.",
       "highlights": [
         "Designed and implemented a customizable clothing platform with real-time 2D/3D rendering using React, Fabric.js, and Three.js.",
-        "Architected layer-based editing system (undo/redo, asset pipeline, rendering abstraction) for interactive design workflow.",
-        "Built server-side rendering pipeline with Node.js to export high-resolution design assets.",
+        "Built a layer-based canvas editor with full undo/redo history, multi-format asset pipeline, and a rendering abstraction layer decoupling UI logic from Fabric.js and Three.js internals.",
+        "Developed a Node.js headless rendering service to generate print-ready high-resolution output from user designs, enabling offline export without client-side rendering constraints.",
         "Established CI/CD pipeline and managed production deployment on Alibaba Cloud."
       ]
     },
@@ -410,6 +410,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2026-02-28T06:20:33"
+    "lastModified": "2026-02-28T06:33:45"
   }
 }
