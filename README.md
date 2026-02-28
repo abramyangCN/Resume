@@ -103,7 +103,7 @@ Senior Frontend Engineer with 7+ years in React and Mini Program ecosystems. App
 - Designed and implemented a customizable clothing platform with real-time 2D/3D rendering using React, Fabric.js, and Three.js.
 - Built a layer-based canvas editor with full undo/redo history, multi-format asset pipeline, and a rendering abstraction layer decoupling UI logic from Fabric.js and Three.js internals.
 - Developed a Node.js headless rendering service to generate print-ready high-resolution output from user designs, enabling offline export without client-side rendering constraints.
-- Established CI/CD pipeline and managed production deployment on Alibaba Cloud.
+- Established CI/CD workflow and managed production deployment on Alibaba Cloud.
 
 ### Senior Frontend Engineer · Shanghai Fumasoft Co., Ltd
 *Dec 2020 – Sep 2021 · Shanghai, China*
