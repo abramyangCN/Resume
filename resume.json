@@ -147,7 +147,8 @@
         "Adopted Redux for global state management, establishing a predictable data flow across complex auction and account workflows.",
         "Designed a WebSocket manager module handling dual concurrent connections (global + local), with automatic reconnection and session recovery to ensure reliability during online auctions.",
         "Refactored multi-account module to support switching among authorized sub-accounts under an enterprise account, with per-account permission control and isolated state management.",
-        "Built a reusable UI component library inspired by shadcn/ui, keeping components fully owned and customizable per page."
+        "Built a reusable UI component library inspired by shadcn/ui, keeping components fully owned and customizable per page.",
+        "Restructured the codebase into a pnpm workspaces monorepo to support a LINE LIFF page alongside the WeChat Miniprogram, extracting shared components, utilities, and types into independent packages reused across both platforms."
       ],
       "keywords": [
         "Taro",
@@ -395,6 +396,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2026-02-28T09:06:13"
+    "lastModified": "2026-02-28T09:14:13"
   }
 }
