@@ -35,10 +35,8 @@
   endDate: "2021-09-01"
   summary: Core frontend contributor for SaaS and hybrid applications.
   highlights:
-    - "Migrated React Native application to hybrid architecture, improving integration
-      flexibility with native modules."
-    - "Designed and implemented JS bridge for bidirectional communication between
-      WebView and native layers."
+    - "Refactored a React Native app into a WebView-based hybrid architecture, enabling a shared codebase across iOS, Android, and H5."
+    - "Designed a JS bridge exposing native capabilities to WebView with async callback and error handling support."
     - "Improved application stability and reduced hybrid interaction issues through
       structured routing and lifecycle management."
     - "Led a cross-functional team of 5 engineers (FE, iOS, Android) coordinating
