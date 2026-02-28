@@ -6,13 +6,22 @@ education:
     startDate: "2015-09-01"
     endDate: "2019-06-01"
 
-awards:
-  - title: Scholarships
+# awards:
+#   - title: Scholarships
+#     date: "2019-06-01"
+#     awarder: Shanghai Dianji University
+#     summary: >-
+#       Awarded for distinguished academic achievements and contributions to
+#       the university community.
+
+certificates:
+  - title: College English Test Band 6 (CET-6)
     date: "2019-06-01"
-    awarder: Shanghai Dianji University
-    summary: >-
-      Awarded for distinguished academic achievements and contributions to
-      the university community.
+    awarder: Ministry of Education of China
+
+  - title: Web Design — CITT Level 3
+    date: "2017-06-01"
+    awarder: China International Talent Training (CITT)
 
 languages:
   - language: Mandarin Chinese
