@@ -3,7 +3,6 @@
     Ongoing retainer frontend development for Christie's China WeChat Miniprogram,
     delivering new features and platform enhancements across release cycles.
   highlights:
-    - "Led incremental Taro migration from v1 → v3 → v4, refactoring class components to React Hooks and modernizing the build workflow without disrupting ongoing delivery."
     - "Adopted Redux for global state management, establishing a predictable data flow across complex auction and account workflows."
     - "Designed a WebSocket manager module handling dual concurrent connections (global + local), with automatic reconnection and session recovery to ensure reliability during online auctions."
     - "Refactored multi-account module to support switching among authorized sub-accounts under an enterprise account, with per-account permission control and isolated state management."
@@ -21,10 +20,9 @@
     Delivered WeChat Miniprogram projects for Hermès, Kallista, Messika, and Bucherer,
     covering after-sales service, e-commerce, appointment booking, and product showcase.
   highlights:
-    - "Built a full e-commerce flow with persisted cart state, WeChat Pay integration, and multi-step checkout with order lifecycle management."
+    - "Built a full e-commerce flow with persisted cart state, WeChat Pay integration, and multi-step (shouqianba) checkout"
     - "Implemented real-time in-app chat via WebSocket with message queuing, delivery tracking, and automatic reconnection."
     - "Integrated WeChat Map with geo-based store search, custom markers, and POI filtering across multiple miniprograms."
-    - "Implemented cascaded multi-dimension filtering with debounced queries for complex product discovery."
   keywords: [Taro, React, TypeScript, WeChat Miniprogram, Orval]
   startDate: "2023-05-01"
   roles: [Senior Frontend Engineer]
@@ -32,9 +30,7 @@
   type: application
 
 - name: Monotype Asia Website
-  description: >-
-    Built and localized the Monotype Asia website for China Mainland, Taiwan, and Korea,
-    supporting font discovery and licensing across three regional deployments from a single codebase.
+  description: Built and localized the Monotype Asia website for China Mainland, Taiwan, and Korea.
   highlights:
     - "Architected a single Astro SSR codebase deployable across China Mainland, Taiwan, and Korea markets, with region-specific locale, routing, and configuration driven by build-time environment variables."
     - "Integrated Strapi as a headless CMS to serve region-specific content, with dynamic sitemap generation and full SSR data fetching per market."
@@ -52,8 +48,7 @@
   highlights:
     - "Architected a dual-rendering design editor with layer management, pattern/font/drawing tools, and undo/redo history, built on a rendering abstraction layer that decouples UI logic from Fabric.js and Three.js internals."
     - "Implemented real-time 3D preview by projecting user designs onto glTF clothing models via Three.js Decal Geometry."
-    - "Built server-side rendering pipeline with Node.js to export high-resolution print-ready design assets."
-    - "Developed the Uniapp Miniprogram shell with custom routing and lifecycle management for seamless cross-platform delivery."
+    - "Built server-side rendering workflow with Node.js to export high-resolution print-ready design assets."
   keywords: [React.js, Fabric.js, Three.js, Uniapp, Node.js, WeChat Miniprogram]
   startDate: "2021-09-15"
   endDate: "2023-02-15"
@@ -64,16 +59,10 @@
 - name: Fumamx Hybrid App
   description: >-
     Rebuilt a React Native SaaS application into a hybrid architecture to improve
-    native integration flexibility and accelerate cross-platform delivery.
+    user experience and accelerate cross-platform delivery.
   highlights:
     - "Designed and implemented a bidirectional JS bridge using postMessage, enabling
       structured communication between WebView and native iOS/Android layers."
-    - "Introduced Vue Router-based navigation management within the WebView layer,
-      decoupling routing from native navigation stacks."
-    - "Improved release velocity by enabling independent web-layer deployments
-      without full native app releases."
-    - "Coordinated a cross-functional team of 5 (FE, iOS, Android) through sprint
-      planning and technical alignment."
   keywords: [React Native, Vue.js, Hybrid Architecture, JS Bridge, iOS, Android]
   startDate: "2020-12-01"
   endDate: "2021-09-01"
@@ -83,15 +72,12 @@
 
 - name: DS Automobile Official Website
   description: >-
-    Developed the official marketing website for DS Automobile China, featuring
-    animated experiences and an interactive dealer locator.
+    Developed the official marketing website for DS Automobile China.
   highlights:
     - "Built a high-fidelity animated landing page with scroll-driven and entrance
       animations using CSS and JavaScript."
     - "Integrated Baidu Map SDK with custom markers, cluster rendering, and fuzzy
-      search for a nationwide dealer locator."
-    - "Produced motion graphics for WeChat official article campaigns, enhancing
-      in-app engagement."
+      search for a nationwide dealer."
   keywords: [JavaScript, Baidu Map, CSS Animation, WeChat]
   startDate: "2020-04-01"
   endDate: "2020-08-01"
@@ -102,12 +88,11 @@
 - name: IQOS EDM Email Templates
   description: >-
     Delivered a series of responsive EDM email templates for IQOS marketing
-    campaigns, coordinated across international teams.
+    campaigns, coordinated across APAC teams.
   highlights:
     - "Built responsive, cross-client email templates using MJML, validated across
       15+ email clients via Litmus."
-    - "Automated email compilation and asset inlining with a Gulp-based build pipeline."
-    - "Coordinated deliverables across 3 time zones with distributed stakeholders."
+    - "Automated email compilation and asset inlining with a Gulp-based build workflow."
   keywords: [MJML, Gulp.js, Responsive Email, Litmus]
   startDate: "2020-04-01"
   endDate: "2020-05-01"
@@ -122,11 +107,8 @@
   highlights:
     - "Built canvas-based interactive mobile experience with gesture controls and
       frame animation for campaign engagement."
-    - "Integrated Tencent Map JSSDK with custom store locator, supporting marker
-      clustering and real-time search."
     - "Extended Swiper.js with custom card collapse and 3D flip transitions to
       match design specifications."
-    - "Integrated WeChat JSSDK for social sharing and in-app browser optimization."
   keywords: [React.js, Canvas, Tencent Map, WeChat JSSDK, Swiper.js, Material UI]
   startDate: "2019-08-01"
   endDate: "2020-08-01"
@@ -141,10 +123,7 @@
   highlights:
     - "Re-implemented Google Maps-based hotel locator with Baidu Map SDK, preserving
       search, filtering, and marker functionality for CN users."
-    - "Resolved cross-region API and geo-service incompatibilities introduced by
-      China's web restrictions."
-    - "Collaborated with the India-based development team in a distributed delivery
-      model with regular cross-timezone syncs."
+    - "Collaborated with the India-based development team"
   keywords: [Baidu Map, Localization, JavaScript, Cross-region Collaboration]
   startDate: "2019-04-01"
   endDate: "2019-08-01"
